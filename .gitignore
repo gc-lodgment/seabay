@@ -1,6 +1,7 @@
 #etc
 config.js
 gulpfile.js
+*.zip
 _bak/
 _document/
 _draft/
