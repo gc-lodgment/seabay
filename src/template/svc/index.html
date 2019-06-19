@@ -1,0 +1,229 @@
+@@include('src/template/svc/include/_head.html')
+</head>
+
+<body class="page-home">
+
+    @@include('src/template/svc/include/_header.html')
+
+    <div class="main">
+        <section class="slider_section">
+            <div class="main_info">
+                <p>A Home away from Home</p>
+            </div>
+            <div id="slider_main" class="slider_container smain">
+                <div data-u="slides" class="slides">
+                    <div><img data-u="image" class="main-visibility"
+                            src="/img/valuehotelgangneung/img/main/main015519.jpg" alt="01" /></div>
+                    <div><img data-u="image" class="main-visibility"
+                            src="/img/valuehotelgangneung/img/main/main025519.jpg" alt="02" /></div>
+                    <div><img data-u="image" class="main-visibility"
+                            src="/img/valuehotelgangneung/img/main/main035519.jpg" alt="03" /></div>
+                    <div><img data-u="image" class="main-visibility"
+                            src="/img/valuehotelgangneung/img/main/main045519.jpg" alt="04" /></div>
+                    <div><img data-u="image" class="main-visibility"
+                            src="/img/valuehotelgangneung/img/main/main055519.jpg" alt="05" /></div>
+                </div>
+                <span u="arrowleft" class="jssor-sprite arow-left"
+                    style="width: 21px; height: 32px; top: 200px; left: 20px;"></span>
+                <span u="arrowright" class="jssor-sprite arow-right"
+                    style="width: 21px; height: 32px; top: 200px; right: 20px"></span>
+            </div>
+            <div id="slider_mmain" class="slider_container mob">
+                <div data-u="slides" class="slides">
+                    <div><img data-u="image" class="main-visibility"
+                            src="/img/valuehotelgangneung/img/main/mmain015519.jpg" alt="01" /></div>
+                    <div><img data-u="image" class="main-visibility"
+                            src="/img/valuehotelgangneung/img/main/mmain025519.jpg" alt="02" /></div>
+                    <div><img data-u="image" class="main-visibility"
+                            src="/img/valuehotelgangneung/img/main/mmain035519.jpg" alt="03" /></div>
+                    <div><img data-u="image" class="main-visibility"
+                            src="/img/valuehotelgangneung/img/main/mmain045519.jpg" alt="04" /></div>
+                    <div><img data-u="image" class="main-visibility"
+                            src="/img/valuehotelgangneung/img/main/mmain055519.jpg" alt="05" /></div>
+                </div>
+                <span u="arrowleft" class="jssor-sprite arow-left"
+                    style="width: 21px; height: 32px; top: 200px; left: 20px;"></span>
+                <span u="arrowright" class="jssor-sprite arow-right"
+                    style="width: 21px; height: 32px; top: 200px; right: 20px"></span>
+            </div>
+        </section>
+        <section class="body_section">
+            <div class="main_reservation">
+                <div class="container">
+                    <form method="get" name="myForm" id="myForm" action="https://be.wingsbooking.com/ko/VHG1/redirect">
+                        <ul class="inputs ">
+                            <li>
+                                <span>호텔예약</span>
+                            </li>
+                            <li>
+                                <div class="date_input">
+                                    <input type="input" name="checkIn" class="datepicker_in" value="2019-06-18"
+                                        placeholder="Check in" readonly />
+                                    <i class="icon-12"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="date_input">
+                                    <input type="input" name="checkOut" class="datepicker_ot" value="2019-06-19"
+                                        placeholder="Check out" readonly />
+                                    <i class="icon-12"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="date_input">
+                                    <input type="number" name="rooms" value="1" min="1" onKeyup="number_check(this)"
+                                        placeholder="Check out" />
+                                    <p class="ad_form_label">객실</p>
+                                </div>
+                                <input type="hidden" name="adults" value="1" />
+                                <input type="hidden" name="children" value="" />
+                            </li>
+                            <li>
+                                <button type="button" onclick="on_submit()">객실 알아보기</button>
+                            </li>
+                            <li>
+                                <div class="temp_data" title="오늘의 날씨">
+                                    <div class="temp">
+                                        <span class="do">24</span>
+                                        <div class="tmx">↑<span>25</span> ↓<span></span></div>
+                                        <div class="day">Tue 18</div>
+                                    </div>
+                                    <div class="sky">
+                                        <i class="icon-16"></i>
+                                        <span class="today">TODAY</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+            <div class="container">
+                <div class="main_notice_event">
+                    <div class="main_notice_wrap">
+                        <div class="main_notice">
+                            <div class="title">
+                                <a href="brd/lists/notice.html">NOTICE<div class="btn_more">+</div></a>
+                            </div>
+                            <ul class="content box_bodder_top">
+                                <li><a href="brd/view/notice/1549.html">[알림] 밸류호텔 강릉 5층 수영장 오픈안내</a></li>
+                                <li><a href="brd/view/notice/1541.html">밸류호텔 강릉, 경포아쿠아리움과의 제휴</a></li>
+                                <li><a href="brd/view/notice/1520.html">밸류호텔강릉의 강릉거주민 특별 혜택</a></li>
+                                <li><a href="brd/view/notice/1514.html">[공지] 밸류플레이트 휴장안내</a></li>
+                                <li><a href="brd/view/notice/1506.html">2019년 새해 福 인사</a></li>
+                                <li><a href="brd/view/notice/1483.html">[공지] 수영장 폐장</a></li>
+                                <li><a href="brd/view/notice/1379.html">[공지] 수영장 이용 안내 문의</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main_event_wrap">
+                        <div class="main_event">
+                            <div class="title">
+                                <a href="brd/lists/event/index.html">EVENT<div class="btn_more">+</div></a>
+                            </div>
+                            <div class="content">
+                                <div class="event_item_wrap event_index_1">
+                                    <div class="event_item">
+                                        <img
+                                            src="/static/valuehotelgangneung/fil/Board/1100/785fd37db077385c6c110338b7a05518.jpg" />
+                                        <div class="event_title">
+                                            밸류호텔 강릉, 구정맞이 '복福'맞이 패키지<br />
+                                            2019-01-12 ~ 2019-01-31 <a href="brd/view/event/1515.html">바로가기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="event_item_wrap event_index_2">
+                                    <div class="event_item">
+                                        <img
+                                            src="/static/valuehotelgangneung/fil/Board/1100/55a45ac7e0938c9ed54067a3fa56b2f3.jpg" />
+                                        <div class="event_title">
+                                            고객증정 쿠폰<br />
+                                            2018-11-05 ~ 2019-04-30 <a href="brd/view/event/1497.html">바로가기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main_slider">
+                <div id="slider_footer" class="slider_container footer">
+                    <div data-u="slides" class="slides">
+                        <div data-p="112.50"><img data-u="image" class="footer-visibility"
+                                src="/img/valuehotelgangneung/img/main/photo01cd58.jpg" alt="01" /></div>
+                        <div data-p="112.50"><img data-u="image" class="footer-visibility"
+                                src="/img/valuehotelgangneung/img/main/photo02cd58.jpg" alt="02" /></div>
+                        <div data-p="112.50"><img data-u="image" class="footer-visibility"
+                                src="/img/valuehotelgangneung/img/main/photo03cd58.jpg" alt="03" /></div>
+                        <div data-p="112.50"><img data-u="image" class="footer-visibility"
+                                src="/img/valuehotelgangneung/img/main/photo04cd58.jpg" alt="04" /></div>
+                        <div data-p="112.50"><img data-u="image" class="footer-visibility"
+                                src="/img/valuehotelgangneung/img/main/photo05cd58.jpg" alt="05" /></div>
+                        <div data-p="112.50"><img data-u="image" class="footer-visibility"
+                                src="/img/valuehotelgangneung/img/main/photo06cd58.jpg" alt="06" /></div>
+                        <div data-p="112.50"><img data-u="image" class="footer-visibility"
+                                src="/img/valuehotelgangneung/img/main/photo07cd58.jpg" alt="07" /></div>
+                        <!-- <div data-p="112.50"><img data-u="image" class="footer-visibility" src="/svc//img/valuehotelgangneung/img/main/photo08.jpg" alt="08" /></div> -->
+                        <!-- <div data-p="112.50"><img data-u="image" class="footer-visibility" src="/svc//img/valuehotelgangneung/img/main/photo09.jpg" alt="09" /></div> -->
+                        <!-- <div data-p="112.50"><img data-u="image" class="footer-visibility" src="/svc//img/valuehotelgangneung/img/main/photo10.jpg" alt="10" /></div> -->
+                        <!-- // <div data-p="112.50"><img data-u="image" class="footer-visibility" src="/svc//img/valuehotelgangneung/img/main/photo11.jpg" alt="11" /></div> -->
+                        <!-- <div data-p="112.50"><img data-u="image" class="footer-visibility" src="/svc//img/valuehotelgangneung/img/main/photo12.jpg" alt="12" /></div> -->
+                        <!-- <div data-p="112.50"><img data-u="image" class="footer-visibility" src="/svc//img/valuehotelgangneung/img/main/photo13.jpg" alt="13" /></div> -->
+                    </div>
+                    <span u="arrowleft" class="jssor-sprite arow-left"
+                        style="width: 21px; height: 32px; top: 290px; left: 20px;"></span>
+                    <span u="arrowright" class="jssor-sprite arow-right"
+                        style="width: 21px; height: 32px; top: 290px; right: 20px"></span>
+                </div>
+            </div>
+            <!-- <div class="main_slider" style="position:relative">
+        <div class="icon-prev"><i class="icon-33"></i></div>
+        <div class="icon-next"><i class="icon-32"></i></div>
+        <div class="slick_center"> -->
+            <!--div><iframe width="1000px" height="600px" src="https://www.youtube.com/embed/EcSCI0MzBGw?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div-->
+            <!-- <img data-lazy="main/photo01.jpg">
+            <img data-lazy="main/photo02.jpg">
+            <img data-lazy="main/photo03.jpg">
+            <img data-lazy="main/photo04.jpg">
+            <img data-lazy="main/photo05.jpg">
+            <img data-lazy="main/photo06.jpg">
+            <img data-lazy="main/photo07.jpg">
+            <img data-lazy="main/photo08.jpg">
+            <img data-lazy="main/photo09.jpg">
+            <img data-lazy="main/photo10.jpg">
+            <img data-lazy="main/photo11.jpg">
+            <img data-lazy="main/photo12.jpg">
+            <img data-lazy="main/photo13.jpg">
+        </div>
+    </div> -->
+        </section>
+    </div>
+
+    <!-- 팝업 -->
+    <div class="event_pop">
+        <div class="top">
+            <label><input type="checkbox" /> 12시간 동안 보지않기</label>
+            <button type="button"><i class="icon-29"></i></button>
+        </div>
+        <div class="pop">
+            <div id="slider_pop" class="slider_container pop">
+                <div data-u="slides" class="slides">
+                    <div>
+                        <img data-u="image"
+                            src="/static/valuehotelgangneung/fil/Board/1500/477503d947581c7ee978d70c3b617eb5.jpg"
+                            title="수영장 안내" />
+                    </div>
+                </div>
+                <span u="arrowleft" class="jssor-sprite arow-left"
+                    style="width: 21px; height: 32px; top: 200px; left: 20px;"></span>
+                <span u="arrowright" class="jssor-sprite arow-right"
+                    style="width: 21px; height: 32px; top: 200px; right: 20px"></span>
+            </div>
+        </div>
+    </div>
+
+    @@include('src/template/svc/include/_footer.html')
+</body>
+
+</html>

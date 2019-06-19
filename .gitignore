@@ -9,6 +9,9 @@ _work/
 _media/
 _tmp/
 img/
+dist/img/
+dist/static/css/
+dist/static/js/
 
 # Logs
 logs

@@ -1,3 +1,7 @@
+.br_sub {}
+.page-home .br_sub,
+.page-rooms .br_sub {display: none;}
+
 .dd {
     border: 1px solid blue
 }
@@ -2840,6 +2844,7 @@ header .top_line .box {
 
 header .top_line .box>li {
     display: table-cell;
+    table-layout: fixed;
     height: 30px;
     vertical-align: middle;
     text-align: center;
@@ -2858,7 +2863,7 @@ header .top_line .box>li a {
 }
 
 header .top_line .box .call {
-    width: 140px
+    width: 110px;
 }
 
 header .top_line .box .call i {
@@ -2867,7 +2872,8 @@ header .top_line .box .call i {
 }
 
 header .top_line .box .email {
-    width: 250px;
+    /* width: 250px; */
+    text-align: left;
     font-size: 11px;
     font-weight: 800
 }

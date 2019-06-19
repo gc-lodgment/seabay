@@ -23,16 +23,16 @@ module.exports = function() {
 
 		// Css 경로
 		css = {
-			src : source + '/css/**/*.css',
-			// src : source + '/css/**',
-			dest: development + '/static/css'
+			// src : source + '/static/css/**/*.css',
+			src : source + '/static/**/*.css',
+			dest: development + '/static'
 		},
 
 		// JS 경로
 		js = {
-			src : source + '/js/**/*.js',
-			// src : source + '/js/**',
-			dest: development + '/static/js'
+			// src : source + '/static/js/**/*.js',
+			src : source + '/static/**/*.js',
+			dest: development + '/static'
 		},
 
 		img = {
