@@ -2400,7 +2400,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
     color: #ffffff;
     top: 0;
     left: 0;
-    background: url('../img/pattern/opacity50-BK.png');
+    background: url('/img/valuehotelgangneung/img/pattern/opacity50-BK.png');
     cursor: wait
 }
 
@@ -2426,7 +2426,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
     z-index: 9999;
     top: 0;
     left: 0;
-    background: url('../img/pattern/opacity50-WT.png');
+    background: url('/img/valuehotelgangneung/img/pattern/opacity50-WT.png');
     cursor: wait
 }
 
@@ -2594,7 +2594,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 }
 
 .b_sprite01 {
-    background: url('../img/sprite/sprite01.png') no-repeat;
+    background: url('/img/valuehotelgangneung/img/sprite/sprite01.png') no-repeat;
     display: inline-block
 }
 
@@ -2603,7 +2603,7 @@ only screen and (-moz-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
     .b_sprite01 {
-        background: url('../img/sprite/sprite01.svg') no-repeat
+        background: url('/img/valuehotelgangneung/img/sprite/sprite01.svg') no-repeat
     }
 }
 
@@ -2624,7 +2624,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 }
 
 .jssor-sprite {
-    background: url('../img/sprite/sprite01.png') no-repeat;
+    background: url('/img/valuehotelgangneung/img/sprite/sprite01.png') no-repeat;
     display: inline-block;
     position: absolute;
     cursor: pointer;
@@ -2636,7 +2636,7 @@ only screen and (-moz-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
     .jssor-sprite {
-        background: url('../img/sprite/sprite01.svg') no-repeat
+        background: url('/img/valuehotelgangneung/img/sprite/sprite01.svg') no-repeat
     }
 }
 
@@ -2683,7 +2683,7 @@ a:hover {
     position: fixed;
     top: 0;
     left: 0;
-    background: url('../img/pattern/opacity80-BK.png');
+    background: url('/img/valuehotelgangneung/img/pattern/opacity80-BK.png');
     z-index: 100000;
     display: none;
     overflow-x: auto;
@@ -2899,7 +2899,7 @@ header .top_line .box .face {
 header .top_line .box .face a {
     width: 17px;
     height: 17px;
-    background: url('../img/symbol/face.png')
+    background: url('/img/valuehotelgangneung/img/symbol/face.png')
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -2907,7 +2907,7 @@ only screen and (-moz-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
     header .top_line .box .face a {
-        background: url('../img/symbol/face.svg') no-repeat
+        background: url('/img/valuehotelgangneung/img/symbol/face.svg') no-repeat
     }
 }
 
@@ -2924,7 +2924,7 @@ header .top_line .box .blog {
 header .top_line .box .blog a {
     width: 17px;
     height: 17px;
-    background: url('../img/symbol/blog.png')
+    background: url('/img/valuehotelgangneung/img/symbol/blog.png')
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -2932,7 +2932,7 @@ only screen and (-moz-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
     header .top_line .box .blog a {
-        background: url('../img/symbol/blog.svg') no-repeat
+        background: url('/img/valuehotelgangneung/img/symbol/blog.svg') no-repeat
     }
 }
 
@@ -2949,7 +2949,7 @@ header .top_line .box .insta {
 header .top_line .box .insta a {
     width: 17px;
     height: 17px;
-    background: url('../img/symbol/insta.png')
+    background: url('/img/valuehotelgangneung/img/symbol/insta.png')
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -2957,7 +2957,7 @@ only screen and (-moz-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
     header .top_line .box .insta a {
-        background: url('../img/symbol/insta.svg') no-repeat
+        background: url('/img/valuehotelgangneung/img/symbol/insta.svg') no-repeat
     }
 }
 
@@ -3038,7 +3038,7 @@ header .top_logo {
     width: 110px;
     height: 90px;
     display: inline-block;
-    background: url('../img/symbol/top_logo.png')
+    background: url('/img/valuehotelgangneung/img/symbol/top_logo.png')
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -3046,7 +3046,7 @@ only screen and (-moz-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
     header .top_logo {
-        background: url('../img/symbol/top_logo.svg') no-repeat
+        background: url('/img/valuehotelgangneung/img/symbol/top_logo.svg') no-repeat
     }
 }
 
@@ -3057,7 +3057,7 @@ header .top_logo_s {
     position: absolute;
     top: 6px;
     left: 45px;
-    background: url('../img/symbol/top_logo_s.png')
+    background: url('/img/valuehotelgangneung/img/symbol/top_logo_s.png')
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -3065,7 +3065,7 @@ only screen and (-moz-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
     header .top_logo_s {
-        background: url('../img/symbol/top_logo_s.svg') no-repeat
+        background: url('/img/valuehotelgangneung/img/symbol/top_logo_s.svg') no-repeat
     }
 }
 
@@ -3083,7 +3083,7 @@ header .top_logo_c {
     top: 6px;
     left: 50%;
     margin-left: -37px;
-    background: url('../img/symbol/top_logo_c.png')
+    background: url('/img/valuehotelgangneung/img/symbol/top_logo_c.png')
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -3091,7 +3091,7 @@ only screen and (-moz-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
     header .top_logo_c {
-        background: url('../img/symbol/top_logo_c.svg') no-repeat
+        background: url('/img/valuehotelgangneung/img/symbol/top_logo_c.svg') no-repeat
     }
 }
 
@@ -3166,7 +3166,7 @@ header .mlang .l li {
 }
 
 header .mlang .l li.bg {
-    background: url('../img/pattern/opacity80-WT.png')
+    background: url('/img/valuehotelgangneung/img/pattern/opacity80-WT.png')
 }
 
 header .top_navi .navi_scroll {
@@ -3174,7 +3174,7 @@ header .top_navi .navi_scroll {
     visibility: hidden;
     width: 100%;
     height: 40px;
-    background: url('../img/pattern/opacity80-WT.png');
+    background: url('/img/valuehotelgangneung/img/pattern/opacity80-WT.png');
     position: relative;
     top: 0;
     left: 0;
@@ -3217,7 +3217,7 @@ header .top_navi .navi_scroll .left_overlay {
     position: fixed;
     top: 0;
     left: 0;
-    background: url('../img/pattern/opacity70-BK.png');
+    background: url('/img/valuehotelgangneung/img/pattern/opacity70-BK.png');
     z-index: 2
 }
 
@@ -3225,7 +3225,7 @@ header .top_navi .navi_scroll .left_overlay {
     header .top_navi .navi_scroll .list {
         width: 300px;
         height: 100%;
-        background: url('../img/pattern/opacity80-WT.png');
+        background: url('/img/valuehotelgangneung/img/pattern/opacity80-WT.png');
         position: fixed;
         left: -350px;
         top: 0;
@@ -3244,7 +3244,7 @@ header .top_navi .navi_scroll .list .side_toggle {
     border: none;
     background: none;
     text-align: right;
-    background: url('../img/pattern/opacity90-WT.png');
+    background: url('/img/valuehotelgangneung/img/pattern/opacity90-WT.png');
     margin: 0;
     padding: 6px 15px;
     outline: none;
@@ -3397,7 +3397,7 @@ header .top_navi .navi_scroll .list .sns_btn.face {
 }
 
 header .top_navi .navi_scroll .list .sns_btn.face .sns_icon {
-    background: url('../img/symbol/face.png')
+    background: url('/img/valuehotelgangneung/img/symbol/face.png')
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -3405,7 +3405,7 @@ only screen and (-moz-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
     header .top_navi .navi_scroll .list .sns_btn.face .sns_icon {
-        background: url('../img/symbol/face.svg') no-repeat
+        background: url('/img/valuehotelgangneung/img/symbol/face.svg') no-repeat
     }
 }
 
@@ -3414,7 +3414,7 @@ header .top_navi .navi_scroll .list .sns_btn.blog {
 }
 
 header .top_navi .navi_scroll .list .sns_btn.blog .sns_icon {
-    background: url('../img/symbol/blog.png')
+    background: url('/img/valuehotelgangneung/img/symbol/blog.png')
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -3422,7 +3422,7 @@ only screen and (-moz-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
     header .top_navi .navi_scroll .list .sns_btn.blog .sns_icon {
-        background: url('../img/symbol/blog.svg') no-repeat
+        background: url('/img/valuehotelgangneung/img/symbol/blog.svg') no-repeat
     }
 }
 
@@ -3431,7 +3431,7 @@ header .top_navi .navi_scroll .list .sns_btn.insta {
 }
 
 header .top_navi .navi_scroll .list .sns_btn.insta .sns_icon {
-    background: url('../img/symbol/insta.png')
+    background: url('/img/valuehotelgangneung/img/symbol/insta.png')
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -3439,7 +3439,7 @@ only screen and (-moz-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
     header .top_navi .navi_scroll .list .sns_btn.insta .sns_icon {
-        background: url('../img/symbol/insta.svg') no-repeat
+        background: url('/img/valuehotelgangneung/img/symbol/insta.svg') no-repeat
     }
 }
 
@@ -3680,7 +3680,7 @@ footer .footer_logo {
     margin-top: -70px;
     width: 100px;
     height: 90px;
-    background: url('../img/symbol/footer_logo.png');
+    background: url('/img/valuehotelgangneung/img/symbol/footer_logo.png');
     float: right
 }
 
@@ -3699,7 +3699,7 @@ footer .footer_logo {
 .bottom_hub a {
     width: 85px;
     height: 25px;
-    background: url('../img/symbol/footer_hub.png');
+    background: url('/img/valuehotelgangneung/img/symbol/footer_hub.png');
     display: block;
     margin: 0 auto
 }
@@ -3709,7 +3709,7 @@ only screen and (-moz-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
     .bottom_hub a {
-        background: url('../img/symbol/footer_hub.svg') no-repeat
+        background: url('/img/valuehotelgangneung/img/symbol/footer_hub.svg') no-repeat
     }
 }
 
@@ -4107,7 +4107,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
     table-layout: fixed;
     border-top: 1px solid #565656;
     padding: 5px 2px;
-    background: url('../img/main/main_bg_notice.jpg') no-repeat right bottom
+    background: url('/img/valuehotelgangneung/img/main/main_bg_notice.jpg') no-repeat right bottom
 }
 
 @media (max-width: 1199px) {
@@ -4746,7 +4746,7 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
     color: #fff;
     text-align: center;
     vertical-align: middle;
-    background: url('../img/main/about_value_bg.jpg') no-repeat center fixed
+    background: url('/img/valuehotelgangneung/img/main/about_value_bg.jpg') no-repeat center fixed
 }
 
 @media (max-width: 767px) {
@@ -6236,7 +6236,7 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
     display: block;
     top: 0;
     left: 0;
-    background: url('../img/pattern/opacity50-BK.png')
+    background: url('/img/valuehotelgangneung/img/pattern/opacity50-BK.png')
 }
 
 .room_list .box .thumb:hover>a>div i {
@@ -6857,7 +6857,7 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
 
 .rsv_result_box .top {
     background: #2F2F2F;
-    background-image: url('../img/pattern/pattern.png');
+    background-image: url('/img/valuehotelgangneung/img/pattern/pattern.png');
     text-align: center;
     padding: 10px
 }
@@ -7033,7 +7033,7 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
     border-radius: 50%;
     -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
-    background: url('../img/symbol/facelike.svg');
+    background: url('/img/valuehotelgangneung/img/symbol/facelike.svg');
     z-index: 10;
     display: none
 }

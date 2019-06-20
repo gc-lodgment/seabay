@@ -9,6 +9,7 @@ _work/
 _media/
 _tmp/
 img/
+svc_tmp/
 dist/img/
 dist/static/css/
 dist/static/js/
