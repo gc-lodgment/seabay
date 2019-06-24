@@ -18,7 +18,7 @@ module.exports = function() {
 		sass = {
 			src : source + '/sass/**/*.{scss,sass}',
 			// src       : source + '/sass/**',
-			dest: development + '/static/css'
+			dest: development + '/static/goco/css'
 		},
 
 		// Css 경로
