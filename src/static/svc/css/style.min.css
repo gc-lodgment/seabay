@@ -3035,7 +3035,7 @@ header .top_box {
 }
 
 header .top_logo {
-    width: 110px;
+    width: 270px;
     height: 90px;
     display: inline-block;
     background: url('http://img.seabay.co.kr/svc/img/symbol/top_logo.png')
@@ -3076,14 +3076,14 @@ only screen and (min-device-pixel-ratio: 1.5) {
 }
 
 header .top_logo_c {
-    width: 70px;
+    width: 90px;
     height: 30px;
     display: none;
     position: absolute;
     top: 6px;
     left: 50%;
-    margin-left: -37px;
-    background: url('http://img.seabay.co.kr/svc/img/symbol/top_logo.png') no-repeat center / 55px;
+    margin-left: -45px;
+    background: url('http://img.seabay.co.kr/svc/img/symbol/m_top_logo.png') no-repeat center / 90px;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -3091,7 +3091,7 @@ only screen and (-moz-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
     header .top_logo_c {
-        background: url('http://img.seabay.co.kr/svc/img/symbol/top_logo.png') no-repeat center / 55px;
+        /* background: url('http://img.seabay.co.kr/svc/img/symbol/top_logo.png') no-repeat center / 55px; */
     }
 }
 
@@ -3682,7 +3682,7 @@ footer .address .info>div {
 
 footer .footer_logo {
     margin-top: -70px;
-    width: 100px;
+    width: 139px;
     height: 90px;
     background: url('http://img.seabay.co.kr/svc/img/symbol/footer_logo.png');
     float: right
