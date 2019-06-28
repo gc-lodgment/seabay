@@ -1,6 +1,7 @@
 .br_sub {}
 .page-home .br_sub,
-.page-rooms .br_sub {display: none;}
+.page-home .br_sub,
+.page-landing .br_sub {display: none;}
 
 .dd {
     border: 1px solid blue
@@ -6788,6 +6789,28 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
     .room_detail .detail .box_left .policies .cont .btn_box a {
         display: block;
         margin-top: 8px
+    }
+}
+
+/* 190628 park 추가 */
+.park .img-landing {
+    position: relative;
+    width: 100%;
+    line-height: 0;
+    text-align: center;
+}
+.park .img-landing img {
+}
+@media (max-width: 767px) {
+
+    .park .img-landing {
+        position: relative;
+        width: 100%;
+        line-height: 0;
+        text-align: center;
+    }
+    .park .img-landing img {
+        width: 100%;
     }
 }
 
