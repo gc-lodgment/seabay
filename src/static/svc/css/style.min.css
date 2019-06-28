@@ -6796,19 +6796,14 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
 .park .img-landing {
     position: relative;
     width: 100%;
+    margin: 0 auto;
     line-height: 0;
     text-align: center;
 }
-.park .img-landing img {
+.park .link-landing {
+    display: inline-block;
 }
 @media (max-width: 767px) {
-
-    .park .img-landing {
-        position: relative;
-        width: 100%;
-        line-height: 0;
-        text-align: center;
-    }
     .park .img-landing img {
         width: 100%;
     }
