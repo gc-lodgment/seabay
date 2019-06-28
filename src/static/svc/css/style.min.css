@@ -2723,20 +2723,20 @@ a:hover {
 
 @media (max-width: 991px) {
     .event_pop {
-        left: 10px
+        left: 10px;
     }
 }
 
 @media (max-width: 600px) {
     .event_pop {
-        top: 20px
+        top: 20px;
     }
 }
 
 @media (max-width: 470px) {
     .event_pop {
-        width: 100%;
-        left: 0px
+        width: 90%;
+        left: 5%;
     }
 }
 
@@ -2793,7 +2793,7 @@ a:hover {
 .event_pop .pop .slider_container.pop,
 .event_pop .pop .slider_container.pop .slides {
     width: 450px;
-    height: 700px
+    height: 700px;
 }
 
 .event_pop .pop .jssor-sprite.arow-left {
