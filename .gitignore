@@ -10,6 +10,7 @@ _tmp/
 img/
 svc_tmp/
 dist/
+.vscode/
 
 # Logs
 logs
