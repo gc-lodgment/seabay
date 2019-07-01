@@ -9,9 +9,7 @@ _media/
 _tmp/
 img/
 svc_tmp/
-dist/img/
-dist/static/css/
-dist/static/js/
+dist/
 
 # Logs
 logs
