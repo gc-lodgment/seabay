@@ -65,8 +65,8 @@ dfn {
 }
 
 h1 {
-    font-size: 2em;
-    margin: 0.67em 0
+    /* font-size: 2em;
+    margin: 0.67em 0 */
 }
 
 mark {
@@ -263,7 +263,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #23527c;
+    /* color: #23527c; */
     text-decoration: underline
 }
 
