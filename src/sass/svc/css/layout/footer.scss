@@ -14,9 +14,9 @@ em, address {
         background: #2F2F2F;
         color: #9A9A9A;
         font-weight: normal;
-        .policy-bar {
+        .terms-bar {
             padding-bottom: 25px;
-            .policy-list {
+            .terms-list {
                 color: inherit;
                 font-size: 0;
                 text-align: center;
@@ -72,6 +72,7 @@ em, address {
                     display:block;
                     margin-top:16px;
                     @include fst-mt0;
+                    cursor: default;
                     p {
                         letter-spacing:0.5px;
                         line-height: 1.5;
@@ -129,9 +130,9 @@ em, address {
         background: #2F2F2F;
         color: #9A9A9A;
         font-weight: normal;
-        .policy-bar {
+        .terms-bar {
             padding-bottom: 15px;
-            .policy-list {
+            .terms-list {
                 color: inherit;
                 font-size: 0;
                 text-align: center;

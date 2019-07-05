@@ -174,7 +174,7 @@ ul {
     }
 }
 
-@include screen-max(1510px) {
+@include screen-min-max(992px, 1510px) {
     .header {
         .gnb {
             .logo-box {
