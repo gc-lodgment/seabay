@@ -1,0 +1,60 @@
+@charset "utf-8";
+@import url('http://static.go.co.kr/css/renew/m/reset.css');
+
+.rent-wrap {
+    .row {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .img-area {
+        .grid-wrap {
+            background: #CAEDFF;          
+            .grid-contents {
+                .tbl-base.tbl-1 {
+                    .row {
+                        position: relative;
+                        word-break: keep-all;
+                        .dot {
+                            position: absolute;
+                            left: 0;
+                        }
+                        .txt {
+                            display: inline-block;
+                            padding-left: 20px;
+                        }
+                    }
+                    .co-blue {
+                        color: #0060FF;
+                    }
+                }
+                .tbl-base.tbl-2 {
+                    td {
+                        padding: 10px;
+                        .rdo-box {
+                            > * {
+                                display: inline-block;
+                                vertical-align: middle;
+                            }
+                            input[type='radio'] {
+                                position: relative;
+                                top: 1px;
+                            }
+                        }
+                    }
+                    td.nth-1 {
+                        text-align: left;
+                        font-size: 14px;
+                    }
+                }
+            }  
+        }
+        figure.nth-4 {
+            .btn-linkOc2 {
+                position: absolute;
+                bottom: 60px;
+                left: 50%;
+                margin-left: -161.5px;
+            }
+        }
+    }
+}
