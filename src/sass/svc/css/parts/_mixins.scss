@@ -54,7 +54,8 @@
 // 커스텀 믹스인
 @mixin center($w: 1200px) {
 	width: $w;
-	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 @mixin sizes($w: null) {
 	width: $w;
