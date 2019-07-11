@@ -4435,7 +4435,7 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
 }
 
 .sub .sub_top_menu .menu_wrap .menu_item {
-    min-width: 140px;
+    //min-width: 140px;
     display: table-cell;
     list-style: none;
     text-align: center
@@ -4666,7 +4666,8 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
 
 @media (max-width: 767px) {
     .about_value .sub_top_menu .menu_wrap .menu_item {
-        width: 50%
+        //width: 50%
+        width: 33.3%;
     }
 }
 
@@ -4995,7 +4996,8 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
 
 @media (max-width: 767px) {
     .value_map .sub_top_menu .menu_wrap .menu_item {
-        width: 50%
+        //width: 50%
+        width: 33.3%;
     }
 }
 
@@ -5083,6 +5085,11 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
     width: 15%
 }
 
+.value_map .value_map_info_item .value_map_info_item_wrap .img-landing {
+    margin: 0 auto;
+    text-align: center;
+}
+
 @media (max-width: 1199px) {
     .value_map .value_map_info_item .value_map_info_item_wrap table {
         font-size: 10px
@@ -5102,6 +5109,9 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
     .value_map .value_map_info_item .value_map_info_item_wrap table th,
     .value_map .value_map_info_item .value_map_info_item_wrap table td {
         padding: 3px
+    }
+    .value_map .value_map_info_item .value_map_info_item_wrap .img-landing img {
+        width: 100%;
     }
 }
 
