@@ -4430,7 +4430,9 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
 
 @media (max-width: 767px) {
     .sub .sub_top_menu .menu_wrap {
-        display: block
+        display: block;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
@@ -4454,6 +4456,12 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
 @media (max-width: 600px) {
     .sub .sub_top_menu .menu_wrap .menu_item a {
         font-size: 12px
+    }
+}
+@media (max-width: 320px) {
+    .sub .sub_top_menu .menu_wrap .menu_item a {
+        font-size: 11px;
+        letter-spacing: -1px;
     }
 }
 
