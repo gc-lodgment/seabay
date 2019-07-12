@@ -6,19 +6,10 @@
     @@include('src/template/svc/include/_header.html')
 
     <div class="facilities_box">
-        <div class="sub">
-            <div class="sub_top_menu">
-                <h4 class="page_title">하늘공원</h4>
-                <h6 class="page_sub_title">주문진에서 가장 고층인 밸류호텔 강릉 옥상에서 드넓고 깨끗한 동해바다와 주변 저층 건물들의<br />아기자기함을 한눈에 담아보기에 적합한
-                    장소입니다. 선명한 동해바다의 일출을 여러분에게 선물합니다.</h6>
-                <ul class="menu_wrap container">
-                    <li class="menu_item"><a href="/views/svc/facilities/banquethall.html">연회장</a></li>
-                    <li class="menu_item"><a href="/views/svc/facilities/swimmingpool.html">수영장</a></li>
-                    <li class="menu_item"><a href="/views/svc/facilities/businesscorner.html">비즈니스코너</a></li>
-                    <li class="menu_item active"><a href="/views/svc/facilities/heavenlypark.html">하늘공원</a></li>
-                </ul>
-            </div>
-        </div>
+        @@include('src/template/svc/include/facilities/sub_top.html', {
+            "title": "하늘공원",
+            "sub_title": "주문진에서 가장 고층인 밸류호텔 강릉 옥상에서 드넓고 깨끗한 동해바다와 주변 저층 건물들의<br />아기자기함을 한눈에 담아보기에 적합한 장소입니다. 선명한 동해바다의 일출을 여러분에게 선물합니다."
+        })
         <div class="sub container">
             <div class="sub_item_box">
                 <div class="sub_item_wrap">
