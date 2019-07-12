@@ -4538,7 +4538,8 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
 .sub .item_info2 .info_wrap .info_content {
     display: table-cell;
     padding-bottom: 2px;
-    padding-top: 9px
+    padding-top: 9px;
+    word-break: keep-all;
 }
 
 @media (max-width: 480px) {
