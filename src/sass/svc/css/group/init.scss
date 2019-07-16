@@ -225,6 +225,9 @@ $bg-group: #6d99da;
 				position: relative;
 				width: 100%;
 				margin-top: 25px;
+				figure {
+					border: 1px solid #cacaca;
+				}
 				>div {
 					position: relative;
 				}
@@ -1166,6 +1169,9 @@ $bg-group: #6d99da;
 				}
 				&:nth-child(2n) {
 					padding-left: 10px;
+				}
+				figure {
+					border: 1px solid #cacaca;
 				}
 				>div {
 					position: relative;
