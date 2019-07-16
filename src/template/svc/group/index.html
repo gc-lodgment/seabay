@@ -472,7 +472,7 @@
                                         </li>
                                         <li class="li-tr">
                                             <span class="s-lbl">이용일</span>
-                                            <input type="text" class="wd-4 sdate hasDatepicker" name="date" placeholder="체크인" readonly="" id="dp1522820491327">
+                                            <input type="text" class="wd-4 sdate hasDatepicker" name="date" placeholder="체크인" readonly="">
                                             <select name="day" id="day" class="wd-1 wd-1-2">
                                                 <option value="당일">당일</option>
                                                 <option value="1박2일" selected="">1박 2일</option>
@@ -542,10 +542,31 @@
         </div>
 
         <script>
-            $('#qna-list > li').on('click', function () {
-                var idx = $(this).index();
-                $(this).toggleClass('on').siblings().removeClass('on');
-            });
+            $(function() {
+                $.fn.datepicker.dates['ko'] = {
+                    days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+                    daysShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+                    daysMin: ["일","월","화","수","목","금","토"],
+                    months: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+                    monthsShort: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                    today: "Today",
+                    clear: "Clear",
+                    format: "yyyy-mm-dd",
+                    titleFormat: "MM yyyy년",
+                    weekStart: 0,
+                };
+                var opt = {
+                    format: 'yyyy-mm-dd',
+                    language: 'ko',
+                    autoclose: !0,
+                    startDate: get_today()
+                }
+                $('.sdate').datepicker(opt);
+                $('#qna-list > li').on('click', function () {
+                    var idx = $(this).index();
+                    $(this).toggleClass('on').siblings().removeClass('on');
+                });
+            })
 
             function faq_move() {
                 $('html, body').stop().animate({
