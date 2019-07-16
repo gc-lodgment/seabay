@@ -1,5 +1,5 @@
 @charset 'utf-8';
-// @import 'src/sass/svc/css/parts/common';
+@import 'src/sass/svc/css/parts/common';
 
 h1, h2, h3 {
 	font-weight: 400;
@@ -1059,7 +1059,7 @@ $bg-group: #6d99da;
 			position: absolute;
 			right: 0;
 			top: 6px;
-			width: 573px;
+			width: 578px;
 			img {
 				width: 100%;
 			}
