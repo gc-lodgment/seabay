@@ -1,4 +1,6 @@
 @@include('src/template/svc/include/_head.html')
+
+    <link href="http://static.ramadapt.co.kr/css/jquery.bxslider.css" rel="stylesheet" />
 </head>
 
 <body class="page-home">
@@ -53,7 +55,7 @@
                     <form method="get" name="myForm" id="myForm" action="https://be.wingsbooking.com/ko/VHG1/redirect">
                         <ul class="inputs ">
                             <li>
-                                <span>호텔예약</span>
+                                <span>실시간 객실예약</span>
                             </li>
                             <li>
                                 <div class="date_input">
@@ -69,7 +71,7 @@
                                     <i class="icon-12"></i>
                                 </div>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <div class="date_input">
                                     <input type="number" name="rooms" value="1" min="1" onKeyup="number_check(this)"
                                         placeholder="Check out" />
@@ -77,7 +79,7 @@
                                 </div>
                                 <input type="hidden" name="adults" value="1" />
                                 <input type="hidden" name="children" value="" />
-                            </li>
+                            </li> -->
                             <li>
                                 <button type="button" onclick="on_submit()">객실 알아보기</button>
                             </li>
@@ -98,100 +100,234 @@
                     </form>
                 </div>
             </div>
-            <div class="container">
-                <div class="main_notice_event">
-                    <div class="main_notice_wrap">
-                        <div class="main_notice">
-                            <div class="title">
-                                <a href="brd/lists/notice.html">NOTICE<div class="btn_more">+</div></a>
-                            </div>
-                            <ul class="content box_bodder_top">
-                                <li><a href="brd/view/notice/1549.html">[알림] 밸류호텔 강릉 5층 수영장 오픈안내</a></li>
-                                <li><a href="brd/view/notice/1541.html">밸류호텔 강릉, 경포아쿠아리움과의 제휴</a></li>
-                                <li><a href="brd/view/notice/1520.html">밸류호텔강릉의 강릉거주민 특별 혜택</a></li>
-                                <li><a href="brd/view/notice/1514.html">[공지] 밸류플레이트 휴장안내</a></li>
-                                <li><a href="brd/view/notice/1506.html">2019년 새해 福 인사</a></li>
-                                <li><a href="brd/view/notice/1483.html">[공지] 수영장 폐장</a></li>
-                                <li><a href="brd/view/notice/1379.html">[공지] 수영장 이용 안내 문의</a></li>
+        </section>
+
+        <section class="notice-sec">
+            <h1 class="sr-only">씨베이호텔 토픽 및 공지사항</h1>
+            <div class="group">
+                <div class="topic-wrap">
+                    <div class="topic-header">
+                        <div class="title">
+                            <a href="http://seabay.co.kr/facilities/?r=swimmingpool" class="link">씨베이호텔 토픽
+                                <span class="hidden-smxs">
+                                    <img src="http://img.seabay.co.kr/svc/img/icon/ico_sb.png" alt="설명" class="ico-sb">
+                                    <span class="sm">현재 하계시즌 맞이 패밀리 풀, 인피니티 풀 오픈 중!</span>
+                                </span>
+                                <div class="ico-plus-cont blue">
+                                    <div class="ico-wrap">
+                                        <div class="ico-container">
+                                            <div class="ico-body">
+                                                <span class="ico-bar"></span>
+                                                <span class="ico-bar"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="topic-body">
+                        <div class="title hidden-mdlg">
+                            <a href="http://seabay.co.kr/facilities/?r=swimmingpool">
+                                <img src="http://img.seabay.co.kr/svc/img/icon/ico_sb.png" alt="설명" class="ico-sb">
+                                <span class="sm">현재 하계시즌 맞이 패밀리 풀, 인피니티 풀 오픈 중!</span>
+                            </a>
+                        </div>
+                        <div class="bx-box">
+                            <ul class="bx-s fnBxSlider">
+                                <li class="item"><a href="http://seabay.co.kr/facilities/?r=swimmingpool"><img src="http://img.seabay.co.kr/svc/img/main/topic/sw_01.jpg" alt="패밀리 풀"></a></li>
+                                <li class="item"><a href="http://seabay.co.kr/facilities/?r=swimmingpool_infinite"><img src="http://img.seabay.co.kr/svc/img/main/topic/sw_02.jpg" alt="인피니티 풀"></a></li>
+                                <li class="item"><a href="http://seabay.co.kr/facilities/?r=swimmingpool"><img src="http://img.seabay.co.kr/svc/img/main/topic/sw_03.jpg" alt="패밀리 풀"></a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="main_event_wrap">
-                        <div class="main_event">
-                            <div class="title">
-                                <a href="brd/lists/event/index.html">EVENT<div class="btn_more">+</div></a>
-                            </div>
-                            <div class="content">
-                                <div class="event_item_wrap event_index_1">
-                                    <div class="event_item">
-                                        <img
-                                            src="http://img.seabay.co.kr/svc/fil/Board/1100/785fd37db077385c6c110338b7a05518.jpg" />
-                                        <div class="event_title">
-                                            밸류호텔 강릉, 구정맞이 '복福'맞이 패키지<br />
-                                            2019-01-12 ~ 2019-01-31 <a href="#none" onclick="alert('종료된 이벤트입니다.')">바로가기</a>
+                </div>
+                <div class="notice-wrap">
+                    <div class="notice-header">
+                        <div class="title">
+                            <a href="http://seabay.co.kr/brd/lists/notice.php" class="link">공지사항
+                                <div class="ico-plus-cont blue">
+                                    <div class="ico-wrap">
+                                        <div class="ico-container">
+                                            <div class="ico-body">
+                                                <span class="ico-bar"></span>
+                                                <span class="ico-bar"></span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="event_item_wrap event_index_2">
-                                    <div class="event_item">
-                                        <img
-                                            src="http://img.seabay.co.kr/svc/fil/Board/1100/55a45ac7e0938c9ed54067a3fa56b2f3.jpg" />
-                                        <div class="event_title">
-                                            고객증정 쿠폰<br />
-                                            2018-11-05 ~ 2019-04-30 <a href="#none" onclick="alert('종료된 이벤트입니다.')">바로가기</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            </a>
                         </div>
+                    </div>
+                    <div class="notice-body">
+                        <ul class="notice-list">
+                            <li><a href="brd/view/notice/1550.php">[알림] 객실정비 품질 향상 및 개선 안내</a></li>
+                            <li><a href="brd/view/notice/1549.php">[알림] 강릉씨베이호텔 5층 수영장 오픈안내</a></li>
+                            <li><a href="brd/view/notice/1541.php">강릉씨베이호텔, 경포아쿠아리움과의 제휴</a></li>
+                            <li><a href="brd/view/notice/1520.php">강릉씨베이호텔의 강릉거주민 특별 혜택</a></li>
+                            <li><a href="brd/view/notice/1514.php">[공지] 밸류플레이트 휴장안내</a></li>
+                            <li><a href="brd/view/notice/1483.php">[공지] 수영장 폐장</a></li>
+                            <li><a href="brd/view/notice/1379.php">[공지] 수영장 이용 안내 문의</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <!-- <div class="main_slider">
-                <div id="slider_footer" class="slider_container footer">
-                    <div data-u="slides" class="slides">
-                        <div data-p="112.50"><img data-u="image" class="footer-visibility"
-                                src="http://img.seabay.co.kr/svc/img/main/photo01cd58.jpg" alt="01" /></div>
-                        <div data-p="112.50"><img data-u="image" class="footer-visibility"
-                                src="http://img.seabay.co.kr/svc/img/main/photo02cd58.jpg" alt="02" /></div>
-                        <div data-p="112.50"><img data-u="image" class="footer-visibility"
-                                src="http://img.seabay.co.kr/svc/img/main/photo03cd58.jpg" alt="03" /></div>
-                        <div data-p="112.50"><img data-u="image" class="footer-visibility"
-                                src="http://img.seabay.co.kr/svc/img/main/photo04cd58.jpg" alt="04" /></div>
-                        <div data-p="112.50"><img data-u="image" class="footer-visibility"
-                                src="http://img.seabay.co.kr/svc/img/main/photo05cd58.jpg" alt="05" /></div>
-                        <div data-p="112.50"><img data-u="image" class="footer-visibility"
-                                src="http://img.seabay.co.kr/svc/img/main/photo06cd58.jpg" alt="06" /></div>
-                        <div data-p="112.50"><img data-u="image" class="footer-visibility"
-                                src="http://img.seabay.co.kr/svc/img/main/photo07cd58.jpg" alt="07" /></div>
-                    </div>
-                    <span u="arrowleft" class="jssor-sprite arow-left"
-                        style="width: 21px; height: 32px; top: 290px; left: 20px;"></span>
-                    <span u="arrowright" class="jssor-sprite arow-right"
-                        style="width: 21px; height: 32px; top: 290px; right: 20px"></span>
-                </div>
-            </div> -->
-            <!-- <div class="main_slider" style="position:relative">
-        <div class="icon-prev"><i class="icon-33"></i></div>
-        <div class="icon-next"><i class="icon-32"></i></div>
-        <div class="slick_center"> -->
-            <!--div><iframe width="1000px" height="600px" src="https://www.youtube.com/embed/EcSCI0MzBGw?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div-->
-            <!-- <img data-lazy="main/photo01.jpg">
-            <img data-lazy="main/photo02.jpg">
-            <img data-lazy="main/photo03.jpg">
-            <img data-lazy="main/photo04.jpg">
-            <img data-lazy="main/photo05.jpg">
-            <img data-lazy="main/photo06.jpg">
-            <img data-lazy="main/photo07.jpg">
-            <img data-lazy="main/photo08.jpg">
-            <img data-lazy="main/photo09.jpg">
-            <img data-lazy="main/photo10.jpg">
-            <img data-lazy="main/photo11.jpg">
-            <img data-lazy="main/photo12.jpg">
-            <img data-lazy="main/photo13.jpg">
-        </div>
-    </div> -->
         </section>
+
+        <section class="rooms-sec">
+            <h1 class="sr-only">객실룸 상품 목록</h1>
+            <div class="group">
+                <div class="rooms-wrap">
+                    <ul class="rooms-list cf">
+                        <li class="rooms-item">
+                            <a href="http://seabay.co.kr/rooms/?r=18836" class="link">
+                                <div class="title cf">
+                                    <span class="lg">슈페리어</span>
+                                    <span class="sm">SUPERIOR</span>
+                                    <div class="btn-more">
+                                        <div class="ico-plus-cont white">
+                                            <div class="ico-wrap">
+                                                <div class="ico-container">
+                                                    <div class="ico-body">
+                                                        <span class="ico-bar"></span>
+                                                        <span class="ico-bar"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        상세안내
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <figure><img src="http://img.seabay.co.kr/svc/img/main/rooms/s.jpg" alt="수페리어 객실"></figure>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="rooms-item">
+                            <a href="http://seabay.co.kr/rooms/?r=18837" class="link">
+                                <div class="title cf">
+                                    <span class="lg">디럭스</span>
+                                    <span class="sm">DELUXE</span>
+                                    <div class="btn-more">
+                                        <div class="ico-plus-cont white">
+                                            <div class="ico-wrap">
+                                                <div class="ico-container">
+                                                    <div class="ico-body">
+                                                        <span class="ico-bar"></span>
+                                                        <span class="ico-bar"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        상세안내
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <figure><img src="http://img.seabay.co.kr/svc/img/main/rooms/d.jpg" alt="디럭스 객실"></figure>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="rooms-item">
+                            <a href="http://seabay.co.kr/rooms/?r=19198" class="link">
+                                <div class="title cf">
+                                    <span class="lg">디럭스 패밀리</span>
+                                    <span class="sm">DELUXE FAMILY</span>
+                                    <div class="btn-more">
+                                        <div class="ico-plus-cont white">
+                                            <div class="ico-wrap">
+                                                <div class="ico-container">
+                                                    <div class="ico-body">
+                                                        <span class="ico-bar"></span>
+                                                        <span class="ico-bar"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        상세안내
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <figure><img src="http://img.seabay.co.kr/svc/img/main/rooms/d_f.jpg" alt="디럭스 패밀리 객실"></figure>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="rooms-item">
+                            <a href="http://seabay.co.kr/rooms/?r=18838" class="link">
+                                <div class="title cf">
+                                    <span class="lg">프리미어 디럭스</span>
+                                    <span class="sm">PREMIER DELUXE</span>
+                                    <div class="btn-more">
+                                        <div class="ico-plus-cont white">
+                                            <div class="ico-wrap">
+                                                <div class="ico-container">
+                                                    <div class="ico-body">
+                                                        <span class="ico-bar"></span>
+                                                        <span class="ico-bar"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        상세안내
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <figure><img src="http://img.seabay.co.kr/svc/img/main/rooms/p_d.jpg" alt="프리미어 디럭스 객실"></figure>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="rooms-item">
+                            <a href="http://seabay.co.kr/rooms/?r=18839" class="link">
+                                <div class="title cf">
+                                    <span class="lg">오션스위트</span>
+                                    <span class="sm">OCEAN SUITE</span>
+                                    <div class="btn-more">
+                                        <div class="ico-plus-cont white">
+                                            <div class="ico-wrap">
+                                                <div class="ico-container">
+                                                    <div class="ico-body">
+                                                        <span class="ico-bar"></span>
+                                                        <span class="ico-bar"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        상세안내
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <figure><img src="http://img.seabay.co.kr/svc/img/main/rooms/o_s.jpg" alt="오션스위트 객실"></figure>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="rooms-item">
+                            <a href="http://seabay.co.kr/rooms/?r=35055" class="link">
+                                <div class="title cf">
+                                    <span class="lg">스위트 패밀리</span>
+                                    <span class="sm">SUITE FAMILY</span>
+                                    <div class="btn-more">
+                                        <div class="ico-plus-cont white">
+                                            <div class="ico-wrap">
+                                                <div class="ico-container">
+                                                    <div class="ico-body">
+                                                        <span class="ico-bar"></span>
+                                                        <span class="ico-bar"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        상세안내
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <figure><img src="http://img.seabay.co.kr/svc/img/main/rooms/o_f.jpg" alt="스위트 패밀리 객실"></figure>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
     </div>
 
     <!-- 팝업 -->
@@ -218,6 +354,19 @@
     </div> -->
 
     @@include('src/template/svc/include/_footer.html')
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
+        $(function() {
+            $(".fnBxSlider").bxSlider({
+                // mode: 'fade',
+                auto: true,
+                autoControls: false,
+                speed: 500,
+                duration: 6000
+            });
+        });
+    </script>
 </body>
 
 </html>
