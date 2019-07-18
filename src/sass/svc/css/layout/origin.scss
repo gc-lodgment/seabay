@@ -6393,11 +6393,11 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
     margin-top: 10px;
 }
 
-@media (max-width: 1199px) {
-    .room_detail .sub_top_menu .menu_wrap {
-        padding: 0 10px;
-    }
-}
+// @media (max-width: 1199px) {
+//     .room_detail .sub_top_menu .menu_wrap {
+//         padding: 0 10px;
+//     }
+// }
 @media (max-width: 991px) {
     .room_detail .sub_top_menu .menu_wrap {
         text-align: left;
