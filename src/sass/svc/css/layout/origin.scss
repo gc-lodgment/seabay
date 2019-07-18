@@ -4427,18 +4427,12 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
 .sub .sub_top_menu .menu_wrap {
     display: table
 }
-.sub .sub_top_menu .menu_wrap + .menu_wrap {
-    margin-top: 10px;
-}
 
 @media (max-width: 767px) {
     .sub .sub_top_menu .menu_wrap {
         display: block;
         padding-left: 0;
         padding-right: 0;
-    }
-    .sub .sub_top_menu .menu_wrap + .menu_wrap {
-        margin-top: 0;
     }
 }
 
@@ -6376,37 +6370,60 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
 }
 
 .room_detail {
-    margin-top: -40px;
     margin-bottom: 40px
 }
 
 @media (max-width: 767px) {
     .room_detail {
-        margin-top: -20px
+        margin-top: -10px
     }
 }
 
+.room_detail .sub_top_menu .menu_wrap {
+    display: block;
+    text-align: center;
+    font-size: 0;
+}
 .room_detail .sub_top_menu .menu_wrap .menu_item {
+    display: inline-block;
     min-width: 10px;
-    width: 14%
+    width: 20%
+}
+.room_detail .sub_top_menu .menu_wrap + .menu_wrap {
+    margin-top: 10px;
 }
 
+@media (max-width: 1199px) {
+    .room_detail .sub_top_menu .menu_wrap {
+        padding: 0 10px;
+    }
+}
 @media (max-width: 991px) {
+    .room_detail .sub_top_menu .menu_wrap {
+        text-align: left;
+    }
     .room_detail .sub_top_menu .menu_wrap .menu_item {
-        min-width: 10px
+        min-width: 10px;
+        width: 50%;
+        letter-spacing: -1px
     }
 
     .room_detail .sub_top_menu .menu_wrap .menu_item a {
+        text-align: center;
         font-size: 13px
     }
+    .room_detail .sub_top_menu .menu_wrap + .menu_wrap {
+        margin-top: 0px;
+    }
+    
 }
 
 @media (max-width: 767px) {
-    .room_detail .sub_top_menu .menu_wrap .menu_item {
-        min-width: 10px;
-        width: 33.3%;
-        letter-spacing: -1px
-    }
+    // .room_detail .sub_top_menu .menu_wrap .menu_item {
+    //     min-width: 10px;
+    //     width: 50%;
+    //     letter-spacing: -1px
+    // }
 }
 
 .room_detail .room-visibility {
