@@ -92,8 +92,8 @@ $bg-group: #6d99da;
 		padding-bottom: 5px;
 	}
 	.sub .sub_item_box .sub_item_wrap .sub_item {
-		padding-left: 0px;
-		padding-right: 0px;
+		padding: 0;
+		padding-top: 35px;
 	}
 	/* 공통 */
 	section[class*=-sec] {
@@ -139,7 +139,7 @@ $bg-group: #6d99da;
 		.d-map {
 			position: absolute;
 			right: 0;
-			top: 6px;
+			top: 0px;
 			width: 578px;
 			img {
 				width: 100%;
