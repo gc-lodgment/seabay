@@ -1,0 +1,118 @@
+@@include('src/template/svc/include/_head.html')
+</head>
+
+<body class="page-rooms">
+
+    @@include('src/template/svc/include/_header.html')
+
+    <div class="sub room_detail">
+        <div id="slider_room" class="slider_container room">
+            <div data-u="slides" class="slides">
+                <div data-p="112.50"><img data-u="image" class="room-visibility" src="http://img.seabay.co.kr/svc/img/rooms/_new/royalsuite/room_01.jpg" alt="01" /></div>
+                <div data-p="112.50"><img data-u="image" class="room-visibility" src="http://img.seabay.co.kr/svc/img/rooms/_new/royalsuite/room_02.jpg" alt="02" /></div>
+                <div data-p="112.50"><img data-u="image" class="room-visibility" src="http://img.seabay.co.kr/svc/img/rooms/_new/royalsuite/room_03.jpg" alt="03" /></div>
+                <div data-p="112.50"><img data-u="image" class="room-visibility" src="http://img.seabay.co.kr/svc/img/rooms/_new/royalsuite/room_02.jpg" alt="04" /></div>
+            </div>
+            <span u="arrowleft" class="jssor-sprite arow-left"
+                style="width: 21px; height: 32px; top: 290px; left: 20px;"></span>
+            <span u="arrowright" class="jssor-sprite arow-right"
+                style="width: 21px; height: 32px; top: 290px; right: 20px"></span>
+        </div>
+
+        @@include('src/template/svc/include/rooms/sub_top.html', {
+            "title": "로얄스위트",
+            "sub_title": "넓고 아늑한 공간으로 최대 4인까지 편안하고 여유로운 시간을 보내실 수 있습니다."
+        })
+        
+        <div class="container">
+            <div class="detail box_center">
+                <div class="box_right">
+                    <h3>RESERVATION</h3>
+                    <form method="get" name="myForm" id="myForm" action="https://be.wingsbooking.com/ko/VHG1/redirect">
+                        <div class="s_input">
+                            <input type="text" name="checkIn" class="datepicker_in" value="2019-06-18"
+                                placeholder="Check in" readonly />
+                            <i class="icon-12 label"></i>
+                        </div>
+                        <div class="s_input">
+                            <input type="text" name="checkOut" class="datepicker_ot" value="2019-06-19"
+                                placeholder="Check out" readonly />
+                            <i class="icon-12 label"></i>
+                        </div>
+                        <div class="s_input">
+                            <input type="number" class="set_period_date" value="1" min="1"
+                                onKeyup="number_check(this)" />
+                            <p class="ad_form_label">박</p>
+                        </div>
+                        <div class="s_input">
+                            <input type="number" name="rooms" value="1" min="1" onKeyup="number_check(this)" />
+                            <p class="ad_form_label">객실</p>
+                            <input type="hidden" name="adults" value="1" />
+                            <input type="hidden" name="children" value="" />
+                        </div>
+                        <div class="s_input">
+                            <button type="button" class="s_btn_gray b_100" onclick="on_submit()"><i
+                                    class="icon-113"></i> SEARCH</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="box_left">
+                    <button class="amenity_more tooltip" onclick="amenity_more()" title="더보기"><span>+</span></button>
+                    <div class="amenitys">
+                        <div class="amenity_box">
+                            <i class="amenity-RB002 tooltip" title="커피/티"></i>
+                            <p>커피/티</p>
+                        </div>
+                        <div class="amenity_box">
+                            <i class="amenity-ZE002 tooltip" title="생수2병무료"></i>
+                            <p>생수2병무료</p>
+                        </div>
+                        <div class="amenity_box">
+                            <i class="amenity-ZD001 tooltip" title="USB충전단자"></i>
+                            <p>USB충전단자</p>
+                        </div>
+                        <div class="amenity_box">
+                            <i class="amenity-KB002 tooltip" title="개별냉난방"></i>
+                            <p>개별냉난방</p>
+                        </div>
+                        <div class="amenity_box">
+                            <i class="amenity-MC001 tooltip" title="오리/거위털 이불"></i>
+                            <p>오리/거위털 이불</p>
+                        </div>
+                        <div class="amenity_box">
+                            <i class="amenity-LC001 tooltip" title="무료 WIFI"></i>
+                            <p>무료 WIFI</p>
+                        </div>
+                        <div class="amenity_box">
+                            <i class="amenity-CC001 tooltip" title="객실 내 온도 조절기"></i>
+                            <p>객실 내 온도 조절기</p>
+                        </div>
+                        <div class="amenity_box">
+                            <i class="amenity-XB001 tooltip" title="객실금고"></i>
+                            <p>객실금고</p>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <div class="title">
+                            <h5>ROOM QUICKVIEW</h5>
+                        </div>
+                        <div class="cont">
+                            <ul class="c_list">
+                                <li>객실 크기 : 50㎡ (15.2평)</li>
+                                <li>침대 타입 : 더블 + 싱글 + 싱글</li>
+                                <li>객실당 인원 : 기준 인원 4인, 최대 인원 4인</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    @@include('src/template/svc/include/rooms/description.html')
+                </div>
+                <!-- /.box_left -->
+            </div>
+        </div>
+    </div>
+
+    @@include('src/template/svc/include/_footer.html')
+</body>
+
+</html>
