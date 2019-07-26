@@ -5099,6 +5099,7 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
     text-align: center;
 }
 
+
 @media (max-width: 1199px) {
     .value_map .value_map_info_item .value_map_info_item_wrap table {
         font-size: 10px
@@ -6834,6 +6835,9 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
 }
 .park .link-landing {
     display: inline-block;
+}
+.park .img-landing > img {
+    width: auto;
 }
 @media (max-width: 767px) {
     .park .img-landing img {
