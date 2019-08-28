@@ -20,17 +20,27 @@ function headerFunc () {
 function scrollFunc () {
 	var gnb	= $(".gnb"),
 		btnTop	= $("#btnTop"),
-		top		= $(".visual .slide").outerHeight();
+		top		= $(".visual .slide").outerHeight(),
+		gnbTop  = gnb.height(),
+        windowWid = $(window).width();
 	$(window).scroll(function() {
 		var scr = $(window).scrollTop();
 		// console.log(scr);
 		// console.log(top);
 		// 상단 해더 고정 배경 클래스 추가
-		if ( scr == 0 ) {
-			gnb.removeClass('on');
-		} else if ( scr > 0 ) {
-			gnb.addClass('on');
-		} 
+        if( windowWid < '992px' ){
+            if ( scr == 0 ) {
+                gnb.removeClass('on');
+            } else if ( scr > 0 ) {
+                gnb.addClass('on');
+            } 
+        }else {
+            if ( scr <= gnbTop ) {
+                gnb.removeClass('on');
+            } else if ( scr > gnbTop ) {
+                gnb.addClass('on');
+            } 
+        }
 		// top 버튼 display
 		if ( scr > top ) {
 			btnTop.fadeIn();
