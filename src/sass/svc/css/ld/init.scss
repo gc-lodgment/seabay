@@ -1,0 +1,827 @@
+@charset 'utf-8';
+@import 'src/sass/svc/css/parts/common';
+
+
+.ld-contents {
+    color: #555;
+    background: #fff;
+    * {
+        font-family: "Noto Sans KR", "Nanum Gothic", sans-serif;
+    }
+    
+	h1, h2, h3, p, span {
+		font-weight: 400;
+		line-height: 1;
+        letter-spacing: -1px;
+		margin: 0;
+		padding: 0;
+	}
+    
+    figure {
+        text-align: center;
+        img {
+            width: auto;
+            max-width: 100%;
+        }
+    }
+    
+}
+
+
+//피씨
+@media (min-width: 992px) {
+    
+    
+    /* 팝업 */
+    .ld-popup {
+        * {
+            font-family: "Noto Sans KR", "Nanum Gothic", sans-serif;
+        }
+        p, span {
+            font-weight: 400;
+            margin: 0;
+            padding: 0;
+        }
+        
+        z-index: 11;
+        position: fixed;
+        overflow: hidden;
+        overflow-y: auto;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+        padding: 0;
+        background: rgba(0, 0, 0, 0.6);
+
+        .ie8 & {
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#60000000,endColorstr=#60000000);
+        }
+        
+        .popup-wrap {
+            position: relative;
+            box-sizing: border-box;
+            top: 50%;
+            margin: -300px auto 0;
+            padding: 30px 0 10px;            
+            .popup-container {
+                position: relative;
+                box-sizing: border-box;
+                width: 760px;
+                margin: 0 auto;
+                padding: 10px;
+                background: linear-gradient(to bottom, #9c0bad, #4101b5);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9c0bad', endColorstr='#4101b5', GradientType=0);
+                .popup-contents {
+                    
+                    position: relative;
+                    box-sizing: border-box;
+                    //height: 600px;
+                    background: #fff;
+
+                    .tit-box {
+                        padding: 37px 0 23px;
+                        text-align: center;
+                        p {
+                            &.pop-tit {
+                                font-size: 30px;
+                                font-weight: bold;
+                                letter-spacing: -0.8px;
+                                color: #333;
+                            }
+                            &.pop-txt {
+                                font-size: 20px;
+                                line-height: 1.5;
+                                letter-spacing: -0.5px;
+                                color: #555;
+                            }
+                        }
+                    }
+
+                    .main-box {
+                        position: relative;
+                        box-sizing: border-box;
+                        padding: 0 40px 0 42px;
+
+                        @include clearfix;
+
+                        //chk box
+                        .chk-box {
+                            $wt : 18px;
+                            @mixin chk {
+                                cursor: pointer;
+                                position: absolute;
+                                display: block;
+                                box-sizing: border-box;
+                                width: $wt;
+                                height: $wt;
+                                top: 50%;
+                                left: 0;
+                                margin-top: -($wt/2);
+                                vertical-align: middle;
+                                border: 1px solid #999;
+                                border-radius: 2px;
+                                background: #fff;
+                            }
+
+                            .chk-txt {
+                                cursor: pointer;
+                                position: relative;
+                                box-sizing: border-box;
+                                display: inline-block;
+                                padding-left: $wt+4px;
+
+                                input.ip-chk {
+                                    display: none;
+                                }
+                                input.ip-chk + .btn-chk {
+                                    @include chk;
+                                }
+                                input.ip-chk:checked + .btn-chk {
+                                    background: url(http://img.seabay.co.kr/svc/img/ld/ppt/ico_check_black.png) no-repeat center;
+                                    background-size: 12px auto;
+                                }
+
+                                .ie8 & {
+                                    input.ip-chk {
+                                        @include chk;
+                                    }
+
+                                    input.ip-chk + .btn-chk {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+
+                        .ip-box {
+                            $wd : 86px;
+                            position: relative;
+                            box-sizing: border-box;
+                            margin-top: 14px;
+                            @include clearfix;
+                            .row {
+                                $t-ht : 100px;
+                                $ht : 40px;
+                                @mixin font-com {
+                                    box-sizing: border-box;
+                                    font-size: 16px;
+                                    vertical-align: middle;
+                                    color: #555;
+                                }
+
+                                display: table;
+                                float: right;
+                                box-sizing: border-box;
+                                //width: 50%;
+                                margin: 0;
+                                .lb-txt, .ip-txt, .chk-box, .ta-txt {
+                                    display: table-cell;
+                                    letter-spacing: -0.8px;
+                                    height: $ht;
+                                    @include font-com;
+                                }
+                                .lb-txt {
+                                    width: $wd;
+                                    //font-weight: 500;
+                                    font-weight: bold;
+                                    em {
+                                        display: inline-block;
+                                        padding-left: 5px;
+                                        line-height: 1;
+                                        vertical-align: bottom;
+                                    }
+                                }
+                                .ip-txt {
+                                    width: 225px;
+                                    padding: 10px;
+                                    border: 1px solid #999;
+                                    border-radius: 4px;
+
+                                    &.w-1 {
+                                        width: 69px;
+                                    }
+                                }
+
+                                .txt {
+                                    //display: inline-block;
+                                    display: table-cell;
+                                    padding-left: 5px;
+                                    line-height: $ht;
+                                    @include font-com;
+                                }
+
+                                .chk-box {
+                                    .chk-txt {
+                                        margin-left: 18px;
+                                        &:first-child {
+                                            margin-left: 0;
+                                        }
+                                        input.ip-chk:checked + .btn-chk {
+                                            background: url(http://img.seabay.co.kr/svc/img/ld/ppt/ico_check.png) no-repeat center;
+                                            background-size: 13px auto;
+                                        }
+                                    }
+                                }
+
+                                .ta-txt {
+                                    width: 435px;
+                                    height: $t-ht;
+                                    padding: 12px 14px;
+                                    border: 1px solid #999;
+                                    border-radius: 4px;
+                                }
+                                .ta-txt::placeholder {
+                                    font-weight: 100;
+                                    color: #666;
+                                }
+
+                                .btn-apply {
+                                    position: absolute;
+                                    display: table;
+                                    width: 120px;
+                                    height: $t-ht;
+                                    line-height: $t-ht;
+                                    top: 0;
+                                    right: 0;
+                                    font-size: 22px;
+                                    letter-spacing: -0.5px;
+                                    text-align: center;
+                                    color: #fff;
+                                    border-radius: 15px;
+                                    background: linear-gradient(to left, #9c0bad, #4101b5), linear-gradient(to bottom, #398fe1, #398fe1);
+                                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9c0bad', endColorstr='#398fe1',GradientType=1);
+                                    span {
+                                        display: table-cell;
+                                        vertical-align: middle;
+                                    }
+                                }
+
+
+                                &:first-child {
+                                    float: left;
+                                    //padding-right: 37px;
+                                }
+
+                                &.ta-row {
+                                    float: none;
+                                    .lb-txt {
+                                        padding-top: 10px;
+                                        vertical-align: top;
+                                    }
+                                }
+
+                                & + .chk-box {
+                                    clear: both;
+                                    margin: 18px 0 0 $wd;
+                                }
+                            }
+
+                            .btn-more {
+                                position: relative;
+                                display: inline-block;
+                                //width: 80px;
+                                height: 26px;
+                                margin-left: 15px;
+                                padding: 0 10px;
+                                font-size: 13px;
+                                font-weight: 300;
+                                text-align: center;
+                                line-height: 26px;
+                                color: #666;
+                                border-radius: 2px;
+                                background: #ddd;
+
+                                &.on {
+                                    span {
+                                        position: relative;
+                                        display: inline-block;
+                                        padding-right: 10px;
+                                        &:before {
+                                            content: '';
+                                            position: absolute;
+                                            display: inline-block;
+                                            width: 6px;
+                                            height: 6px;
+                                            top: 50%;
+                                            right: 0;
+                                            margin: -2px 0 0 10px;
+                                            border: 2px solid #666;
+                                            border-left: 0;
+                                            border-bottom: 0;
+                                            transform: rotate(-45deg);
+                                        }
+
+                                        .ie8 {
+                                            &:before {
+                                                content: '▲';
+                                                border: 0;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .pop-policy-box {
+                                position: relative;
+                                overflow: auto;
+                                display: none;
+                                //width: 100%;
+                                height: 70px;
+                                margin: 10px 0 0 $wd;
+                                border: 1px solid #ddd;
+                                .box {
+                                    position: relative;
+                                    box-sizing: border-box;
+                                    padding: 6px;
+                                    font-size: 12px;
+                                    line-height: 1.4;
+                                    word-break: keep-all;
+                                    color: #666;
+                                }
+                            }
+                        }
+
+                        .call-box {
+                            margin: 30px -40px 0 -42px;
+                            padding: 15px 0;
+                            text-align: center;
+                            background: #eee;
+                            .txt-call {
+                                font-size: 20px;
+                                letter-spacing: -0.5px;
+                                color: #380dd7;
+
+                                .txt-tel {
+                                    font-weight: bold;
+                                }
+
+                                .link-tel {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                //btn
+                .btn-pop-close {
+                    $wt : 50px;
+                    position: absolute;
+                    box-sizing: border-box;
+                    display: block;
+                    width: $wt;
+                    height: $wt;
+                    top: -($wt);
+                    right: 0;
+                    background: url(http://img.seabay.co.kr/svc/img/ld/ppt/btn_pop_close.png) no-repeat center;
+                    span {
+                        position: relative;
+                        box-sizing: border-box;
+                        display: inline-block;
+                        font-size: 0;
+                        text-indent: -999px;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+
+//모바일~태블릿
+@media (max-width: 991px) {
+    
+    
+    
+    /* 팝업 */
+    .ld-popup {
+        * {
+            font-family: "Noto Sans KR", "Nanum Gothic", sans-serif;
+        }
+        p, span {
+            font-weight: 400;
+            margin: 0;
+            padding: 0;
+        }
+        
+        z-index: 11;
+        position: fixed;
+        overflow: hidden;
+        overflow-y: auto;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+        padding: 0;
+        background: rgba(0, 0, 0, 0.6);
+        
+        .popup-wrap {
+            position: relative;
+            box-sizing: border-box;
+            top: 50%;
+            margin: 0 auto 35px;
+            padding: 30px 0 0;
+            
+            .popup-container {
+                position: relative;
+                box-sizing: border-box;
+                width: 96%;
+                max-width: 600px;
+                margin: 0 auto;
+                padding: 10px;
+                background: linear-gradient(to bottom, #9c0bad, #4101b5);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9c0bad', endColorstr='#4101b5', GradientType=0);
+                .popup-contents {
+                    position: relative;
+                    box-sizing: border-box;
+                    background: #fff;
+                    .tit-box {
+                        width: 96%;
+                        margin: 0 auto;
+                        padding: 16px 0 12px;
+                        text-align: center;
+                        p {
+                            &.pop-tit {
+                                font-size: 17px;
+                                font-weight: bold;
+                                letter-spacing: -0.8px;
+                                color: #333;
+                            }
+                            &.pop-txt {
+                                font-size: 14px;
+                                line-height: 1.5;
+                                letter-spacing: -0.5px;
+                                word-break: keep-all;
+                                color: #555;
+                            }
+                        }
+                    }
+
+                    .main-box {
+                        position: relative;
+                        box-sizing: border-box;
+                        padding: 0 20px 0 21px;
+
+                        @include clearfix;
+
+                        //chk box
+                        .chk-box {
+                            $wt : 13px;
+                            @mixin chk {
+                                cursor: pointer;
+                                position: absolute;
+                                display: block;
+                                box-sizing: border-box;
+                                width: $wt;
+                                height: $wt;
+                                top: 50%;
+                                left: 0;
+                                margin-top: -($wt/2);
+                                vertical-align: middle;
+                                border: 1px solid #999;
+                                border-radius: 2px;
+                                background: #fff;
+                            }
+
+                            .chk-txt {
+                                cursor: pointer;
+                                position: relative;
+                                box-sizing: border-box;
+                                display: inline-block;
+                                padding-left: $wt+2px;
+
+                                input.ip-chk {
+                                    display: none;
+                                }
+                                input.ip-chk + .btn-chk {
+                                    @include chk;
+                                }
+                                input.ip-chk:checked + .btn-chk {
+                                    background: url(http://img.seabay.co.kr/svc/img/ld/ppt/ico_check_black.png) no-repeat center;
+                                    background-size: 10px auto;
+                                }
+
+                            }
+                        }
+
+                        .ip-box {
+                            $wd : 67px;
+                            position: relative;
+                            box-sizing: border-box;
+                            @include clearfix;
+                            .row {
+                                $t-ht : 60px;
+                                $ht : 30px;
+                                @mixin font-com {
+                                    box-sizing: border-box;
+                                    font-size: 13px;
+                                    vertical-align: middle;
+                                    color: #555;
+                                }
+
+                                display: table;
+                                box-sizing: border-box;
+                                width: 100%;
+                                margin: 8px 0 0 0;
+                                .lb-txt, .ip-txt, .chk-box, .ta-txt {
+                                    display: table-cell;
+                                    letter-spacing: -0.8px;
+                                    height: $ht;
+                                    @include font-com;
+                                }
+                                .lb-txt {
+                                    width: $wd;
+                                    font-weight: bold;
+                                    em {
+                                        display: inline-block;
+                                        padding-left: 3px;
+                                        line-height: 1;
+                                        vertical-align: bottom;
+                                    }
+                                }
+                                .ip-txt {
+                                    width: 100%;
+                                    padding: 10px;
+                                    border: 1px solid #999;
+                                    border-radius: 4px;
+
+                                    &.w-1 {
+                                        width: 50px;
+                                    }
+                                }
+
+                                .txt {
+                                    display: inline-block;
+                                    padding-left: 5px;
+                                    line-height: $ht;
+                                    @include font-com;
+                                }
+
+                                .chk-box {
+                                    font-size: 12px;
+                                    .chk-txt {
+                                        margin-left: 7px;
+                                        &:first-child {
+                                            margin-left: 0;
+                                        }
+                                        input.ip-chk:checked + .btn-chk {
+                                            background: url(http://img.seabay.co.kr/svc/img/ld/ppt/ico_check.png) no-repeat center;
+                                            background-size: 10px auto;
+                                        }
+                                    }
+                                }
+
+                                .ta-txt {
+                                    resize: none;
+                                    width: 100%;
+                                    height: $t-ht;
+                                    padding: 10px 12px;
+                                    border: 1px solid #999;
+                                    border-radius: 4px;
+                                }
+                                .ta-txt::placeholder {
+                                    font-weight: 100;
+                                    color: #666;
+                                }
+
+                                .btn-apply {
+                                    $bt-ml : $wd;
+                                    position: relative;
+                                    display: block;
+                                    width: calc(100% + ($bt-ml));
+                                    height: ($t-ht)-(10px);
+                                    margin-top: 10px;
+                                    margin-left: -$bt-ml;
+                                    top: 0;
+                                    right: 0;
+                                    font-size: 18px;
+                                    letter-spacing: -0.5px;
+                                    text-align: center;
+                                    color: #fff;
+                                    border-radius: 10px;
+                                    background: linear-gradient(to left, #9c0bad, #4101b5), linear-gradient(to bottom, #398fe1, #398fe1);
+                                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9c0bad', endColorstr='#398fe1',GradientType=1);
+                                    span {
+                                        display: inline-block;
+                                        line-height: ($t-ht)-(10px);
+                                    }
+                                }
+
+                                &.ta-row {
+                                    .lb-txt {
+                                        padding-top: 10px;
+                                        vertical-align: top;
+                                    }
+                                }
+
+                                & + .chk-box {
+                                    clear: both;
+                                    margin: 10px 0 0 0;
+                                    font-size: 13px;
+                                    line-height: 26px;
+                                }
+                            }
+
+                            .btn-more {
+                                position: absolute;
+                                display: inline-block;
+                                //width: 80px;
+                                height: 26px;
+                                right: 0;
+                                padding: 0 10px;
+                                font-size: 12px;
+                                font-weight: 300;
+                                text-align: center;
+                                line-height: 26px;
+                                color: #666;
+                                border-radius: 2px;
+                                background: #ddd;
+
+                                &.on {
+                                    span {
+                                        position: relative;
+                                        display: inline-block;
+                                        padding-right: 10px;
+                                        &:before {
+                                            content: '';
+                                            position: absolute;
+                                            display: inline-block;
+                                            width: 6px;
+                                            height: 6px;
+                                            top: 50%;
+                                            right: 0;
+                                            margin: -2px 0 0 10px;
+                                            border: 2px solid #666;
+                                            border-left: 0;
+                                            border-bottom: 0;
+                                            transform: rotate(-45deg);
+                                        }
+
+                                        .ie8 {
+                                            &:before {
+                                                content: '▲';
+                                                border: 0;
+                                            }
+                                        }
+                                    }
+                                }
+
+                            }
+                            .pop-policy-box {
+                                position: relative;
+                                overflow: auto;
+                                display: none;
+                                //width: 100%;
+                                height: 50px;
+                                margin: 10px 0 0 0;
+                                border: 1px solid #ddd;
+                                .box {
+                                    position: relative;
+                                    box-sizing: border-box;
+                                    padding: 6px;
+                                    font-size: 11px;
+                                    line-height: 1.4;
+                                    word-break: keep-all;
+                                    color: #666;
+                                }
+                            }
+                            
+                            &.use-box {
+                                .row {
+                                    float: right;
+                                    width: 50%;
+                                    .lb-txt {
+                                        //width: 44%;
+                                        padding-left: 8%;
+                                    }
+                                    .ip-txt {    
+                                        //width: 99%;
+                                    }
+                                    
+                                    &:first-child {
+                                        float: left;
+                                        .lb-txt {
+                                            padding-left: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .call-box {
+                            margin: 17px -20px 0 -21px;
+                            padding: 8px 0;
+                            text-align: center;
+                            background: #eee;
+                            .txt-call {
+                                font-size: 15px;
+                                letter-spacing: -0.5px;
+                                color: #380dd7;
+
+                                .txt-tel {
+                                    display: none;
+                                }
+
+                                .link-tel {
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                //btn
+                .btn-pop-close {
+                    $wt : 30px;
+                    position: absolute;
+                    box-sizing: border-box;
+                    display: block;
+                    width: $wt;
+                    height: $wt;
+                    top: -($wt);
+                    right: 0;
+                    background: url(http://img.seabay.co.kr/svc/img/ld/ppt/btn_pop_close.png) no-repeat center;
+                    background-size: 30px auto;
+                    span {
+                        position: relative;
+                        box-sizing: border-box;
+                        display: inline-block;
+                        font-size: 0;
+                        text-indent: -999px;
+                    }
+                }
+            }
+            
+        }
+    }
+    
+}
+
+//모바일~태블릿
+@media (max-width: 320px) {
+    
+    /* 팝업 */
+    .ld-popup {
+        
+        .popup-wrap {
+            padding-top: 40px;
+            .popup-container {
+                
+                .popup-contents {
+                    
+                    .main-box {
+                        padding: 0 15px 0 16px;
+                        .ip-box {
+                            $wd-m : 58px;
+                            .row {
+                                .lb-txt, .ip-txt, .chk-box, .ta-txt, .txt {
+                                    font-size: 12px;
+                                }
+                                
+                                .lb-txt {
+                                    width: $wd-m;
+                                }
+
+                                .chk-box {
+                                    font-size: 11px;
+                                    .chk-txt {
+                                        margin-left: 5px;
+                                    }
+                                }
+                                
+                                .btn-apply {
+                                    margin-left: -$wd-m;
+                                    width: calc(100% + ($wd-m));
+                                }
+                            }
+                             
+                            &.use-box {
+                                .row {
+                                    .lb-txt {
+                                        padding-left: 6%;
+                                    }
+                                    
+                                    &:first-child {
+                                        .lb-txt {
+                                            padding-left: 0;
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+                        
+                        .call-box {
+                            margin-left: -16px;
+                            margin-right: -15px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
