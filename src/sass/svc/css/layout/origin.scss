@@ -4389,7 +4389,7 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
 }
 
 .sub .sh_small {
-    font-size: 12px
+    font-size: 14px
 }
 
 @media (max-width: 767px) {
@@ -4579,7 +4579,7 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
 
 .sub .item_info .info_wrap .info_content,
 .sub .item_info2 .info_wrap .info_content {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 24px
 }
 
@@ -5494,7 +5494,7 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
     border: 1px solid #eaeaea;
     border-collapse: collapse;
     padding: 5px;
-    font-size: 12px
+    font-size: 14px;
 }
 
 .facilities_box .sub_item .item_info2 .info_wrap .meetingroom th {
@@ -6616,7 +6616,7 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
     -ms-text-overflow: ellipsis;
     width: 90%;
     margin: 5px 0 0 0;
-    font-size: 12px
+    font-size: 13px;
 }
 
 @media (max-width: 600px) {
@@ -6702,7 +6702,7 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
 
 .room_detail .detail .box_left .description .cont,
 .room_detail .detail .box_left .policies .cont {
-    font-size: 13px
+    font-size: 14px
 }
 
 .room_detail .detail .box_left .description .cont p,
@@ -7097,7 +7097,7 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
 .detail_table th {
     border: 1px solid #d9d9d9;
     padding: 2px 5px;
-    font-size: 11px
+    font-size: 14px
 }
 
 .mob_face_btn {
@@ -7127,4 +7127,37 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
     width: 56px;
     height: 56px;
     display: inline-block
+}
+
+
+/* 날씨 정보 */
+.main .weather {z-index: 99; position: absolute; width: 1140px; top: 180px; left: 50%; margin-left: -510px;  line-height: 1.2; text-align: left;}
+.main .weather .area {position: absolute; right: 5px;/* height: 96px;*/ box-sizing: border-box; }
+.main .weather .area [class*=s-] {display: block; color: #fff; font-size: 17px; }
+.main .weather .area .inner {position: relative; float: right; }
+.main .weather .area img {position: relative; float: right; }
+.main .weather .area .s-1 {line-height: 1; }
+.main .weather .area .s-2 {margin-top: 3px; font-weight: 700; }
+.main .weather .area .s-2 .t-1 {position: relative; top: -1px; }
+.main .weather .area .s-3 {font-size: 27px; }
+.main .weather .area .s-4 {font-size: 14px !important; font-weight: 700; padding-left: 3px;}
+.main .weather .area .s-4 > * {vertical-align: middle;}
+.main .weather .area .s-4 img {position: relative !important; float: none !important;}
+.main .weather .area .s-3 .big {font-size: 40px; }
+.main .weather .area .s-3 .c {font-family: "Noto Sans KR"; }
+
+@media (max-width: 991px) {
+    .main .weather {
+        display: none;
+    }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+    .main .weather {width: auto; margin-left: -0; right: 10px;}
+    .main .weather .area [class*=s-] {font-size: 15px; }
+    .main .weather .area .s-3 {font-size: 25px; }
+    .main .weather .area .s-4 {font-size: 13px !important;}
+    .main .weather .area .s-3 .big {font-size: 38px; }
+}
+@media (min-width: 1201px) {
+    .main .weather {margin-left: -565px;}
 }
