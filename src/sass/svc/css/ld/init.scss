@@ -1,15 +1,19 @@
 @charset 'utf-8';
 @import 'src/sass/svc/css/parts/common';
 
+$ld-fc-black: #353d45;
+
 
 .ld-contents {
-    color: #555;
+    position: relative;
+    box-sizing: border-box;
     background: #fff;
     * {
         font-family: "Noto Sans KR", "Nanum Gothic", sans-serif;
     }
     
 	h1, h2, h3, p, span {
+        position: relative;
 		font-weight: 400;
 		line-height: 1;
         letter-spacing: -1px;
@@ -17,12 +21,25 @@
 		padding: 0;
 	}
     
+    img {
+        position: relative;
+        width: auto;
+        max-width: 100%;
+    }
+    
     figure {
         text-align: center;
-        img {
-            width: auto;
-            max-width: 100%;
-        }
+    }
+    
+    .group {
+        width: auto;
+    }
+    
+    .container {
+        @include clearfix;
+        position: relative;
+        box-sizing: border-box;
+        margin: 0 auto;
     }
     
 }
@@ -30,7 +47,419 @@
 
 //피씨
 @media (min-width: 992px) {
+
+    $width: 1000px;
+    $tabH: 150px;
     
+    .ld-contents {
+        .container {
+            width: $width;
+            padding: 0;
+        }
+    
+        //비주얼
+        .visual {
+            position: relative;
+            padding: 71px 0 55px;
+            background: url(http://img.seabay.co.kr/svc/img/ld/ppt/bg_visual.jpg) no-repeat center;
+            background-size: cover;
+            .tit {
+                width: $width;
+                margin: 0 auto;
+                text-align: center;
+            }
+            .img-top {
+                position: absolute;
+                top: 30px;
+                right: 30px;
+                //margin-right: -410px;
+            }
+        }
+        
+        //tab
+        .ld-tab {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            transition: all 0.2s ease 0s;
+            .tab-list {
+                @include clearfix;
+                position: relative;
+                background: #00c8ff;
+                
+                li {
+                    position: relative;
+                    display: table;
+                    float: right;
+                    width: 50%;
+                    height: $tabH;
+                    a {
+                        position: relative;
+                        display: table-cell;
+                        box-sizing: border-box;
+                        width: 100%;
+                        padding: 0 80px;
+                        vertical-align: middle;
+                        text-align: left;
+                        img {
+                            vertical-align: middle;
+                        }
+                    }
+                    
+                    &:first-child {
+                        float: left;
+                        a {
+                            padding: 0 71px;
+                            text-align: right;
+                            img {
+                            }
+                        }
+                    }
+                
+                    &.pool {
+                        background: #00c8ff;
+                    }
+
+                    &.group {
+                        background: #8400ff;
+                    }
+                }
+                    
+            }
+            
+            &.on {
+                z-index: 10003;
+                position: fixed;
+                top: 0; 
+            }
+        }
+        
+        //banner
+        .ld-bn {
+            z-index: 99;
+            position: relative;
+            width: $width;
+            margin: 0 auto;
+            text-align: right;
+            .ld-bn-list {
+                position: absolute;
+                top: 235px;
+                right: -175px;
+                margin-top: 0;
+                transition: all 0.2s ease 0s;
+                li {
+                    margin-top: 8px;
+                    line-height: 0;
+                    &:first-child {
+                        margin-top: 0;
+                    }
+                    a {
+                        display: inline-block;
+                        img {
+                        }
+                    }
+                }
+            }
+    
+            &.on {
+                position: fixed;
+                top: 0; 
+                left: 50%; 
+                margin-left: -500px;
+                .ld-bn-list { 
+                    top: 210px;
+                } 
+            }
+        }
+        
+        //풀파티 구매하기
+        .pool-sect {
+            margin: 0 auto;
+            padding: ($tabH) 0 77px;
+            color: #fff;
+            background: #081b5e;
+            
+            .bear {
+                padding: 85px 0 120px;
+            }
+            
+            .sec-txt {
+                padding-top: 33px;
+                font-size: 24px;
+                line-height: 30px;
+                text-align: center;
+                letter-spacing: -0.6px;
+                em {
+                    font-weight: bold;
+                }
+            }
+            
+            .img-pool {
+                padding: 21px 0 20px;
+            }
+            
+            .pool-txt-box {
+                $pl-wd: 210px;
+                position: relative;
+                .tit {
+                    position: absolute;
+                    width: $pl-wd;
+                    height: 50px;
+                    font-size: 27px;
+                    font-weight: bold;
+                    letter-spacing: -0.7px;
+                    line-height: 50px;
+                    text-align: center;
+                    border: 1px solid #fff;
+                    border-radius: 24px;
+                }
+                
+                .txt-box {
+                    position: relative;
+                    box-sizing: border-box;
+                    margin-left: $pl-wd;
+                    padding: 6px 0 0 29px;
+                    dl {
+                        display: table;
+                        width: 100%;
+                        margin: 0;
+                        padding: 4px 0 0 0;
+                        text-align: left;
+                        dt, dd {
+                            display: table-cell;
+                            font-size: 22px;
+                            line-height: 30px;
+                            letter-spacing: -0.5px;
+                            vertical-align: top;
+                            color: #f1f8ff;
+                        }
+                        dt {
+                            position: relative;
+                            box-sizing: border-box;
+                            width: 108px;
+                            padding-left: 10px;
+                            font-weight: bold;
+                            &:before {
+                                content: '';
+                                position: absolute;
+                                display: block;
+                                width: 3px;
+                                height: 3px;
+                                top: 15px;
+                                left: 0px;
+                                background: #fff;
+                            }
+                        }
+                        dd {
+                            .t-mark {
+                                padding: 3px 0 5px;
+                                padding-left: 25px;
+                                text-indent: -26px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        //단독대관 할인 프로모션
+        .group-sect {
+            padding: 101px 0 94px;
+            color: #445660;
+            background: #fff;
+            
+            .sec-txt {
+                padding: 27px 0 35px;
+                text-align: center;
+                p {
+                    font-size: 28px;
+                    line-height: 35px;
+                    &.p-0 {
+                        font-weight: bold;
+                        color: $ld-fc-black;
+                    }
+                    &.p-1 {
+                        font-weight: bold;
+                        color: #7920ff;
+                    }
+                    &.p-2 {
+                        font-size: 24px;
+                        span {
+                            color: #0066ff;
+                        }
+                    }
+                }
+            }
+            
+            .shap-box {
+                $s-ht: 50px;
+                .shap-list {
+                    position: relative;
+                    display: inline-block;
+                    margin: 0 -5px;
+                    text-align: center;
+                    li {
+                        position: relative;
+                        box-sizing: border-box;
+                        display: inline-block;
+                        //width: 130px;
+                        padding: 5px 4px;
+                        text-align: center;
+                        color: $ld-fc-black;
+                        p {
+                            height: $s-ht;
+                            padding: 0 20px;
+                            font-size: 22px;
+                            line-height: $s-ht;
+                            letter-spacing: -1px;
+                            border: 1px solid $ld-fc-black;
+                            border-radius: 25px;
+                        }
+                    }
+                }
+            }
+            
+            .group-box {
+                @include clearfix;
+                position: relative;
+                padding-top: 50px;
+                margin: 0 -3px;
+                .row {
+                    position: relative;
+                    box-sizing: border-box;
+                    float: left;
+                    width: 330px;
+                    margin: 0;
+                    padding: 0 3px;
+                    .box {
+                        position: relative;
+                        box-sizing: border-box;
+                        margin: 3px 0 5px;
+                        padding: 0;
+                        figure {
+                            
+                        }
+                        .group-txt {
+                            z-index: 1;
+                            position: absolute;
+                            display: table;
+                            width: 100%;
+                            //height: 100%;
+                            height: 216px;
+                            top: 0;
+                            left: 0;
+                            p {
+                                display: table-cell;
+                                font-size: 22px;
+                                font-weight: bold;
+                                line-height: 1.3;
+                                text-align: center;
+                                vertical-align: middle;
+                                color: #fff;
+                            }
+                        }
+                    }
+                    
+                    &.fir {
+                        .box {
+                            .group-txt {
+                                height: 446px;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            .group-txt-box {
+                padding-top: 20px;
+                text-align: center;
+                .box {
+                    p {
+                        display: inline-block;
+                        margin-top: 7px;
+                        padding: 0 20px;
+                        font-size: 22px;
+                        font-weight: bold;
+                        line-height: 26px;
+                        letter-spacing: -0.6px;
+                        color: $ld-fc-black;
+                        &.bg-grn {
+                            background: #ccff00;
+                            span {
+                                font-weight: bold;
+                                color: #e51c86;
+                            }
+                        }
+                    }
+                }
+                
+                .txt {
+                    padding-top: 5px;
+                    font-size: 22px;
+                    line-height: 34px;
+                    letter-spacing: -0.6px;
+                    color: $ld-fc-black;
+                }
+                
+                .call-box {
+                    padding: 27px 0 37px;
+                    letter-spacing: -0.8px;
+                    color: #380dd7;
+                    p {
+                        display: inline-block;
+                        font-size: 32px;
+                        line-height: 34px;
+                        font-weight: bold;
+                        vertical-align: middle;
+                        &.link-call {
+                            font-size: 34px;
+                        }
+                    }
+                    .s-1 {
+                        display: inline-block;
+                        padding-left: 4px;
+                        font-size: 20px;
+                        vertical-align: -webkit-baseline-middle;
+                    }
+                }
+            }
+            
+            .btn-box {
+                $btn-ht: 80px;
+                position: relative;
+                text-align: center;
+                .btn-group {
+                    position: relative;
+                    display: inline-block;
+                    width: 410px;
+                    height: $btn-ht;
+                    text-align: center;
+                    border-radius: 20px;
+                    background: linear-gradient(to left, #7920ff 35%, #0066ff 100%);
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7920ff', endColorstr='#0066ff',GradientType=1 );
+                    span {
+                        position: relative;
+                        display: inline-block;
+                        padding-right: 45px;
+                        font-size: 30px;
+                        line-height: $btn-ht;
+                        color: #fff;
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            display: block;
+                            width: 32px;
+                            height: 100%;
+                            top: 0;
+                            right: 0;
+                            background: url(http://img.seabay.co.kr/svc/img/ld/ppt/ico_arrowR.png) no-repeat center;
+                            background-size: 32px auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
     
     /* 팝업 */
     .ld-popup {
@@ -43,7 +472,7 @@
             padding: 0;
         }
         
-        z-index: 11;
+        z-index: 10005;
         position: fixed;
         overflow: hidden;
         overflow-y: auto;
@@ -64,7 +493,7 @@
             box-sizing: border-box;
             top: 50%;
             margin: -300px auto 0;
-            padding: 30px 0 10px;            
+            padding: 67px 0 40px;            
             .popup-container {
                 position: relative;
                 box-sizing: border-box;
@@ -392,8 +821,417 @@
 
 //모바일~태블릿
 @media (max-width: 991px) {
+
+    $width: 720px;
+    $width-2: 640px;
+    $tabH: 70px;
     
+    .br_sub {
+        height: 0;
+    }
     
+    .ld-contents {
+        .container {
+            width: 100%;
+            max-width: $width;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+    
+        //비주얼
+        .visual {
+            position: relative;
+            padding: 107px 0 40px;
+            background: url(http://img.seabay.co.kr/svc/img/ld/ppt/bg_visual_m.jpg) no-repeat top;
+            background-size: cover;
+            .tit {
+                max-width: $width-2;
+                margin: 0 auto;
+                padding: 0 7px 0 33px;
+                text-align: center;
+            }
+        }
+        
+        //tab
+        .ld-tab {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            bottom: auto;
+            transition: all 0.4s ease 0s;
+            .tab-list {
+                @include clearfix;
+                position: relative;
+                background: #00c8ff;
+                //background: #081b5e;
+                
+                li {
+                    position: relative;
+                    box-sizing: border-box;
+                    display: table;
+                    float: right;
+                    width: 50%;
+                    min-height: $tabH;
+                    padding: 16px 0 13px;
+                    a {
+                        position: relative;
+                        box-sizing: border-box;
+                        display: table-cell;
+                        width: 100%;
+                        padding: 0 17px;
+                        vertical-align: middle;
+                        text-align: left;
+                        img {
+                            vertical-align: middle;
+                        }
+                    }
+                    
+                    &:first-child {
+                        float: left;
+                        a {
+                            text-align: right;
+                        }
+                    }
+                
+                    &.pool {
+                        background: #00c8ff;
+                    }
+
+                    &.group {
+                        margin-left: 0;
+                        margin-right: 0;
+                        background: #8400ff;
+                    }
+                }
+            }
+            
+            &.on {
+                z-index: 10003;
+                position: fixed;
+                bottom: 0; 
+                transition: all 0.4s ease 0s;
+            }
+        }
+        
+        //banner
+        .ld-bn {
+            display: none;
+        }
+        
+        //풀파티 구매하기
+        .pool-sect {
+            margin: 0 auto;
+            padding: ($tabH) 0 40px;
+            color: #fff;
+            background: #081b5e;
+            
+            .bear {
+                padding: 39px 0 50px;
+            }
+            
+            .sec-txt {
+                padding-top: 15px;
+                font-size: 14px;
+                line-height: 17px;
+                text-align: center;
+                letter-spacing: -0.6px;
+                em {
+                    font-weight: bold;
+                }
+            }
+            
+            .img-pool {
+                padding: 21px 0 37px;
+            }
+            
+            .pool-txt-box {
+                position: relative;
+                .tit {
+                    width: 119px;
+                    height: 32px;
+                    margin: 0 auto;
+                    font-size: 17px;
+                    font-weight: bold;
+                    letter-spacing: -0.7px;
+                    line-height: 32px;
+                    text-align: center;
+                    border: 1px solid #fff;
+                    border-radius: 14px;
+                }
+                .txt-box {
+                    position: relative;
+                    box-sizing: border-box;
+                    padding-top: 19px;
+                    dl {
+                        display: table;
+                        width: 100%;
+                        margin: 0;
+                        padding: 4px 0 0 0;
+                        text-align: left;
+                        dt, dd {
+                            display: table-cell;
+                            font-size: 14px;
+                            line-height: 18px;
+                            letter-spacing: -0.7px;
+                            vertical-align: top;
+                            color: #c9d4f7;
+                        }
+                        dt {
+                            position: relative;
+                            box-sizing: border-box;
+                            width: 66px;
+                            padding-left: 7px;
+                            font-weight: bold;
+                            &:before {
+                                content: '';
+                                position: absolute;
+                                display: block;
+                                width: 2px;
+                                height: 2px;
+                                top: 9px;
+                                left: 0px;
+                                background: #fff;
+                            }
+                        }
+                        dd {
+                            word-break: keep-all;
+                            .t-mark {
+                                padding: 3px 0 0;
+                                padding-left: 13px;
+                                text-indent: -14px;
+                                line-height: 18px;
+                                
+                                &:last-child {
+                                    padding-bottom: 3px;
+                                }
+                            }
+                        }
+                        
+                        &.lst {
+                            dd {
+                                word-break: break-all;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        //단독대관 할인 프로모션
+        .group-sect { 
+            padding: 50px 0 44px;
+            color: #445660;
+            background: #fff;
+            
+            .sec-txt {
+                padding: 19px 0 17px;
+                text-align: center;
+                p {
+                    font-size: 17px;
+                    line-height: 20px;
+                    word-break: keep-all;
+                    &.p-0 {
+                        font-weight: bold;
+                        color: $ld-fc-black;
+                    }
+                    &.p-1 {
+                        font-weight: bold;
+                        color: #7920ff;
+                    }
+                    &.p-2 {
+                        font-size: 14px;
+                        span {
+                            color: #0066ff;
+                        }
+                    }
+                }
+            }
+            
+            .shap-box {
+                $s-ht: 30px;
+                .shap-list {
+                    position: relative;
+                    display: inline-block;
+                    margin: 0 -2px;
+                    text-align: center;
+                    li {
+                        position: relative;
+                        box-sizing: border-box;
+                        display: inline-block;
+                        //width: 130px;
+                        padding: 4px 2px;
+                        text-align: center;
+                        color: $ld-fc-black;
+                        p {
+                            height: $s-ht;
+                            padding: 0 14px;
+                            font-size: 14px;
+                            line-height: $s-ht;
+                            letter-spacing: -0.6px;
+                            border: 1px solid $ld-fc-black;
+                            border-radius: 14px;
+                        }
+                    }
+                }
+            }
+            
+            .group-box {
+                @include clearfix;
+                position: relative;
+                padding-top: 30px;
+                margin: 0 -3px;
+                .row {
+                    position: relative;
+                    box-sizing: border-box;
+                    float: left;
+                    width: 50%;
+                    margin: 0;
+                    padding: 0 3px;
+                    .box {
+                        position: relative;
+                        box-sizing: border-box;
+                        margin: 3px 0 5px;
+                        padding: 0;
+                        figure {
+                            
+                        }
+                        .group-txt {
+                            z-index: 1;
+                            position: absolute;
+                            display: table;
+                            width: 100%;
+                            height: 100%;
+                            top: 45%;
+                            left: 0;
+                            p {
+                                display: table-cell;
+                                font-size: 14px;
+                                font-weight: bold;
+                                line-height: 1.3;
+                                text-align: center;
+                                vertical-align: middle;
+                                color: #fff;
+                            }
+                        }
+                    }
+                    
+                    &.lst {
+                        @include clearfix;
+                        clear: both;
+                        float: none;
+                        width: 100%;
+                        .box {
+                            float: left;
+                            width: 50%;
+                            margin: 0;
+                            padding: 0 0 0 3px; 
+                            .group-txt {
+                            }
+                            
+                            &:first-child {
+                                padding: 0 3px 0 0;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            .group-txt-box {
+                padding-top: 25px;
+                text-align: center;
+                .box {
+                    p {
+                        display: inline-block;
+                        margin-top: 5px;
+                        padding: 0 10px;
+                        font-size: 15px;
+                        font-weight: bold;
+                        line-height: 22px;
+                        letter-spacing: -1px;
+                        color: $ld-fc-black;
+                        span {
+                            font-weight: bold;
+                            color: #e51c86;
+                        }
+                        &.bg-grn {
+                            background: #ccff00;
+                        }
+                    }
+                }
+                
+                .txt {
+                    padding-top: 27px;
+                    font-size: 15px;
+                    line-height: 22px;
+                    letter-spacing: -1px;
+                    color: $ld-fc-black;
+                }
+                
+                .call-box {
+                    $f-s: 24px;
+                    padding: 18px 0 17px;
+                    letter-spacing: -0.8px;
+                    color: #380dd7;
+                    p {
+                        display: inline-block;
+                        font-size: 18px;
+                        line-height: $f-s;
+                        font-weight: bold;
+                        vertical-align: middle;
+                    }
+                    .link-call {
+                        font-size: $f-s;
+                        line-height: $f-s;
+                        font-weight: bold;
+                        vertical-align: middle;
+                    }
+                    .s-1 {
+                        display: block;
+                        padding-left: 4px;
+                        font-size: 15px;
+                        line-height: $f-s;
+                    }
+                }
+            }
+            
+            .btn-box {
+                $btn-ht: 50px;
+                position: relative;
+                box-sizing: border-box;
+                text-align: center;
+                padding: 0 30px;
+                .btn-group {
+                    position: relative;
+                    display: inline-block;
+                    width: 100%;
+                    max-width: 520px;
+                    height: $btn-ht;
+                    text-align: center;
+                    border-radius: 12px;
+                    background: linear-gradient(to left, #7920ff 35%, #0066ff 100%);
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7920ff', endColorstr='#0066ff',GradientType=1 );
+                    span {
+                        display: inline-block;
+                        padding-right: 30px;
+                        font-size: 20px;
+                        line-height: $btn-ht;
+                        color: #fff;
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            display: block;
+                            width: 22px;
+                            height: 100%;
+                            top: 0;
+                            right: 0;
+                            background: url(http://img.seabay.co.kr/svc/img/ld/ppt/ico_arrowR.png) no-repeat center;
+                            background-size: 22px auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
     
     /* 팝업 */
     .ld-popup {
@@ -406,7 +1244,7 @@
             padding: 0;
         }
         
-        z-index: 11;
+        z-index: 10005;
         position: fixed;
         overflow: hidden;
         overflow-y: auto;
@@ -757,7 +1595,6 @@
             
         }
     }
-    
 }
 
 //모바일~태블릿

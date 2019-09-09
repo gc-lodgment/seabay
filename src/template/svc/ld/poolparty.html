@@ -1,5 +1,5 @@
 @@include('src/template/svc/include/_head.html')
-   
+   <!-- 190909 css/js 추가 -->
     <link rel="stylesheet" type="text/css" href="/static/svc/css/ld/init.css">
     
     <script type="text/javascript" src="/static/svc/js/ld/init.js"></script>
@@ -9,12 +9,231 @@
 
     @@include('src/template/svc/include/_header.html')
 
+    <!-- 190909 풀파티 랜딩 -->
     <div class="contents ld-contents">
-        풀파티 메인
+        <div id="ld-visual" class="visual">
+            <h2 class="tit"><img src="http://img.seabay.co.kr/svc/img/ld/ppt/tit_visual.png" alt="호텔로 놀러가자! Let's 풀파티"></h2>
+            <p class="img-top hidden-smxs"><img src="http://img.seabay.co.kr/svc/img/ld/ppt/btn_top.png" alt="풀파티 단체예약문의"></p>
+        </div>
+        
+        <!-- tab -->
+        <div id="ld-tab" class="ld-tab">
+            <ul class="tab-list">
+                <li class="pool">
+                    <!-- 패키지 : 수영장 탭이 클릭된 상태로 페이지가 이동되어야 합니다 -->
+                    <a href="http://seabay.co.kr/reserve/" role="button">
+                        <img class="hidden-smxs" src="http://img.seabay.co.kr/svc/img/ld/ppt/tab_01.png" alt="풀파티 구매하기">
+                        <img class="hidden-mdlg" src="http://img.seabay.co.kr/svc/img/ld/ppt/tab_01_m.png" alt="풀파티 구매하기">
+                    </a>
+                </li>
+                <li class="group">
+                    <a href="javascript: $('.ld-popup').show(); popFn();" role="button">
+                        <img class="hidden-smxs" src="http://img.seabay.co.kr/svc/img/ld/ppt/tab_02.png" alt="풀파티 단독대관">
+                        <img class="hidden-mdlg" src="http://img.seabay.co.kr/svc/img/ld/ppt/tab_02_m.png" alt="풀파티 단독대관">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- 우측배너 메뉴 : PC -->
+        <div id="ld-bn" class="ld-bn">
+            <ul class="ld-bn-list">
+                <li class="group">
+                    <a href="javascript: $('.ld-popup').show(); popFn();" role="button">
+                        <img src="http://img.seabay.co.kr/svc/img/ld/ppt/btn_tab_01.png" alt="풀파티 단체예약">
+                    </a>
+                </li>
+                <li class="pool">
+                    <!-- 패키지 : 수영장 탭이 클릭된 상태로 페이지가 이동되어야 합니다 -->
+                    <a href="http://seabay.co.kr/reserve/" role="button">
+                        <img src="http://img.seabay.co.kr/svc/img/ld/ppt/btn_tab_02.png" alt="수영장&숙박 최저가 구매">
+                    </a>
+                </li>
+                <li class="rest">
+                    <a href="http://seabay.co.kr/reserve/" role="button">
+                        <img src="http://img.seabay.co.kr/svc/img/ld/ppt/btn_tab_03.png" alt="객실예약">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- pool -->
+        <div id="ld-pool-sect" class="pool-sect">
+            <div class="container">
+                <!-- 쿠폰 -->
+                <div class="bear">
+                    <figure class="hidden-smxs">
+                        <img src="http://img.seabay.co.kr/svc/img/ld/ppt/img_coupon.png" alt="EVENT 야간 입장권 구매자 전원 맥주or커피 1잔 무료">
+                    </figure>
+                    <figure class="hidden-mdlg">
+                        <img src="http://img.seabay.co.kr/svc/img/ld/ppt/img_coupon_m.png" alt="EVENT 야간 입장권 구매자 전원 맥주or커피 1잔 무료">
+                    </figure>
+                </div>
+                
+                <div class="pool-area">
+                    <p class="sec-tit"> 
+                        <img class="hidden-smxs" src="http://img.seabay.co.kr/svc/img/ld/ppt/tit_pool.png" alt="15층 루프탑 인피니티 풀 (단독대관가능)">
+                        <img class="hidden-mdlg" src="http://img.seabay.co.kr/svc/img/ld/ppt/tit_pool_m.png" alt="15층 루프탑 인피니티 풀 (단독대관가능)">
+                    </p>
+                    
+                    <p class="sec-txt">
+                        <em>바다전망 루프탑 수영장 ‘인피니티 풀에서’</em>에서<br>
+                        프리미엄 호텔의 차별화된 풀파티를 경험하세요!
+                    </p>
+                    
+                    <div class="img-pool">
+                        <figure>
+                            <img class="hidden-smxs" src="http://img.seabay.co.kr/svc/img/ld/ppt/img_pool.png" alt="인피니티 풀">
+                            <img class="hidden-mdlg" src="http://img.seabay.co.kr/svc/img/ld/ppt/img_pool_m.png" alt="인피니티 풀">
+                        </figure>
+                        
+                        <div class="hidden">
+                            <p>"하늘과 바다를 대면하는 환상의 프라이빗 공간"</p>
+                            <p>15층 위치한 인피니티풀은 탁트인 바다 전망으로 야외에서 하늘과 바다를 직접 대면하는 듯한 환상ㅇ의 느낌을 선사해 드립니다.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="pool-txt-box">
+                        <p class="tit">이용안내</p>
+                        <div class="txt-box">
+                            <dl>
+                                <dt>위치안내 : </dt>
+                                <dd>
+                                   인피니티 풀 (15층)
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>이용요금 : </dt>
+                                <dd>
+                                   주간 이용료 20,000원, 야간 이용료 20,000원 <br class="hidden-mdlg">(주간/야간 별도요금)
+                                    <p class="t-mark">※ 야간 이용시 맥주 or 커피 1잔을 제공해 드립니다.</p>
+                                    <p class="t-mark">※ 인피니티 풀은 주간/야간 모두 만19세 이상 성인만 이용가능</p>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>이용시간 : </dt>
+                                <dd>
+                                   주간 13시 ~ 19시 / 야간 20시 ~ 22시
+                                   <p class="t-mark">※ 호텔 사정에 의해 이용시간이 변경될 수 있습니다.</p>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>준비물품 : </dt>
+                                <dd>
+                                   수영모(야구모자 가능), 수영복(편한 복장 가능), 개인수건
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>기타안내 : </dt>
+                                <dd>
+                                   최대인원 초과 시 안전을 위해 입장이 제한 됨<br>
+                                   풀장에는 락커룸 및 샤워실이 구비되어 있습니다. <br>
+                                   규정시간 이외에는 수영장 이용 절대 불가 / 외부음식 반입 불가
+                                </dd>
+                            </dl>
+                            <dl class="lst">
+                                <dt>예약문의 : </dt>
+                                <dd>
+                                   전화 : 1666-1243<br>
+                                   이메일 : valuehotelgangneung@ebiznetworks.co.kr
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- group -->
+        <div class="group-sect">
+            <div class="container">
+                
+                <div class="group-area">
+                    <p class="sec-tit"> 
+                        <img class="hidden-smxs" src="http://img.seabay.co.kr/svc/img/ld/ppt/tit_group.png" alt="풀파티 단독대관 할인 프로모션">
+                        <img class="hidden-mdlg" src="http://img.seabay.co.kr/svc/img/ld/ppt/tit_group_m.png" alt="풀파티 단독대관 할인 프로모션">
+                    </p>
+                    
+                    <div class="sec-txt">
+                        <p class="p-0">‘풀파티’ 가격걱정 NO!</p>
+                        <p class="p-1">20명부터 단독대관, 단체예약 가능!</p>
+                        <p class="p-2"><span>프리미엄 호텔의 품격있는 혜택과 서비스를 할인특가</span>로 이용해보세요!</p>
+                    </div>
+                    
+                    <div class="shap-box">
+                        <ul class="shap-list">
+                            <li><p>#생일파티</p></li>
+                            <li><p>#베이비샤워</p></li>
+                            <li><p>#친목모임</p></li>
+                            <li><p>#단체파티</p></li>
+                            <li><p>#기업행사</p></li>
+                            <li><p>#총각파티</p></li>
+                            <li class="hidden-mdlg"><p>#처녀파티</p></li>
+                            <li><p>#기념일파티</p></li>
+                            <li><p>#동아리행사</p></li>
+                            <li><p>#가족모임</p></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="group-box">
+                        <div class="row fir">
+                            <div class="box">
+                                <figure><img src="http://img.seabay.co.kr/svc/img/ld/ppt/img_group_01.png" alt="이미지"></figure>
+                                <div class="group-txt"><p>특별한 날<br>특별한 이벤트</p></div>
+                            </div>
+                        </div>
+                        <div class="row mid">
+                            <div class="box">
+                                <figure><img src="http://img.seabay.co.kr/svc/img/ld/ppt/img_group_02.png" alt="이미지"></figure>
+                                <div class="group-txt"><p>친구들과 함께</p></div>
+                            </div>
+                            <div class="box">
+                                <figure><img src="http://img.seabay.co.kr/svc/img/ld/ppt/img_group_03.png" alt="이미지"></figure>
+                                <div class="group-txt"><p>기념일</p></div>
+                            </div>
+                        </div>
+                        <div class="row lst">
+                            <div class="box">
+                                <figure><img src="http://img.seabay.co.kr/svc/img/ld/ppt/img_group_04.png" alt="이미지"></figure>
+                                <div class="group-txt"><p>기업의 행사</p></div>
+                            </div>
+                            <div class="box">
+                                <figure><img src="http://img.seabay.co.kr/svc/img/ld/ppt/img_group_05.png" alt="이미지"></figure>
+                                <div class="group-txt"><p>소규모 친목행사</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="group-txt-box">
+                        <div class="box hidden-smxs">
+                            <p class="bg-grn">생일파티, 브라이덜샤워, 베이비샤워, 처녀파티, 총각파티, 소규모모임,</p>
+                            <p class="bg-grn">단체파티, 기업행사, 대학행사, 동아리행사, 가족모임 등 <span>풀파티 최적의 장소!</span></p>
+                        </div>
+                        <div class="box hidden-mdlg">
+                            <p class="bg-grn">생일파티, 브라이덜샤워, 베이비샤워, 처녀파티, 총각파티, </p> <br class="hidden-mdlg">
+                            <p class="bg-grn">소규모모임, 단체파티, 기업행사, 대학행사, 동아리행사, </p> <br class="hidden-mdlg">
+                            <p class="">가족모임 등 <span>풀파티 최적의 장소!</span></p>
+                        </div>
+                        
+                        <p class="txt">단체여행 20년 경력의 특급플래너가 <br class="hidden-mdlg">최적의 플랜을 제시해 드립니다.</p>
+                        
+                        <div class="call-box">
+                            <p class="txt-call">단체예약문의 : </p><p class="link-call hidden-smxs">010-4460-3435</p><a href="tel:010-4460-3435" class="link-call hidden-mdlg">010-4460-3435</a><span class="s-1">(주중/주말 06시~02시)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="btn-box">
+                        <a href="javascript: $('.ld-popup').show(); popFn();" class="btn-group"><span>단독대관/단체예약 문의</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
     </div>
     
     <!-- 팝업 -->
-    <div class="ld-popup">
+    <div class="ld-popup" style="display: none;">
         <div class="popup-wrap">
             <div class="popup-container">
                 <div class="popup-contents">
@@ -300,6 +519,7 @@
             </div>
         </div>
     </div>
+    <!--END: 190909 풀파티 랜딩 -->
     
     @@include('src/template/svc/include/_footer.html')
 </body>
