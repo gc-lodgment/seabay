@@ -49,8 +49,8 @@ $ld-fc-black: #353d45;
 @media (min-width: 992px) {
 
     $width: 1000px;
-    $tabH: 150px;
-    
+    $tabH: 120px;
+     
     .ld-contents {
         .container {
             width: $width;
@@ -174,6 +174,8 @@ $ld-fc-black: #353d45;
         
         //풀파티 구매하기
         .pool-sect {
+            $pl-wd: 210px;
+            
             margin: 0 auto;
             padding: ($tabH) 0 77px;
             color: #fff;
@@ -194,24 +196,71 @@ $ld-fc-black: #353d45;
                 }
             }
             
-            .img-pool {
-                padding: 21px 0 20px;
+            /* txt tit */
+            .tit {
+                width: $pl-wd;
+                height: 50px;
+                font-size: 27px;
+                font-weight: bold;
+                letter-spacing: -0.7px;
+                line-height: 50px;
+                text-align: center;
+                border: 1px solid #fff;
+                border-radius: 24px;
+            }
+            
+            .pool-img-box {
+                @include clearfix;
+                position: relative;
+                box-sizing: border-box;
+                overflow: hidden;
+                height: 450px;
+                margin: 45px auto 40px;
+                border-radius: 20px;
+                .pool-img-txt-box {
+                    float: left;
+                    position: relative;
+                    box-sizing: border-box;
+                    width: 259px;
+                    height: 100%;
+                    padding: 50px 10px 87px 25px;
+                    background: #1f69f1;
+                    p {
+                        &.tit {
+                            
+                        }
+                        &.sub-tit {
+                            padding: 27px 0 31px 23px;
+                            font-size: 28px;
+                            font-weight: bold;
+                            text-indent: -17px;
+                            line-height: 1.2;
+                            color: #85c7ff;
+                        }
+                        &.txt {
+                            padding: 0 0 0 3px;
+                            font-size: 18px;
+                            line-height: 28px;
+                            letter-spacing: -1.6px;
+                            word-break: keep-all; 
+                        }
+                    }
+                }
+                .pool-img {
+                    float: right;
+                    position: relative;
+                    box-sizing: border-box;
+                    width: 741px;
+                    img {
+                        
+                    }
+                }
             }
             
             .pool-txt-box {
-                $pl-wd: 210px;
                 position: relative;
                 .tit {
                     position: absolute;
-                    width: $pl-wd;
-                    height: 50px;
-                    font-size: 27px;
-                    font-weight: bold;
-                    letter-spacing: -0.7px;
-                    line-height: 50px;
-                    text-align: center;
-                    border: 1px solid #fff;
-                    border-radius: 24px;
                 }
                 
                 .txt-box {
@@ -310,6 +359,7 @@ $ld-fc-black: #353d45;
                             height: $s-ht;
                             padding: 0 20px;
                             font-size: 22px;
+                            font-weight: bold;
                             line-height: $s-ht;
                             letter-spacing: -1px;
                             border: 1px solid $ld-fc-black;
@@ -500,8 +550,10 @@ $ld-fc-black: #353d45;
                 width: 760px;
                 margin: 0 auto;
                 padding: 10px;
-                background: linear-gradient(to bottom, #9c0bad, #4101b5);
-                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9c0bad', endColorstr='#4101b5', GradientType=0);
+                background: linear-gradient(135deg, #7920ff, #0066ff);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7920ff', endColorstr='#0066ff',GradientType=1 );
+                //background: linear-gradient(to bottom, #9c0bad, #4101b5);
+                //filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9c0bad', endColorstr='#4101b5', GradientType=0);
                 .popup-contents {
                     
                     position: relative;
@@ -940,24 +992,62 @@ $ld-fc-black: #353d45;
                 }
             }
             
-            .img-pool {
-                padding: 21px 0 37px;
+            //txt tit
+            .tit {
+                width: 119px;
+                height: 32px;
+                margin: 0 auto;
+                font-size: 17px;
+                font-weight: bold;
+                letter-spacing: -0.7px;
+                line-height: 32px;
+                text-align: center;
+                border: 1px solid #fff;
+                border-radius: 14px;
+            }
+            
+            .pool-img-box {
+                @include clearfix;
+                position: relative;
+                box-sizing: border-box;
+                overflow: hidden;
+                margin: 29px auto 35px;
+                border-radius: 16px;
+                .pool-img-txt-box {
+                    position: relative;
+                    box-sizing: border-box;
+                    height: 100%;
+                    padding: 20px 5px 15px;
+                    text-align: center;
+                    background: #1f69f1;
+                    p {
+                        &.sub-tit {
+                            padding: 10px 0 7px;
+                            font-size: 16px;
+                            font-weight: bold;
+                            text-indent: -5px;
+                            line-height: 1.2;
+                            color: #85c7ff;
+                        }
+                        &.txt {
+                            font-size: 13px;
+                            line-height: 20px;
+                            letter-spacing: -1.2px;
+                            word-break: keep-all; 
+                        }
+                    }
+                }
+                .pool-img {
+                    position: relative;
+                    box-sizing: border-box;
+                    img {
+                        
+                    }
+                }
             }
             
             .pool-txt-box {
                 position: relative;
-                .tit {
-                    width: 119px;
-                    height: 32px;
-                    margin: 0 auto;
-                    font-size: 17px;
-                    font-weight: bold;
-                    letter-spacing: -0.7px;
-                    line-height: 32px;
-                    text-align: center;
-                    border: 1px solid #fff;
-                    border-radius: 14px;
-                }
                 .txt-box {
                     position: relative;
                     box-sizing: border-box;
@@ -1066,6 +1156,7 @@ $ld-fc-black: #353d45;
                             height: $s-ht;
                             padding: 0 14px;
                             font-size: 14px;
+                            font-weight: bold;
                             line-height: $s-ht;
                             letter-spacing: -0.6px;
                             border: 1px solid $ld-fc-black;
@@ -1271,8 +1362,7 @@ $ld-fc-black: #353d45;
                 max-width: 600px;
                 margin: 0 auto;
                 padding: 10px;
-                background: linear-gradient(to bottom, #9c0bad, #4101b5);
-                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9c0bad', endColorstr='#4101b5', GradientType=0);
+                background: linear-gradient(135deg, #7920ff, #0066ff);
                 .popup-contents {
                     position: relative;
                     box-sizing: border-box;
@@ -1600,6 +1690,23 @@ $ld-fc-black: #353d45;
 
 //모바일~태블릿
 @media (max-width: 320px) {
+    
+    .ld-contents {
+        
+        //풀파티 구매하기
+        .pool-sect {
+            .pool-img-box {
+                .pool-img-txt-box {
+                    p {
+                        &.txt {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
     
     /* 팝업 */
     .ld-popup {
