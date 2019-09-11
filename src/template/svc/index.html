@@ -1,6 +1,9 @@
 @@include('src/template/svc/include/_head.html')
 
     <link href="http://static.ramadapt.co.kr/css/jquery.bxslider.css" rel="stylesheet" />
+    
+    <script async="async" src="https://www.youtube.com/iframe_api?v=3.0.20" id="YTAPI"></script>
+    <script src="http://static.seabay.co.kr/svc/js/jquery.mb.YTPlayer.min.js"></script>
 </head>
 
 <body class="page-home">
@@ -8,6 +11,46 @@
     @@include('src/template/svc/include/_header.html')
 
     <div class="main">
+        <!-- 190910 날씨 -->
+        <div class="weather">
+            <div class="area">
+                <div class="inner">
+                    <span class="s-1">2019.01.22 (화)</span>
+                    <span class="s-2">강릉의 오늘 <span class="t-1">▷</span> 맑음</span>
+                    <span class="s-3"><span class="big">7</span><span class="c">℃</span></span>
+                    <span class="s-4">
+                        <img src="http://img.sampobeach.co.kr/weather/finedust.png" alt="미세먼지">
+                        <span class="txt-dust">미세먼지 - <span class="grade">보통</span></span>
+                    </span>
+                </div>
+                <img src="http://img.sampobeach.co.kr/weather/clear.png" alt="날씨">
+            </div>
+        </div>
+        <!-- //.weather -->
+       
+        <!-- 190910 영상 -->
+        <div class="vid-wrap">
+            <div class="vid-bg"></div>
+            <section class="vid-area m">
+                <div class="vid-box">
+                    <video id="vidM" playsinline="" webkit-playsinline="" preload="" autoplay="" muted="">
+                        <source src="http://img.seabay.co.kr/svc/img/main/seabay_mobile.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </section>
+            <section class="vid-area pc">
+                <section class="vidPc" data-property="{videoURL:'zZojWZtwcPk',containment:'self', showControls:false, autoPlay:true, loop:false, mute:false, startAt:0, opacity:1, addRaster:true, quality:'default', stopMovieOnBlur: false}"></section>
+                <!--<iframe id="vidPc" width="100%" height="100%" src="https://www.youtube.com/embed/zZojWZtwcPk?mute=1&autoplay=1&rel=0&controls=0&showinfo=" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"> </iframe> -->
+               <!-- <script src="https://www.youtube.com/iframe_api"></script>
+                <iframe id="vidPc" width="100%" height="100%" src="https://www.youtube.com/embed/zZojWZtwcPk?mute=1&autoplay=1&rel=0&controls=0&showinfo=" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+            </section>
+            
+            <div class="vid-txt-box">
+                <a href="javascript:;" class="vid-txt" title="영상 닫기"><img src="http://img.seabay.co.kr/svc/img/main/bg_main_txt.png" alt="강릉씨베이호텔 자세한 정보 보기" /></a>
+            </div>
+        </div> 
+        <!-- //.vid-wrap -->
+         
         <section class="slider_section">
             <div class="main_info">
                 <p>A Home away from Home</p>
@@ -101,23 +144,6 @@
                 </div>
             </div>
         </section>
-        
-        <!-- 190905 날씨추가 -->
-        <div class="weather">
-            <div class="area">
-                <div class="inner">
-                    <span class="s-1">2019.01.22 (화)</span>
-                    <span class="s-2">강릉의 오늘 <span class="t-1">▷</span> 맑음</span>
-                    <span class="s-3"><span class="big">7</span><span class="c">℃</span></span>
-                    <span class="s-4">
-                        <img src="http://img.sampobeach.co.kr/weather/finedust.png" alt="미세먼지">
-                        <span class="txt-dust">미세먼지 - <span class="grade">보통</span></span>
-                    </span>
-                </div>
-                <img src="http://img.sampobeach.co.kr/weather/clear.png" alt="날씨">
-            </div>
-        </div>
-        <!-- //.weather -->
 
         <section class="notice-sec">
             <h1 class="sr-only">씨베이호텔 토픽 및 공지사항</h1>

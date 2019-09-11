@@ -19,7 +19,7 @@ module.exports = function () {
 		sass = {
 			src: source + '/sass/**/!(_)*.{scss,sass}',
 			parts: source + '/sass/**/_*.{scss,sass}',
-			dest: development + '/static/css'
+			dest: development + '/static'
 		},
 
 		// Css 경로
@@ -44,10 +44,16 @@ module.exports = function () {
 
 		// etc 경로
 		etc = {
-			src: source + '/!(css|scss|js|img)/**',
+			src: source + '/!(css|static|sass|js|img|template)*/**',
 			dest: development + '/static',
 		},
 
+		// static (씨베이 별도) 경로
+		static = {
+			src: source + '/static/**',
+			dest: development + '/static',
+		},
+		
 		// HTML 옵션
 		htmlbeautify = {
 			"indentSize": 4
@@ -65,6 +71,7 @@ module.exports = function () {
 		js: js,
 		img: img,
 		etc: etc,
+		static: static,
 
 		htmlbeautify: htmlbeautify
 	};
