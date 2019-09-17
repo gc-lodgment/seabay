@@ -68,7 +68,7 @@ function vidFunc(){
     
     $('.vid-wrap').find('.vid-txt').on('click', function(){
         $(this).parents('.vid-wrap').fadeOut();
-        $('header').removeClass('vid');
+        $('.header, .weather').removeClass('vid');
         $('body').css({'overflow': 'auto', 'height': '100%'});
     });
 }
@@ -83,6 +83,10 @@ function vidWH(){
     if( winWid <= '991' ){
         //console.log('m');
         $('#vidM').get(0).load();
+        $('.vid-area.m .vid-box').css({'height' : winHt+'px'}); 
+        /*if( winWid <= '500' ){
+            $('.vid-area.m .vid-box #vidM').css({'margin-left' : '-'+(winWid/2)+'px'}); 
+        }*/
 
         $('.vid-area.m .vid-box').fadeIn(500, function(){
             $('#vidM').get(0).play();
@@ -97,8 +101,10 @@ function vidWH(){
         $('.weather').css({'cursor' : 'pointer'}); 
         $('.vid-wrap, .weather').hover(function(){
             vid.find('.vid-txt-box').addClass('on');
+            $('.weather').addClass('active');
         }, function(){
             vid.find('.vid-txt-box').removeClass('on');
+            $('.weather').removeClass('active');
         });
         
         $(window).load(function(){

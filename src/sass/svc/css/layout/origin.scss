@@ -7175,22 +7175,43 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
         display: none;
     }
     .main .vid-area.m {
+        position: relative;
         display: block;
         background: url(http://img.seabay.co.kr/svc/img/main/bg_main_m.jpg) no-repeat center;
         background-size: cover;
     }
     .main .vid-box {
         position: absolute;
-       // box-sizing: border-box;
+        box-sizing: border-box; 
+        overflow: hidden;
         width: 100%;
-        height: 100%;
+        height: auto;
+        left: 0;
+        top: 0;
+        margin: 0 auto;
+        text-align: center;
+        * {
+            box-sizing: border-box; 
+        }
+    }
+    .main .vid-box #vidM {
+        position: relative;
+        min-width: 100%;
+        min-height: 100%;
+        /* height: 100%; */
+        margin: 0 auto;
+        text-align: center;
     }
     .main .vid-txt-box {
-        width: 90%;
+        position: absolute;
+        width: 100%;
         max-width: 640px;
+        top: 0;
+        left: 0;
     }
     .main .vid-txt-box .vid-txt img {
-        width: 100%;
+        //width: 100%;
+        width: 70%;
     }
 }
 @media (min-width: 992px) {
@@ -7242,6 +7263,10 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
     .main .weather {
         display: none;
     }
+}
+@media (min-width: 992px) {
+    .main .weather.vid {opacity: 0; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; transition: all 1s ease 0s;}
+    .main .weather.vid.active {opacity: 1; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";}
 }
 @media (min-width: 992px) and (max-width: 1200px) {
     .main .weather {width: auto; margin-left: -0; right: 10px;}
