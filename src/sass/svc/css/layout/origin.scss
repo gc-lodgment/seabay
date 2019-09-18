@@ -7164,7 +7164,6 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
     height: 100%;
     margin: 0 auto;
     text-align: center;
-    transition: all 1s ease 0s;
 }
 .main .vid-txt-box .vid-txt {
     display: table-cell;
@@ -7229,13 +7228,19 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
         height: 100%;
         top: 0;
         left: 0;
+        transition: all 0.2s ease 0s;
     }
     .main .vid-txt-box {
         margin-top: 45px;
         opacity: 0;
         -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        transition: all 1s ease 0s;
     }
     .main .vid-txt-box.on {
+        opacity: 1;
+        -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    }
+    .main .vid-txt-box.end {
         opacity: 1;
         -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     }
@@ -7267,6 +7272,7 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
 @media (min-width: 992px) {
     .main .weather.vid {opacity: 0; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; transition: all 1s ease 0s;}
     .main .weather.vid.active {opacity: 1; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";}
+    .main .weather.vid.end {opacity: 1; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";}
 }
 @media (min-width: 992px) and (max-width: 1200px) {
     .main .weather {width: auto; margin-left: -0; right: 10px;}

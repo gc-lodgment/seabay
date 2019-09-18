@@ -1,9 +1,9 @@
 @@include('src/template/svc/include/_head.html')
 
-    <link href="http://static.ramadapt.co.kr/css/jquery.bxslider.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="http://static.ramadapt.co.kr/css/jquery.bxslider.css" />
     
-    <script async="async" src="https://www.youtube.com/iframe_api?v=3.0.20" id="YTAPI"></script>
-    <script src="http://static.seabay.co.kr/svc/js/jquery.mb.YTPlayer.min.js"></script>
+    <!--<script type="text/javascript" src="http://static.seabay.co.kr/svc/js/jquery.mb.YTPlayer.min.js"></script>-->
+    <script type="text/javascript" src="/static/svc/js/jquery.mb.YTPlayer.min.js"></script>
 </head>
 
 <body class="page-home">
@@ -39,7 +39,7 @@
                 </div>
             </section>
             <section class="vid-area pc">
-                <section class="vidPc" data-property="{videoURL:'zZojWZtwcPk',containment:'self', showControls:false, autoPlay:true, loop:false, mute:false, startAt:0, opacity:1, addRaster:true, quality:'default', stopMovieOnBlur: false}"></section>
+                <section id="pcVid" class="vidPc" data-property="{videoURL:'zZojWZtwcPk', containment:'#pcVid', showControls:false, autoPlay:true, loop:false, mute:false, startAt:0, opacity:1, addRaster:true, quality:'default', stopMovieOnBlur: false, showYTLogo: false, addRaster: true}"></section>
             </section>
             
             <div class="vid-txt-box">

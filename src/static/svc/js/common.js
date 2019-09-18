@@ -82,6 +82,8 @@ function vidWH(){
     
     if( winWid <= '991' ){
         //console.log('m');
+        var txtBoxM = $('.vid-txt-box');
+        var txtBoxWid = txtBoxM.width();
         $('#vidM').get(0).load();
         $('.vid-area.m .vid-box').css({'height' : winHt+'px'}); 
         /*if( winWid <= '500' ){
@@ -94,6 +96,8 @@ function vidWH(){
                 $(this).parents('.vid-area.m .vid-box').fadeOut(500);
             });
         });
+        
+        txtBoxM.css({'left' : '50%', 'margin-left' : '-'+(txtBoxWid/2)+'px'})
     }else {
         var myPlayer;
         $("#vidM").stop();
@@ -107,7 +111,7 @@ function vidWH(){
             $('.weather').removeClass('active');
         });
         
-        $(window).load(function(){
+        $(window).ready(function(){
             var isIframe = function () {
                 var a = !1;
                 try {
@@ -125,7 +129,25 @@ function vidWH(){
             myPlayer = $(".vidPc").YTPlayer({align:"center,left"});
         });
 
-        
         vid.find('.vidPc').css({'width' : winWid+'px', 'height' : '100%'}); 
+        
+        
+        $('#pcVid').on("YTPTime", function(e){
+            var currentTime = e.time;
+
+            curTime = $("#pcVid").YTPGetTime(); 
+            allTime = $("#pcVid").YTPGetTotalTime();
+            timeStr = allTime.split(':'); 
+
+            //console.log('time - ', curTime, '/ alltime - ', allTime, timeStr[1]);
+
+            if( curTime == ('00 : '+ (Number(timeStr[1]) -3)) ){
+                //console.log('true')
+                $('#pcVid').css('opacity', '0');
+                $('.vid-txt-box').addClass('end');
+                $('.weather').addClass('end');
+            }
+
+        });
     }
 }
