@@ -141,7 +141,7 @@ function vidWH(){
 
             //console.log('time - ', curTime, '/ alltime - ', allTime, timeStr[1]);
 
-            if( curTime == ('00 : '+ (Number(timeStr[1]) -3)) ){
+            if( curTime == ('00 : '+ (Number(timeStr[1]) -1)) ){
                 //console.log('true')
                 $('#pcVid').css('opacity', '0');
                 $('.vid-txt-box').addClass('end');
