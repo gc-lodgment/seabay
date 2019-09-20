@@ -1,13 +1,14 @@
 $(function() {
 	
-    //vidFunc();
+    vidFunc();
 	
 });
 
-
 /* movie */
 function vidFunc(){
-    $('body').css({'overflow': 'hidden', 'height': '100%'});
+    if( $('.vid-wrap').css('display') == 'block' ){
+        $('body').css({'overflow': 'hidden', 'height': '100%'});
+    }
     
     vidWH();
     $(window).resize(function(){
