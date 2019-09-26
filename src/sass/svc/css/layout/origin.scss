@@ -7219,17 +7219,40 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
     }
     .main .vid-area.pc {
         display: block;
+        top: 0;
         background: url(http://img.seabay.co.kr/svc/img/main/bg_main.jpg) no-repeat center;
         background-size: cover;
     }
-    .main .vid-area.pc .vidPc {
+    .main .vid-area.pc .vid-box {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        margin: 0;
+        //padding-bottom: 56.25%; 
+    }
+    .main .vid-area.pc .vid-box .vidPc {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    @media (min-aspect-ratio: 16/9) {
+      .main .vid-area.pc .vid-box { height: 300%; top: -100%; }
+    }
+    @media (max-aspect-ratio: 16/9) {
+      .main .vid-area.pc .vid-box { width: 300%; left: -100%; }
+    }
+    /*.main .vid-area.pc .vidPc {
         position: absolute;
         width: 100%;
         height: 100%;
         top: 0;
         left: 0;
         transition: all 0.2s ease 0s;
-    }
+    }*/
     .main .vid-txt-box {
         margin-top: 45px;
         opacity: 0;

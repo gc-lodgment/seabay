@@ -3,11 +3,11 @@
     <link rel="stylesheet" type="text/css" href="http://static.ramadapt.co.kr/css/jquery.bxslider.css" />
     
     <!--<script type="text/javascript" src="http://static.seabay.co.kr/svc/js/jquery.mb.YTPlayer.min.js"></script>-->
-    <script type="text/javascript" src="/static/svc/js/jquery.mb.YTPlayer.min_custom.js"></script>
-    
+    <!--<script type="text/javascript" src="/static/svc/js/jquery.mb.YTPlayer.min_custom.js"></script>-->
+    <script src="http://www.youtube.com/player_api"></script>
     <script type="text/javascript" src="/static/svc/js/init.js"></script>
-    <!--<script type="text/javascript" src="/static/svc/js/init_player.js"></script>-->
-</head> 
+    <script type="text/javascript" src="/static/svc/js/init_player.js"></script>
+</head>  
 
 <body class="page-home">
 
@@ -42,9 +42,14 @@
                 </div>
             </section>
             <section class="vid-area pc">
-                <section id="pcVid" class="vidPc" data-property="{videoURL:'zZojWZtwcPk', containment:'#pcVid', showControls:false, autoPlay:true, loop:false, mute:true, startAt:0, opacity:1, addRaster:true, quality:'default', stopMovieOnBlur: false, showYTLogo: false, addRaster: true}"></section>
+                <!-- {videoURL: 'zZojWZtwcPk' / -5gWcHBdXWE --> 
+                <!--<section id="pcVid" class="vidPc" data-property="{videoURL:'-5gWcHBdXWE', containment:'#pcVid', showControls:false, autoPlay:true, loop:false, mute:true, startAt:0, opacity:1, addRaster:true, quality:'default', stopMovieOnBlur: false, showYTLogo: false, addRaster: true}"></section>-->
+                <section class="vid-box">  
+                    <!--<div id="player" class="vidPc"></div>-->
+                    <iframe id="player" class="vidPc" src="https://www.youtube.com/embed/NupIKt3LM1Q?rel=0&enablejsapi=1&autoplay=1" frameborder="0" allow="autoplay"></iframe>
+                </section> 
             </section>
-            
+             
             <div class="vid-txt-box">
                 <a href="javascript:;" class="vid-txt" title="영상 닫기"><img src="http://img.seabay.co.kr/svc/img/main/bg_main_txt.png" alt="강릉씨베이호텔 자세한 정보 보기" /></a>
             </div>
