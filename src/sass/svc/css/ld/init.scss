@@ -1473,9 +1473,12 @@ $ld-fc-black: #353d45;
                                 }
                                 .ip-txt {
                                     width: 100%;
-                                    padding: 10px;
+                                    padding: 4px 5px 4px 7px;
+                                    //padding: 0 10px;
+                                    //line-height: $ht;
                                     border: 1px solid #999;
-                                    border-radius: 4px;
+                                    border-radius: 4px; 
+                                    background: #fff;
 
                                     &.w-1 {
                                         width: 50px;
