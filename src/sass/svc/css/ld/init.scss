@@ -1695,6 +1695,11 @@ $ld-fc-black: #353d45;
 @media (max-width: 320px) {
     
     .ld-contents {
+    
+        //비주얼
+        .visual {
+            padding: 85px 0 20px;
+        }
         
         //풀파티 구매하기
         .pool-sect {
