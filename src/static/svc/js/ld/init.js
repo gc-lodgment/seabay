@@ -54,10 +54,10 @@ function scrollFn() {
             var tabH = $('#ld-tab').height(); 
             
             if( scr <= (visualTop+tabH)) { 
-                console.log('up');
+                //console.log('up');
                 $('#ld-tab').removeClass('on').css({'bottom' : 'auto', 'margin-bottom' : '0'});
             }else {
-                console.log('down'); 
+                //console.log('down'); 
                 //$('#ld-tab').addClass('on').css({'bottom' : '-'+tabH+'px'}).animate({'bottom' : 0+'px'}, 100);
                 $('#ld-tab').addClass('on').css({'bottom' : '-'+tabH+'px', 'margin-bottom' : tabH+'px'});
             }
