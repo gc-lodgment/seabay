@@ -2,7 +2,6 @@
 $(function() {
     
     vidWH();
-    vidPC();
     
 	$(window).on('resize', function () {
         vidWH();
@@ -25,13 +24,15 @@ function vidWH(){
     var winWid = $(window).width(),
         winHt = $(window).height(),
         vid = $('.vid-wrap');
+    var txtBoxM = $('.vid-txt-box');
+    var txtBoxWid = txtBoxM.width();
     
     vid.css({'width' : winWid+'px', 'height' : winHt+'px'}); 
     
     if( winWid <= '991' ){
         //console.log('m');
-        var txtBoxM = $('.vid-txt-box');
-        var txtBoxWid = txtBoxM.width();
+        
+        $("#vidPc").stop();
         $('#vidM').get(0).load();
         $('.vid-area.m .vid-box').css({'height' : winHt+'px'}); 
 
@@ -42,7 +43,7 @@ function vidWH(){
             });
         });
         
-        txtBoxM.css({'left' : '50%', 'margin-left' : '-'+(txtBoxWid/2)+'px'})
+        txtBoxM.css({'left' : '50%', 'margin-left' : '-'+(txtBoxWid/2)+'px'});
     }else {
         //var myPlayer;
         $("#vidM").stop();
@@ -55,48 +56,9 @@ function vidWH(){
             vid.find('.vid-txt-box').removeClass('on');
             $('.weather').removeClass('active');
         });
+        
+        txtBoxM.css({'left' : '0', 'margin-left' : 'auto'});
         //vid.find('.vidPc').css({'width' : winWid+'px', 'height' : '100%'}); 
         
     }
-}
-
-function vidPC(){
-    var myPlayer, curTime, allTime, timeStr;
-
-$(window).ready(function(){
-    var isIframe = function () {
-        var a = !1;
-        try {
-            self.location.href != top.location.href && (a = !0)
-        } catch (b) {
-            a = !0
-        }
-        return a
-    };
-
-    var options = {
-        playOnlyIfVisible: true
-    };
-
-    myPlayer = $(".vidPc").YTPlayer({align:"center,left"});
-
-
-    $('#pcVid').on("YTPTime", function(e){
-        var currentTime = e.time;
-
-        curTime = $("#pcVid").YTPGetTime(); 
-        allTime = $("#pcVid").YTPGetTotalTime();
-        timeStr = allTime.split(':'); 
-
-        //console.log('time - ', curTime, '/ alltime - ', allTime, timeStr[1]);
-
-        if( curTime == ('00 : '+ (Number(timeStr[1]) -2)) ){
-            //console.log('true')
-            $('#pcVid').css('opacity', '0');
-            $('.vid-txt-box').addClass('end');
-            $('.weather').addClass('end');
-        }
-
-    });
-});
 }

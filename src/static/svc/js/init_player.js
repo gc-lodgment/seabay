@@ -26,7 +26,7 @@ function onYouTubeIframeAPIReady() {
 }
 
 function onPlayerReady(event) {
-    player.mute();
+   // player.mute();
     event.target.playVideo();
 }
 
@@ -47,7 +47,7 @@ function onPlayerStateChange(event) {
         $('.weather').addClass('end');
     }else if(playerState == '시작되지 않음'){
         //console.log('yet');
-        player.mute();
+        player.mute(); 
         player.playVideo();
     }
 }
