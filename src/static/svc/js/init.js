@@ -32,9 +32,6 @@ function vidWH(){
     
     if( winWid <= '991' ){
         //console.log('m');
-        
-        $("#vidPc").stop();
-        $('#vidM').get(0).load();
         $('.vid-area.m .vid-box').css({'height' : winHt+'px'}); 
 
         $('.vid-area.m .vid-box').fadeIn(500, function(){
@@ -46,9 +43,8 @@ function vidWH(){
         
         txtBoxM.css({'left' : '50%', 'margin-left' : '-'+(txtBoxWid/2)+'px'});
     }else {
+        //console.log('pc');
         //var myPlayer;
-        $("#vidM").stop();
-        
         $('.weather').css({'cursor' : 'pointer'}); 
         $('.vid-wrap, .weather').hover(function(){
             vid.find('.vid-txt-box').addClass('on');
