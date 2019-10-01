@@ -14,6 +14,7 @@ $(function() {
 	
     //텍스트 클릭시 영상 닫기
     $('.vid-wrap').find('.vid-txt').on('click', function(){
+        $(this).parents('.vid-wrap').find('.vid-area').remove(); //영상 제거
         $(this).parents('.vid-wrap').fadeOut();
         $('.header, .weather').removeClass('vid');
         $('body').css({'overflow': 'auto', 'height': '100%'});
