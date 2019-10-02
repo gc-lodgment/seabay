@@ -25,7 +25,8 @@ function endVid(){
 
         
     }else {
-        var pchtml;
+        var pchtml = '<iframe id="vidPc" class="vidPc" src="https://www.youtube.com/embed/NupIKt3LM1Q?rel=0&amp;controls=0&amp;autoplay=1&modestbranding=1" allow="autoplay; encrypted-media" frameborder="0" allowfullscreen=""></iframe>',
+            pchtmlApi = '<iframe id="player" class="vidPc" src="https://www.youtube.com/embed/NupIKt3LM1Q?rel=0&enablejsapi=1&autoplay=1&mute=1" allow="autoplay; encrypted-media" frameborder="0" allowfullscreen=""></iframe>';
         
         $("#vidM").remove(); 
         $("#vidPc, #player").remove(); 
@@ -33,24 +34,14 @@ function endVid(){
         //console.log('pc');
         if( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) {
             //console.log('IE');
-            pchtml = '<iframe id="vidPc" class="vidPc" src="https://www.youtube.com/embed/NupIKt3LM1Q?rel=0&amp;controls=0&amp;autoplay=1&modestbranding=1" allow="autoplay; encrypted-media" frameborder="0" allowfullscreen=""></iframe>';
+            $('.vid-area.pc .vid-box').append(pchtml);
             
-            var runtime = 17000; //영상 길이
-            var delay = 1000;
-            var time = runtime + delay;
-            
-            setTimeout(function () {
-                //console.log('ended');
-                $('#vidPc').fadeOut();
-                //$('#player').css('opacity', '0');
-                $('.vid-txt-box').addClass('end');
-                $('.weather').addClass('end');
-            }, time);
+            movieTime();
         }else if ( (agent.indexOf("chrome") != -1) || (agent.indexOf("safari") != -1) || (agent.indexOf("whale") != -1) ){
             //console.log("SAFARI");
             if( (agent.indexOf("chrome") != -1) || (agent.indexOf("whale") != -1) ){
                 //console.log('chrome, whale');
-                pchtml = '<iframe id="player" class="vidPc" src="https://www.youtube.com/embed/NupIKt3LM1Q?rel=0&enablejsapi=1&autoplay=1&mute=1" allow="autoplay; encrypted-media" frameborder="0" allowfullscreen=""></iframe>';
+                $('.vid-area.pc .vid-box').append(pchtmlApi);
             }else {
                 //console.log('safari');
                 $("#vidPc").remove(); 
@@ -58,11 +49,24 @@ function endVid(){
                 $('.weather').addClass('end');
             }
         }else {
-            console.log('other');
-            pchtml = '<iframe id="player" class="vidPc" src="https://www.youtube.com/embed/NupIKt3LM1Q?rel=0&enablejsapi=1&autoplay=1&mute=1" allow="autoplay; encrypted-media" frameborder="0" allowfullscreen=""></iframe>';
-        }
+            //console.log('other');
             
-        $('.vid-area.pc .vid-box').append(pchtml);
+            $('.vid-area.pc .vid-box').append(pchtmlApi);
+        }
     }
+}
+
+function movieTime(){
+    var runtime = 17000; //영상 길이
+    var delay = 1000;
+    var time = runtime + delay;
+
+    setTimeout(function () {
+        //console.log('ended');
+        $('#vidPc').fadeOut();
+        //$('#player').css('opacity', '0');
+        $('.vid-txt-box').addClass('end');
+        $('.weather').addClass('end');
+    }, time);
 }
 
