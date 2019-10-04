@@ -4547,9 +4547,31 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
 .sub .item_info2 .info_wrap .info_content {
     display: table-cell;
     padding-bottom: 2px;
-    padding-top: 9px;
+    padding-top: 9px; 
     word-break: keep-all;
 }
+
+.sub .item_info .info_wrap .info_content .info_content_txt,
+.sub .item_info2 .info_wrap .info_content .info_content_txt {
+    display: table;
+    margin: 0;
+    padding: 0;
+}
+
+.sub .item_info .info_wrap .info_content .info_content_txt span,
+.sub .item_info2 .info_wrap .info_content .info_content_txt span {
+    display: table-cell;
+    margin: 0;
+    padding: 0 0 0 4px;
+    word-break: keep-all;
+}
+
+.sub .item_info .info_wrap .info_content .info_content_txt .info-txt-w1,
+.sub .item_info2 .info_wrap .info_content .info_content_txt .info-txt-w1 {
+    min-width: 67px;
+    padding-left: 0;
+}
+
 
 @media (max-width: 480px) {
 
