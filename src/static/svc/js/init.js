@@ -5,7 +5,7 @@ $(function() {
     
 	$(window).on('resize', function () {
         vidWH();
-	});
+	}).resize();
     
     //영상 있을때만 body 고정
     if( $('.vid-wrap').css('display') == 'block' ){
@@ -26,12 +26,13 @@ function vidWH(){
         winHt = $(window).height(),
         vid = $('.vid-wrap');
     var txtBoxM = $('.vid-txt-box');
-    var txtBoxWid = txtBoxM.width();
     
     vid.css({'width' : winWid+'px', 'height' : winHt+'px'}); 
     
     if( winWid <= '991' ){
         //console.log('m');
+        var txtBoxWid = vid.width();
+        
         $('.vid-area.m .vid-box').css({'height' : winHt+'px'}); 
 
         $('.vid-area.m .vid-box').fadeIn(500, function(){
