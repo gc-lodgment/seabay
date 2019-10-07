@@ -1,24 +1,24 @@
 @@include('src/template/svc/include/_head.html')
 
-    <link rel="stylesheet" type="text/css" href="http://static.ramadapt.co.kr/css/jquery.bxslider.css" />
-    
-    <!--<script type="text/javascript" src="http://static.seabay.co.kr/svc/js/jquery.mb.YTPlayer.min.js"></script>-->
-    <!--<script type="text/javascript" src="/static/svc/js/jquery.mb.YTPlayer.min_custom.js"></script>-->
-    <script src="http://www.youtube.com/player_api"></script>
-    <script type="text/javascript" src="/static/svc/js/init.js"></script>
-    <!--<script type="text/javascript" src="/static/svc/js/init_test.js"></script>-->
-    <script type="text/javascript" src="/static/svc/js/init_vid.js"></script>
-    <script type="text/javascript" src="/static/svc/js/init_player.js"></script> 
-    <!-- <script type="text/javascript" src="http://static.seabay.co.kr/svc/js/init_player.js"></script> -->
-</head>  
+<link rel="stylesheet" type="text/css" href="http://static.ramadapt.co.kr/css/jquery.bxslider.css" />
+
+<!--<script type="text/javascript" src="http://static.seabay.co.kr/svc/js/jquery.mb.YTPlayer.min.js"></script>-->
+<!--<script type="text/javascript" src="/static/svc/js/jquery.mb.YTPlayer.min_custom.js"></script>-->
+<script src="http://www.youtube.com/player_api"></script>
+<script type="text/javascript" src="/static/svc/js/init.js"></script>
+<!--<script type="text/javascript" src="/static/svc/js/init_test.js"></script>-->
+<script type="text/javascript" src="/static/svc/js/init_vid.js"></script>
+<script type="text/javascript" src="/static/svc/js/init_player.js"></script>
+<!-- <script type="text/javascript" src="http://static.seabay.co.kr/svc/js/init_player.js"></script> -->
+</head>
 
 <body class="page-home">
 
-    @@include('src/template/svc/include/_header.html')  
- 
+    @@include('src/template/svc/include/_header.html')
+
     <div class="main">
-        <!-- 190917 날씨 추가 (190905 전달본) : 멀티클래스 추가 --> 
-        <div class="weather vid">  
+        <!-- 190917 날씨 추가 (190905 전달본) : 멀티클래스 추가 -->
+        <div class="weather vid">
             <div class="area">
                 <div class="inner">
                     <span class="s-1">2019.01.22 (화)</span>
@@ -33,76 +33,62 @@
             </div>
         </div>
         <!-- //.weather -->
-       
-        <!-- 190917 영상 추가 --> 
+
+        <!-- 190917 영상 추가 -->
         <div class="vid-wrap">
             <div class="vid-bg"></div>
-            <section class="vid-area m"> 
+            <section class="vid-area m">
                 <div class="vid-box">
                     <video id="vidM" playsinline="" webkit-playsinline="" preload="" autoplay="" muted="">
                         <source src="http://img.seabay.co.kr/svc/img/main/seabay_mobile.mp4" type="video/mp4" />
                     </video>
-                </div> 
-            </section>      
-            <section class="vid-area pc"> 
-                <!-- {videoURL: 'zZojWZtwcPk' / -5gWcHBdXWE --> 
+                </div>
+            </section>
+            <section class="vid-area pc">
+                <!-- {videoURL: 'zZojWZtwcPk' / -5gWcHBdXWE -->
                 <!--<section id="pcVid" class="vidPc" data-property="{videoURL:'-5gWcHBdXWE', containment:'#pcVid', showControls:false, autoPlay:true, loop:false, mute:true, startAt:0, opacity:1, addRaster:true, quality:'default', stopMovieOnBlur: false, showYTLogo: false, addRaster: true}"></section>-->
-                <section class="vid-box">   
+                <section class="vid-box">
                     <!--<div id="player" class="vidPc"></div>-->
                     <!--<video id="vidPc" class="vidPc" playsinline="" webkit-playsinline="" preload="" autoplay="">
                         <source src="http://img.seabay.co.kr/svc/img/main/seabay_pc.mp4" type="video/mp4" />
-                    </video>--> 
+                    </video>-->
                     <!--?rel=0&enablejsapi=1&autoplay=1   //  &amp;playlist=NupIKt3LM1Q&amp;loop=1  id="player" -->
                     <!--<iframe id="player" class="vidPc" src="https://www.youtube.com/embed/NupIKt3LM1Q?rel=0&enablejsapi=1&autoplay=1&mute=1" allow="autoplay; encrypted-media" frameborder="0" allowfullscreen=""></iframe>-->
-                </section>    
-            </section>    
-               
-            <div class="vid-txt-box"> 
+                </section>
+            </section>
+
+            <div class="vid-txt-box">
                 <a href="javascript:;" class="vid-txt"><img src="http://img.seabay.co.kr/svc/img/main/bg_main_txt.png" alt="강릉씨베이호텔 자세한 정보 보기" /></a>
-            </div> 
-             
-        </div>  
-        <!-- //.vid-wrap -->  
-         
+            </div>
+
+        </div>
+        <!-- //.vid-wrap -->
+
         <section class="slider_section">
             <div class="main_info">
                 <p>A Home away from Home</p>
-            </div> 
+            </div>
             <div id="slider_main" class="slider_container smain">
                 <div data-u="slides" class="slides">
-                    <div><img data-u="image" class="main-visibility"
-                            src="http://img.seabay.co.kr/svc/img/main/main015519.jpg" alt="01" /></div>
-                    <div><img data-u="image" class="main-visibility"
-                            src="http://img.seabay.co.kr/svc/img/main/main025519.jpg" alt="02" /></div>
-                    <div><img data-u="image" class="main-visibility"
-                            src="http://img.seabay.co.kr/svc/img/main/main035519.jpg" alt="03" /></div>
-                    <div><img data-u="image" class="main-visibility"
-                            src="http://img.seabay.co.kr/svc/img/main/main045519.jpg" alt="04" /></div>
-                    <div><img data-u="image" class="main-visibility"
-                            src="http://img.seabay.co.kr/svc/img/main/main055519.jpg" alt="05" /></div>
+                    <div><img data-u="image" class="main-visibility" src="http://img.seabay.co.kr/svc/img/main/main015519.jpg" alt="01" /></div>
+                    <div><img data-u="image" class="main-visibility" src="http://img.seabay.co.kr/svc/img/main/main025519.jpg" alt="02" /></div>
+                    <div><img data-u="image" class="main-visibility" src="http://img.seabay.co.kr/svc/img/main/main035519.jpg" alt="03" /></div>
+                    <div><img data-u="image" class="main-visibility" src="http://img.seabay.co.kr/svc/img/main/main045519.jpg" alt="04" /></div>
+                    <div><img data-u="image" class="main-visibility" src="http://img.seabay.co.kr/svc/img/main/main055519.jpg" alt="05" /></div>
                 </div>
-                <span u="arrowleft" class="jssor-sprite arow-left"
-                    style="width: 21px; height: 32px; top: 200px; left: 20px;"></span>
-                <span u="arrowright" class="jssor-sprite arow-right"
-                    style="width: 21px; height: 32px; top: 200px; right: 20px"></span>
+                <span u="arrowleft" class="jssor-sprite arow-left" style="width: 21px; height: 32px; top: 200px; left: 20px;"></span>
+                <span u="arrowright" class="jssor-sprite arow-right" style="width: 21px; height: 32px; top: 200px; right: 20px"></span>
             </div>
             <div id="slider_mmain" class="slider_container mob">
                 <div data-u="slides" class="slides">
-                    <div><img data-u="image" class="main-visibility"
-                            src="http://img.seabay.co.kr/svc/img/main/mmain015519.jpg" alt="01" /></div>
-                    <div><img data-u="image" class="main-visibility"
-                            src="http://img.seabay.co.kr/svc/img/main/mmain025519.jpg" alt="02" /></div>
-                    <div><img data-u="image" class="main-visibility"
-                            src="http://img.seabay.co.kr/svc/img/main/mmain035519.jpg" alt="03" /></div>
-                    <div><img data-u="image" class="main-visibility"
-                            src="http://img.seabay.co.kr/svc/img/main/mmain045519.jpg" alt="04" /></div>
-                    <div><img data-u="image" class="main-visibility"
-                            src="http://img.seabay.co.kr/svc/img/main/mmain055519.jpg" alt="05" /></div>
+                    <div><img data-u="image" class="main-visibility" src="http://img.seabay.co.kr/svc/img/main/mmain015519.jpg" alt="01" /></div>
+                    <div><img data-u="image" class="main-visibility" src="http://img.seabay.co.kr/svc/img/main/mmain025519.jpg" alt="02" /></div>
+                    <div><img data-u="image" class="main-visibility" src="http://img.seabay.co.kr/svc/img/main/mmain035519.jpg" alt="03" /></div>
+                    <div><img data-u="image" class="main-visibility" src="http://img.seabay.co.kr/svc/img/main/mmain045519.jpg" alt="04" /></div>
+                    <div><img data-u="image" class="main-visibility" src="http://img.seabay.co.kr/svc/img/main/mmain055519.jpg" alt="05" /></div>
                 </div>
-                <span u="arrowleft" class="jssor-sprite arow-left"
-                    style="width: 21px; height: 32px; top: 200px; left: 20px;"></span>
-                <span u="arrowright" class="jssor-sprite arow-right"
-                    style="width: 21px; height: 32px; top: 200px; right: 20px"></span>
+                <span u="arrowleft" class="jssor-sprite arow-left" style="width: 21px; height: 32px; top: 200px; left: 20px;"></span>
+                <span u="arrowright" class="jssor-sprite arow-right" style="width: 21px; height: 32px; top: 200px; right: 20px"></span>
             </div>
         </section>
         <section class="body_section">
@@ -115,15 +101,13 @@
                             </li>
                             <li>
                                 <div class="date_input">
-                                    <input type="input" name="checkIn" class="datepicker_in" value="2019-06-18"
-                                        placeholder="Check in" readonly />
+                                    <input type="input" name="checkIn" class="datepicker_in" value="2019-06-18" placeholder="Check in" readonly />
                                     <i class="icon-12"></i>
                                 </div>
                             </li>
                             <li>
                                 <div class="date_input">
-                                    <input type="input" name="checkOut" class="datepicker_ot" value="2019-06-19"
-                                        placeholder="Check out" readonly />
+                                    <input type="input" name="checkOut" class="datepicker_ot" value="2019-06-19" placeholder="Check out" readonly />
                                     <i class="icon-12"></i>
                                 </div>
                             </li>
@@ -234,7 +218,7 @@
             <h1 class="sr-only">객실룸 상품 목록</h1>
             <div class="group">
                 <div class="rooms-wrap">
-                   <!-- 190719 객실상품 목록 변경 및 추가 // 상세페이지 리뉴얼 -->
+                    <!-- 190719 객실상품 목록 변경 및 추가 // 상세페이지 리뉴얼 -->
                     <ul class="rooms-list cf">
                         <li class="rooms-item">
                             <a href="./rooms/detail_new/superior_db.html" class="link">
@@ -460,33 +444,29 @@
     </div>
 
     <!-- 팝업 -->
-    <!-- <div class="event_pop">
+    <div class="event_pop">
         <div class="top">
             <label><input type="checkbox" /> 12시간 동안 보지않기</label>
             <button type="button"><i class="icon-29"></i></button>
         </div>
         <div class="pop">
-            <div id="slider_pop" class="slider_container pop">
+            <div class="slider_container pop">
                 <div data-u="slides" class="slides">
                     <div>
-                        <img data-u="image"
-                            src="http://img.seabay.co.kr/svc/fil/Board/1500/477503d947581c7ee978d70c3b617eb5.jpg"
-                            title="수영장 안내" />
+                        <img data-u="image" src="http://img.seabay.co.kr/svc/fil/Board/1500/477503d947581c7ee978d70c3b617eb5.jpg" title="수영장 안내" />
                     </div>
                 </div>
-                <span u="arrowleft" class="jssor-sprite arow-left"
-                    style="width: 21px; height: 32px; top: 200px; left: 20px;"></span>
-                <span u="arrowright" class="jssor-sprite arow-right"
-                    style="width: 21px; height: 32px; top: 200px; right: 20px"></span>
+                <!-- <span u="arrowleft" class="jssor-sprite arow-left" style="width: 21px; height: 32px; top: 200px; left: 20px;"></span>
+                <span u="arrowright" class="jssor-sprite arow-right" style="width: 21px; height: 32px; top: 200px; right: 20px"></span> -->
             </div>
         </div>
-    </div> -->
+    </div>
 
     @@include('src/template/svc/include/_footer.html')
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script>
-        $(function() {
+        $(function () {
             $(".fnBxSlider").bxSlider({
                 // mode: 'fade',
                 auto: true,

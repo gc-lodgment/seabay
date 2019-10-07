@@ -1,8 +1,15 @@
 @charset "utf-8";
 
-.br_sub {content: ''; display: block; height: 10px;}
+.br_sub {
+    content: '';
+    display: block;
+    height: 10px;
+}
+
 @media (min-width: 992px) {
-    .br_sub {display: none;}
+    .br_sub {
+        display: none;
+    }
 }
 
 .dd {
@@ -2719,7 +2726,7 @@ a:hover {
 
 @media (max-width: 600px) {
     .event_pop {
-        top: 20px;
+        top: 40px;
     }
 }
 
@@ -2780,10 +2787,18 @@ a:hover {
     cursor: pointer !important
 }
 
-.event_pop .pop .slider_container.pop,
+// .event_pop .pop .slider_container.pop,
 .event_pop .pop .slider_container.pop .slides {
+    // width: 450px;
+    // height: 700px;
+    position: relative;
     width: 450px;
-    height: 700px;
+    max-width: 100%;
+    height: auto;
+}
+
+.event_pop .pop .slider_container.pop .slides>div>img {
+    max-width: 100%;
 }
 
 .event_pop .pop .jssor-sprite.arow-left {
@@ -3071,6 +3086,7 @@ header .logo_m {
     margin: 0 auto;
     text-align: center;
 }
+
 header .top_logo_c {
     display: inline-block;
     position: relative;
@@ -3084,7 +3100,8 @@ header .top_logo_c {
     margin-left: -45px; */
     /* background: url('http://img.seabay.co.kr/svc/img/symbol/m_top_logo.png') no-repeat center / 90px; */
 }
-header .top_logo_c > img {
+
+header .top_logo_c>img {
     width: auto;
     height: 30px;
 }
@@ -3467,6 +3484,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
     .main .slider_section {
         margin-top: 0;
     }
+
     .main .slider_section .main_info {
         width: 100%
     }
@@ -4459,6 +4477,7 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
         font-size: 12px
     }
 }
+
 @media (max-width: 320px) {
     .sub .sub_top_menu .menu_wrap .menu_item a {
         font-size: 11px;
@@ -4547,7 +4566,7 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
 .sub .item_info2 .info_wrap .info_content {
     display: table-cell;
     padding-bottom: 2px;
-    padding-top: 9px; 
+    padding-top: 9px;
     word-break: keep-all;
 }
 
@@ -5147,6 +5166,7 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
     .value_map .value_map_info_item .value_map_info_item_wrap table td {
         padding: 3px
     }
+
     .value_map .value_map_info_item .value_map_info_item_wrap .img-landing img {
         width: 100%;
     }
@@ -6412,12 +6432,14 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
     text-align: center;
     font-size: 0;
 }
+
 .room_detail .sub_top_menu .menu_wrap .menu_item {
     display: inline-block;
     min-width: 10px;
     width: 17%
 }
-.room_detail .sub_top_menu .menu_wrap + .menu_wrap {
+
+.room_detail .sub_top_menu .menu_wrap+.menu_wrap {
     margin-top: 10px;
 }
 
@@ -6425,6 +6447,7 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
     .room_detail .sub_top_menu .menu_wrap {
         text-align: left;
     }
+
     .room_detail .sub_top_menu .menu_wrap .menu_item {
         min-width: 10px;
         width: 50%;
@@ -6435,10 +6458,11 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
         text-align: center;
         font-size: 13px
     }
-    .room_detail .sub_top_menu .menu_wrap + .menu_wrap {
+
+    .room_detail .sub_top_menu .menu_wrap+.menu_wrap {
         margin-top: 0px;
     }
-    
+
 }
 
 @media (max-width: 767px) {
@@ -6831,6 +6855,7 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
     position: absolute;
     left: 0
 }
+
 .room_detail .detail .box_left .description .cont .c_list li.dot-no:before,
 .room_detail .detail .box_left .policies .cont .c_list li.dot-no:before {
     content: '';
@@ -6860,12 +6885,15 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
     line-height: 0;
     text-align: center;
 }
+
 .park .link-landing {
     display: inline-block;
 }
-.park .img-landing > img {
+
+.park .img-landing>img {
     width: auto;
 }
+
 @media (max-width: 767px) {
     .park .img-landing img {
         width: 100%;
@@ -7163,6 +7191,7 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
     left: 0;
     background: #fff;
 }
+
 .main .vid-bg {
     z-index: 99996;
     position: absolute;
@@ -7171,6 +7200,7 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
     height: 100%;
     background: url(http://img.seabay.co.kr/svc/img/main/bg_main_re.png) repeat;
 }
+
 .main .vid-area {
     z-index: 99994;
     position: absolute;
@@ -7178,6 +7208,7 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
     width: 100%;
     height: 100%;
 }
+
 .main .vid-txt-box {
     z-index: 99997;
     position: relative;
@@ -7187,23 +7218,27 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
     margin: 0 auto;
     text-align: center;
 }
+
 .main .vid-txt-box .vid-txt {
     display: table-cell;
     vertical-align: middle;
 }
+
 @media (max-width: 991px) {
     .main .vid-area.pc {
         display: none;
     }
+
     .main .vid-area.m {
         position: relative;
         display: block;
         background: url(http://img.seabay.co.kr/svc/img/main/bg_main_m.jpg) no-repeat center;
         background-size: cover;
     }
+
     .main .vid-box {
         position: absolute;
-        box-sizing: border-box; 
+        box-sizing: border-box;
         overflow: hidden;
         width: 100%;
         height: auto;
@@ -7211,10 +7246,12 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
         top: 0;
         margin: 0 auto;
         text-align: center;
+
         * {
-            box-sizing: border-box; 
+            box-sizing: border-box;
         }
     }
+
     .main .vid-box #vidM {
         position: relative;
         min-width: 100%;
@@ -7223,6 +7260,7 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
         margin: 0 auto;
         text-align: center;
     }
+
     .main .vid-txt-box {
         position: absolute;
         width: 100%;
@@ -7230,21 +7268,25 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
         top: 0;
         left: 0;
     }
+
     .main .vid-txt-box .vid-txt img {
         //width: 100%;
         width: 70%;
     }
 }
+
 @media (min-width: 992px) {
     .main .vid-area.m {
         display: none;
     }
+
     .main .vid-area.pc {
         display: block;
         top: 0;
         background: url(http://img.seabay.co.kr/svc/img/main/bg_main.jpg) no-repeat center;
         background-size: cover;
     }
+
     .main .vid-area.pc .vid-box {
         position: relative;
         overflow: hidden;
@@ -7254,6 +7296,7 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
         margin: 0;
         //padding-bottom: 56.25%; 
     }
+
     .main .vid-area.pc .vid-box .vidPc {
         position: absolute;
         top: 0;
@@ -7261,12 +7304,21 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
         width: 100%;
         height: 100%;
     }
+
     @media (min-aspect-ratio: 16/9) {
-      .main .vid-area.pc .vid-box { height: 300%; top: -100%; }
+        .main .vid-area.pc .vid-box {
+            height: 300%;
+            top: -100%;
+        }
     }
+
     @media (max-aspect-ratio: 16/9) {
-      .main .vid-area.pc .vid-box { width: 300%; left: -100%; }
+        .main .vid-area.pc .vid-box {
+            width: 300%;
+            left: -100%;
+        }
     }
+
     /*.main .vid-area.pc .vidPc {
         position: absolute;
         width: 100%;
@@ -7278,54 +7330,152 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
     .main .vid-txt-box {
         margin-top: 45px;
         opacity: 0;
-        -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
         transition: all 1s ease 0s;
     }
+
     .main .vid-txt-box.on {
         opacity: 1;
-        -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     }
+
     .main .vid-txt-box.end {
         opacity: 1;
-        -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     }
 }
 
 
 /* 날씨 정보 */
-.main .weather {z-index: 99992; position: absolute; width: 1140px; top: 180px; left: 50%; margin-left: -510px;  line-height: 1.2; text-align: left;}
-.main .weather.on {z-index: 99;}
-.main .weather .area {position: absolute; right: 5px;/* height: 96px;*/ box-sizing: border-box; }
-.main .weather .area [class*=s-] {display: block; color: #fff; font-size: 17px; }
-.main .weather .area .inner {position: relative; float: right; }
-.main .weather .area img {position: relative; float: right; }
-.main .weather .area .s-1 {line-height: 1; }
-.main .weather .area .s-2 {margin-top: 3px; font-weight: 700; }
-.main .weather .area .s-2 .t-1 {position: relative; top: -1px; }
-.main .weather .area .s-3 {font-size: 27px; }
-.main .weather .area .s-4 {font-size: 14px !important; font-weight: 700; padding-left: 3px;}
-.main .weather .area .s-4 > * {vertical-align: middle;}
-.main .weather .area .s-4 img {position: relative !important; float: none !important;}
-.main .weather .area .s-3 .big {font-size: 40px; }
-.main .weather .area .s-3 .c {font-family: "Noto Sans KR"; }
+.main .weather {
+    z-index: 99992;
+    position: absolute;
+    width: 1140px;
+    top: 180px;
+    left: 50%;
+    margin-left: -510px;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.main .weather.on {
+    z-index: 99;
+}
+
+.main .weather .area {
+    position: absolute;
+    right: 5px;
+    /* height: 96px;*/
+    box-sizing: border-box;
+}
+
+.main .weather .area [class*=s-] {
+    display: block;
+    color: #fff;
+    font-size: 17px;
+}
+
+.main .weather .area .inner {
+    position: relative;
+    float: right;
+}
+
+.main .weather .area img {
+    position: relative;
+    float: right;
+}
+
+.main .weather .area .s-1 {
+    line-height: 1;
+}
+
+.main .weather .area .s-2 {
+    margin-top: 3px;
+    font-weight: 700;
+}
+
+.main .weather .area .s-2 .t-1 {
+    position: relative;
+    top: -1px;
+}
+
+.main .weather .area .s-3 {
+    font-size: 27px;
+}
+
+.main .weather .area .s-4 {
+    font-size: 14px !important;
+    font-weight: 700;
+    padding-left: 3px;
+}
+
+.main .weather .area .s-4>* {
+    vertical-align: middle;
+}
+
+.main .weather .area .s-4 img {
+    position: relative !important;
+    float: none !important;
+}
+
+.main .weather .area .s-3 .big {
+    font-size: 40px;
+}
+
+.main .weather .area .s-3 .c {
+    font-family: "Noto Sans KR";
+}
 
 @media (max-width: 991px) {
     .main .weather {
         display: none;
     }
 }
+
 @media (min-width: 992px) {
-    .main .weather.vid {opacity: 0; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; transition: all 1s ease 0s;}
-    .main .weather.vid.active {opacity: 1; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";}
-    .main .weather.vid.end {opacity: 1; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";}
+    .main .weather.vid {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        transition: all 1s ease 0s;
+    }
+
+    .main .weather.vid.active {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    }
+
+    .main .weather.vid.end {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    }
 }
+
 @media (min-width: 992px) and (max-width: 1200px) {
-    .main .weather {width: auto; margin-left: -0; right: 10px;}
-    .main .weather .area [class*=s-] {font-size: 15px; }
-    .main .weather .area .s-3 {font-size: 25px; }
-    .main .weather .area .s-4 {font-size: 13px !important;}
-    .main .weather .area .s-3 .big {font-size: 38px; }
+    .main .weather {
+        width: auto;
+        margin-left: -0;
+        right: 10px;
+    }
+
+    .main .weather .area [class*=s-] {
+        font-size: 15px;
+    }
+
+    .main .weather .area .s-3 {
+        font-size: 25px;
+    }
+
+    .main .weather .area .s-4 {
+        font-size: 13px !important;
+    }
+
+    .main .weather .area .s-3 .big {
+        font-size: 38px;
+    }
 }
+
 @media (min-width: 1201px) {
-    .main .weather {margin-left: -565px;}
+    .main .weather {
+        margin-left: -565px;
+    }
 }
