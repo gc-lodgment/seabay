@@ -32,16 +32,19 @@ function endVid(){
         $("#vidPc, #player").remove(); 
         
         //console.log('pc');
-        if( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) {
-            //console.log('IE');
+        if( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) || (agent.indexOf("edge") != -1) ) {
+            console.log('IE');
             $('.vid-area.pc .vid-box').append(pchtml);
             
             movieTime();
         }else if ( (agent.indexOf("chrome") != -1) || (agent.indexOf("safari") != -1) || (agent.indexOf("whale") != -1) ){
             //console.log("SAFARI");
             if( (agent.indexOf("chrome") != -1) || (agent.indexOf("whale") != -1) ){
-                //console.log('chrome, whale');
+                console.log('chrome, whale, edge');
                 $('.vid-area.pc .vid-box').append(pchtmlApi);
+                /*if( (agent.indexOf("edge") != -1) ){
+                    console.log('edge')
+                }*/
             }else {
                 //console.log('safari');
                 $("#vidPc").remove(); 

@@ -5,7 +5,8 @@ tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-var player;
+var player, curTime, allTime, timeStr;
+var played = false;
 
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
@@ -25,6 +26,8 @@ function onYouTubeIframeAPIReady() {
     });
 }
 
+var ytplayer = $("#player");
+
 function onPlayerReady(event) {
     player.mute();
     event.target.playVideo();
@@ -41,7 +44,7 @@ function onPlayerStateChange(event) {
     //console.log('onPlayerStateChange 실행: ' + playerState);
 
     if(playerState == '종료됨'){
-        //console.log('end');
+        console.log('end');
         $('#player').css('opacity', '0');
         $('.vid-txt-box').addClass('end');
         $('.weather').addClass('end');
