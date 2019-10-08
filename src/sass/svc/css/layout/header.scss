@@ -129,7 +129,11 @@ figure > img {
 @include screen-min(992px) {
     .header {
         $hd-ht: 104px;
+        position: absolute;
+        width: 100%;
         height: $hd-ht;
+        top: 0;
+        left: 0;
         .gnb {
             /*background: #fff;
             z-index: 2;
@@ -142,7 +146,8 @@ figure > img {
             background: #fff;
             transition: box-shadow .3s;
             &.on {
-                z-index: 10001;
+                //z-index: 10001;
+                z-index: 99999;
                 position: fixed;
                 //box-shadow: 0 2px 2px rgba(0,0,0, .15);
             }
@@ -322,8 +327,12 @@ figure > img {
         display: none;
     }
     .header {
-        $hd-ht: 40px;
+        $hd-ht: 41px;
+        position: absolute;
+        width: 100%;
         height: $hd-ht;
+        top: 0;
+        left: 0;
         .gnb {
             z-index: 10;
             position: fixed;
@@ -332,6 +341,7 @@ figure > img {
             background: #fff;
             transition: box-shadow .3s;
             &.on {
+                z-index: 99999;
                 box-shadow: 0 2px 2px rgba(0,0,0, .15);
             }
             .logo-box {
@@ -488,6 +498,7 @@ figure > img {
             height: $hd-ht;
             .gnb {
                 z-index: 99999;
+                position: absolute;
                 height: $hd-ht;
                 background: none;
                 &:after {

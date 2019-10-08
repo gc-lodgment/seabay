@@ -44,10 +44,10 @@ function onPlayerStateChange(event) {
     //console.log('onPlayerStateChange 실행: ' + playerState);
 
     if(playerState == '종료됨'){
-        console.log('end');
+        /*console.log('end');
         $('#player').css('opacity', '0');
         $('.vid-txt-box').addClass('end');
-        $('.weather').addClass('end');
+        $('.weather').addClass('end');*/
     }else if(playerState == '시작되지 않음'){
         //console.log('yet');
         player.mute();

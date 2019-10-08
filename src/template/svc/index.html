@@ -8,14 +8,14 @@
 <script type="text/javascript" src="/static/svc/js/init.js"></script>
 <!--<script type="text/javascript" src="/static/svc/js/init_test.js"></script>-->
 <script type="text/javascript" src="/static/svc/js/init_vid.js"></script>
-<script type="text/javascript" src="/static/svc/js/init_player.js"></script>
+<!--<script type="text/javascript" src="/static/svc/js/init_player.js"></script>-->
 <!-- <script type="text/javascript" src="http://static.seabay.co.kr/svc/js/init_player.js"></script> -->
 </head>
 
 <body class="page-home">
-
+ 
     @@include('src/template/svc/include/_header.html')
-
+ 
     <div class="main">
         <!-- 190917 날씨 추가 (190905 전달본) : 멀티클래스 추가 -->
         <div class="weather vid">
@@ -43,28 +43,19 @@
                         <source src="http://img.seabay.co.kr/svc/img/main/seabay_mobile.mp4" type="video/mp4" />
                     </video>
                 </div>
-            </section>
+            </section> 
             <section class="vid-area pc">
-                <!-- {videoURL: 'zZojWZtwcPk' / -5gWcHBdXWE -->
-                <!--<section id="pcVid" class="vidPc" data-property="{videoURL:'-5gWcHBdXWE', containment:'#pcVid', showControls:false, autoPlay:true, loop:false, mute:true, startAt:0, opacity:1, addRaster:true, quality:'default', stopMovieOnBlur: false, showYTLogo: false, addRaster: true}"></section>-->
-                <section class="vid-box">
-                    <!--<div id="player" class="vidPc"></div>-->
-                    <!--<video id="vidPc" class="vidPc" playsinline="" webkit-playsinline="" preload="" autoplay="">
-                        <source src="http://img.seabay.co.kr/svc/img/main/seabay_pc.mp4" type="video/mp4" />
-                    </video>-->
-                    <!--?rel=0&enablejsapi=1&autoplay=1   //  &amp;playlist=NupIKt3LM1Q&amp;loop=1  id="player" -->
-                    <!--<iframe id="player" class="vidPc" src="https://www.youtube.com/embed/NupIKt3LM1Q?rel=0&enablejsapi=1&autoplay=1&mute=1" allow="autoplay; encrypted-media" frameborder="0" allowfullscreen=""></iframe>-->
-                </section>
+                <section class="vid-box"></section>  
             </section>
-
+  
             <div class="vid-txt-box">
                 <a href="javascript:;" class="vid-txt"><img src="http://img.seabay.co.kr/svc/img/main/bg_main_txt.png" alt="강릉씨베이호텔 자세한 정보 보기" /></a>
             </div>
+  
+        </div> 
+        <!-- //.vid-wrap --> 
 
-        </div>
-        <!-- //.vid-wrap -->
-
-        <section class="slider_section">
+        <!--<section class="slider_section">
             <div class="main_info">
                 <p>A Home away from Home</p>
             </div>
@@ -90,8 +81,9 @@
                 <span u="arrowleft" class="jssor-sprite arow-left" style="width: 21px; height: 32px; top: 200px; left: 20px;"></span>
                 <span u="arrowright" class="jssor-sprite arow-right" style="width: 21px; height: 32px; top: 200px; right: 20px"></span>
             </div>
-        </section>
-        <section class="body_section">
+        </section>-->
+        
+        <section id="mainRest" class="body_section">
             <div class="main_reservation">
                 <div class="container">
                     <form method="get" name="myForm" id="myForm" action="https://be.wingsbooking.com/ko/VHG1/redirect">
@@ -440,9 +432,9 @@
                 </div>
             </div>
         </section>
-
+ 
     </div>
-
+ 
     <!-- 팝업 -->
     <div class="event_pop">
         <div class="top">
@@ -462,7 +454,7 @@
         </div>
     </div>
 
-    @@include('src/template/svc/include/_footer.html')
+    @@include('src/template/svc/include/_footer.html') 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script>
