@@ -129,11 +129,7 @@ figure > img {
 @include screen-min(992px) {
     .header {
         $hd-ht: 104px;
-        position: absolute;
-        width: 100%;
         height: $hd-ht;
-        top: 0;
-        left: 0;
         .gnb {
             /*background: #fff;
             z-index: 2;
@@ -260,6 +256,12 @@ figure > img {
                 }
             }
         }
+        &.main {
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
     }
 }
 @include screen-min-max(992px, 1510px) {
@@ -328,11 +330,7 @@ figure > img {
     }
     .header {
         $hd-ht: 41px;
-        position: absolute;
-        width: 100%;
         height: $hd-ht;
-        top: 0;
-        left: 0;
         .gnb {
             z-index: 10;
             position: fixed;
@@ -535,6 +533,12 @@ figure > img {
                     display: block;
                 }
             }
+        }
+        &.main {
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
         }
     }
 }

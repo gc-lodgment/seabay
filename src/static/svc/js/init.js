@@ -20,6 +20,7 @@ function vidWH(){
         evtPop = $('.event_pop'),
         evtPopWid = evtPop.width();
         
+    $('.header').addClass('main');
     vid.css({'width' : winWid+'px', 'height' : winHt+'px'}); 
     
     if( winWid <= '991' ){
