@@ -305,6 +305,24 @@ $ld-fc-black: #353d45;
                                 padding-left: 25px;
                                 text-indent: -26px;
                             }
+                            .t-cell {
+                                position: relative;
+                                display: table;
+                                text-align: left;
+                                padding: 3px 0 2px;
+                                span {
+                                    display: table-cell;
+                                    margin: 0;
+                                    padding: 0 0 0 4px;
+                                    text-indent: 0;
+                                    word-break: keep-all; 
+                                    line-height: 1.25;
+                                    &.s-1 {
+                                        min-width: 67px;
+                                        padding-left: 0;
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -1093,6 +1111,24 @@ $ld-fc-black: #353d45;
                                 
                                 &:last-child {
                                     padding-bottom: 3px;
+                                }
+                            }
+                            .t-cell {
+                                position: relative;
+                                display: table;
+                                text-align: left;
+                                padding: 3px 0 0;
+                                span {
+                                    display: table-cell;
+                                    margin: 0;
+                                    padding: 0 0 0 4px;
+                                    text-indent: 0;
+                                    word-break: keep-all; 
+                                    line-height: 1.25;
+                                    &.s-1 {
+                                        min-width: 70px;
+                                        padding-left: 0;
+                                    }
                                 }
                             }
                         }
