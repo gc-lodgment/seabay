@@ -109,6 +109,11 @@
                     }
                 }
             }
+            
+            //a href가 공백일때
+            .nope {
+                cursor: inherit;
+            }
         }
         .notice-wrap {
             @include float;

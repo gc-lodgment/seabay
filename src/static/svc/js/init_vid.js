@@ -41,7 +41,7 @@ function endVid(){
     }else {
         //console.log('pc');
         var pchtml = '<iframe id="vidPc" class="vidPc" src="https://www.youtube.com/embed/NupIKt3LM1Q?rel=0&amp;controls=0&amp;autoplay=1&modestbranding=1" allow="autoplay; encrypted-media" frameborder="0" allowfullscreen=""></iframe>',
-            pchtmlApi = '<iframe id="player" class="vidPc" src="https://www.youtube.com/embed/NupIKt3LM1Q?rel=0&enablejsapi=1&autoplay=1&mute=1" allow="autoplay; encrypted-media" frameborder="0" allowfullscreen=""></iframe> <script type="text/javascript" src="http://static.seabay.co.kr/svc/js/init_player_test.js"></script>';
+            pchtmlApi = '<iframe id="player" class="vidPc" src="https://www.youtube.com/embed/NupIKt3LM1Q?rel=0&enablejsapi=1&autoplay=1&mute=1" allow="autoplay; encrypted-media" frameborder="0" allowfullscreen=""></iframe> <script type="text/javascript" src="http://static.seabay.co.kr/svc/js/init_player.js"></script>';
         
         $(".vid-area.m .vid-box").empty();
         //$("#vidPc, #player").remove(); 
