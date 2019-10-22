@@ -44,12 +44,68 @@ em, address {
                 margin-top: 22px;
             }
             .logo-box {
+                position: relative;
                 img {
                     display: inline-block;
                     &.logo-goco {
                         height: 40px;
                     }
                 }
+                
+                /* 패밀리 사이트 */
+                .family-wrapper {
+                    $wd: 140px;
+                    $pm: 10px;
+                    .family-site {
+                        position: absolute;
+                        //position: relative;
+                        top: 39px;
+                        left: 269px;
+                        font-size: 13px;
+                        line-height: 22px;
+                        color: #a3a3a3;
+                        .family-site-label {
+                            cursor: pointer;
+                            position: relative;
+                            box-sizing: border-box;
+                            display: inline-block;
+                            width: $wd;
+                            height: 24px;
+                            padding-left: $pm;
+                            line-height: 24px;
+                            border: 1px solid #4c4c4c;
+                        }
+                        
+                        .site {
+                            z-index: 9999;
+                            position: absolute;
+                            display: none;
+                            box-sizing: border-box;
+                            left: 0;
+                            bottom: 23px;
+                            width: $wd;
+                            padding-bottom: $pm;
+                            border: 1px solid #4c4c4c;
+                            background-color: #323232;
+                            li {
+                                .fam_btn {
+                                    padding: 5px $pm;
+                                    line-height: 16px;
+                                    word-break: keep-all;
+                                }
+
+                                &.group-name {
+                                    margin-top: $pm;
+                                    .fam_btn {
+                                        font-weight: 700;
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                
             }
             .addr-bar {
                 .addr {
@@ -159,6 +215,8 @@ em, address {
                 margin-top: 10px;
             }
             .logo-box {
+                position: relative;
+                //overflow: hidden;
                 img {
                     display: inline-block;
                     &.logo {
@@ -168,6 +226,61 @@ em, address {
                         height: 30px;
                     }
                 }
+                
+                /* 패밀리 사이트 */
+                .family-wrapper {
+                    $wd: 115px;
+                    $pm: 6px;
+                    .family-site {
+                        position: absolute;
+                        //position: relative;
+                        top: 26px;
+                        left: 200px;
+                        font-size: 11px;
+                        line-height: 16px;
+                        color: #a3a3a3;
+                        .family-site-label {
+                            cursor: pointer;
+                            position: relative;
+                            box-sizing: border-box;
+                            display: inline-block;
+                            width: $wd;
+                            height: 24px;
+                            padding-left: $pm;
+                            line-height: 24px;
+                            border: 1px solid #4c4c4c;
+                        }
+                        
+                        .site {
+                            z-index: 9999;
+                            position: absolute;
+                            display: none;
+                            box-sizing: border-box;
+                            left: 0;
+                            bottom: 23px;
+                            width: $wd;
+                            padding-bottom: $pm;
+                            border: 1px solid #4c4c4c;
+                            background-color: #323232;
+                            li {
+                                .fam_btn {
+                                    padding: 3px $pm;
+                                    line-height: 13px;
+                                    word-break: keep-all;
+                                }
+
+                                &.group-name {
+                                    margin-top: $pm;
+                                    .fam_btn {
+                                        font-weight: 700;
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                
             }
             .addr-bar {
                 .addr {
@@ -221,6 +334,30 @@ em, address {
                         display: block;
                         position: relative;
                         margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include screen-max(320px) {
+    .footer {
+        .sfa {
+            .logo-box {
+                /* 패밀리 사이트 */
+                .family-wrapper {
+                    $wd: 110px;
+                    .family-site {
+                        left: 194px;
+                        font-size: 10px;
+                        .family-site-label {
+                            width: $wd;
+                        }
+                        
+                        .site {
+                            width: $wd;
+                        }
                     }
                 }
             }
