@@ -40,7 +40,7 @@
                     <img src="http://img.seabay.co.kr/svc/img/symbol/footer_logo.png" alt="씨베이호텔" class="logo">
                     <img src="http://img.seabay.co.kr/svc/img/symbol/logo_f_goco.png" alt="고코투어" class="logo-goco">
                     <!-- 191021 패밀리 사이트 추가 -->
-                    <div class="family-wrapper">
+                    <div id="family-wrapper" class="family-wrapper">
                         <div class="family-site">
                             <span class="family-site-label">패밀리사이트&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▲</span>
                             <ul class="site">
@@ -62,8 +62,8 @@
                             </ul>
                         </div>
                     </div>
-                    <script type="text/javascript">
-                        $('.family-site > span').click(function(){
+                    <script>
+                        $('#family-wrapper .family-site-label').on('click', function () {
                             $(this).next().toggle();
                         });
                     </script>
