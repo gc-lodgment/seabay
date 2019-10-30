@@ -13,35 +13,30 @@
                 <div data-p="112.50"><img data-u="image" class="room-visibility" src="http://img.seabay.co.kr/svc/img/rooms/_new/dx_double/room_03.jpg" alt="03" /></div>
                 <div data-p="112.50"><img data-u="image" class="room-visibility" src="http://img.seabay.co.kr/svc/img/rooms/_new/dx_double/room_02.jpg" alt="04" /></div>
             </div>
-            <span u="arrowleft" class="jssor-sprite arow-left"
-                style="width: 21px; height: 32px; top: 290px; left: 20px;"></span>
-            <span u="arrowright" class="jssor-sprite arow-right"
-                style="width: 21px; height: 32px; top: 290px; right: 20px"></span>
+            <span u="arrowleft" class="jssor-sprite arow-left" style="width: 21px; height: 32px; top: 290px; left: 20px;"></span>
+            <span u="arrowright" class="jssor-sprite arow-right" style="width: 21px; height: 32px; top: 290px; right: 20px"></span>
         </div>
 
         @@include('src/template/svc/include/rooms/sub_top.html', {
-            "title": "디럭스 더블",
-            "sub_title": "여행의 가치를 추구하는 연인, 친구, 가족 2인형 여행객들에게 적합한 더블타입 베드를 제공합니다."
+        "title": "디럭스 더블",
+        "sub_title": "여행의 가치를 추구하는 연인, 친구, 가족 2인형 여행객들에게 적합한 더블타입 베드를 제공합니다."
         })
-        
+
         <div class="container">
             <div class="detail box_center">
                 <div class="box_right">
                     <h3>RESERVATION</h3>
                     <form method="get" name="myForm" id="myForm" action="https://be.wingsbooking.com/ko/VHG1/redirect">
                         <div class="s_input">
-                            <input type="text" name="checkIn" class="datepicker_in" value="2019-06-18"
-                                placeholder="Check in" readonly />
+                            <input type="text" name="checkIn" class="datepicker_in" value="2019-06-18" placeholder="Check in" readonly />
                             <i class="icon-12 label"></i>
                         </div>
                         <div class="s_input">
-                            <input type="text" name="checkOut" class="datepicker_ot" value="2019-06-19"
-                                placeholder="Check out" readonly />
+                            <input type="text" name="checkOut" class="datepicker_ot" value="2019-06-19" placeholder="Check out" readonly />
                             <i class="icon-12 label"></i>
                         </div>
                         <div class="s_input">
-                            <input type="number" class="set_period_date" value="1" min="1"
-                                onKeyup="number_check(this)" />
+                            <input type="number" class="set_period_date" value="1" min="1" onKeyup="number_check(this)" />
                             <p class="ad_form_label">박</p>
                         </div>
                         <div class="s_input">
@@ -51,13 +46,12 @@
                             <input type="hidden" name="children" value="" />
                         </div>
                         <div class="s_input">
-                            <button type="button" class="s_btn_gray b_100" onclick="on_submit()"><i
-                                    class="icon-113"></i> SEARCH</button>
+                            <button type="button" class="s_btn_gray b_100" onclick="on_submit()"><i class="icon-113"></i> SEARCH</button>
                         </div>
                     </form>
                 </div>
                 <div class="box_left">
-                    <button class="amenity_more tooltip" onclick="amenity_more()" title="더보기"><span>+</span></button>
+                    <!-- <button class="amenity_more tooltip" onclick="amenity_more()" title="더보기"><span>+</span></button> -->
                     <div class="amenitys">
                         <div class="amenity_box">
                             <i class="amenity-RB002 tooltip" title="커피/티"></i>
@@ -90,6 +84,18 @@
                         <div class="amenity_box">
                             <i class="amenity-XB001 tooltip" title="객실금고"></i>
                             <p>객실금고</p>
+                        </div>
+                        <div class="amenity_box">
+                            <img src="http://img.seabay.co.kr/svc/img/icon/ico_balcony.png" alt="발코니">
+                            <p>발코니</p>
+                        </div>
+                        <div class="amenity_box">
+                            <img src="http://img.seabay.co.kr/svc/img/icon/ico_coffeeport.png" alt="커피포트">
+                            <p>커피포트</p>
+                        </div>
+                        <div class="amenity_box">
+                            <img src="http://img.seabay.co.kr/svc/img/icon/ico_bidet.png" alt="비데">
+                            <p>비데설치</p>
                         </div>
                     </div>
                     <div class="description">
