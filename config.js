@@ -44,7 +44,7 @@ module.exports = function () {
 
         // etc 경로
         etc = {
-            src: source + '/**/!(css|static|sass|js|img|template)*/**',
+            src: source + '/**/*.!{html, css, sass, js, jpg, png, gif}',
             dest: development + '/static',
         },
 
