@@ -14,7 +14,10 @@ function headerFunc () {
 	});
 	gNav.find(".bg-drop, .i-x").on('click', function() {
 		gNav.removeClass("on");
-	});
+    });
+    if ( $('.page-home').length ) {
+        $('.header').addClass('vid');
+    }
 }
 
 function scrollFunc () {

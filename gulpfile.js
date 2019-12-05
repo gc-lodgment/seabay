@@ -133,7 +133,8 @@ function sprite(cb) {
 };
 function static() {
 	return src(config.static.src, {since: lastRun(static)})
-		.pipe(dest(config.static.dest));
+        .pipe(dest(config.static.dest))
+        .pipe(browserSync.stream());
 }
 function etc() {
 	return src(config.etc.src, {since: lastRun(etc)})
@@ -220,6 +221,7 @@ exports.sprite = sprite;
 exports.etc = etc;
 exports.testPathServer = testPathServer;
 exports.testPathLocal = testPathLocal;
-exports.serve = parallel(series(parallel(template), css, static, sassDev, js, img, etc, bSync), watching);
-exports.build = parallel(series(parallel(template), css, static, sassDev, js, img, etc, bSync), watching);
-exports.test = series(parallel(template), css, static, sassPrd, js, img, etc, copyTest, testPathServer, bSyncTest);
+exports.default = parallel(bSync, watching);
+exports.serve = parallel(series(parallel(template), static, sassDev, img, etc, bSync), watching);
+exports.build = parallel(series(parallel(template), static, sassDev, img, etc, bSync), watching);
+exports.test = series(parallel(template), static, sassPrd, img, etc, copyTest, testPathServer, bSyncTest);
