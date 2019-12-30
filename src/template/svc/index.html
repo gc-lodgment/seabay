@@ -15,9 +15,9 @@
 </head>
 
 <body class="page-home">
- 
+
     @@include('src/template/svc/include/_header.html')
- 
+
     <div class="main">
         <!-- 190917 날씨 추가 (190905 전달본) : 멀티클래스 추가 -->
         <div class="weather vid">
@@ -45,17 +45,17 @@
                         <source src="http://img.seabay.co.kr/svc/img/main/seabay_mobile.mp4" type="video/mp4" />
                     </video>
                 </div>
-            </section> 
-            <section class="vid-area pc">
-                <section class="vid-box"></section>  
             </section>
-  
+            <section class="vid-area pc">
+                <section class="vid-box"></section>
+            </section>
+
             <div class="vid-txt-box">
                 <a href="javascript:;" class="vid-txt"><img src="http://img.seabay.co.kr/svc/img/main/bg_main_txt.png" alt="강릉씨베이호텔 자세한 정보 보기" /></a>
             </div>
-  
-        </div> 
-        <!-- //.vid-wrap --> 
+
+        </div>
+        <!-- //.vid-wrap -->
 
         <!--<section class="slider_section">
             <div class="main_info">
@@ -84,7 +84,7 @@
                 <span u="arrowright" class="jssor-sprite arow-right" style="width: 21px; height: 32px; top: 200px; right: 20px"></span>
             </div>
         </section>-->
-        
+
         <section id="mainRest" class="body_section">
             <div class="main_reservation">
                 <div class="container">
@@ -435,11 +435,11 @@
                 </div>
             </div>
         </section>
- 
+
     </div>
- 
+
     <!-- 팝업 -->
-    <!--<div class="event_pop">
+    <div class="event_pop" style="display: block;">
         <div class="top">
             <label><input type="checkbox" /> 12시간 동안 보지않기</label>
             <button type="button"><i class="icon-29"></i></button>
@@ -448,16 +448,17 @@
             <div class="slider_container pop">
                 <div data-u="slides" class="slides">
                     <div>
-                        <a href="http://seabay.co.kr/facilities/?r=swimmingpool_infinite"><img data-u="image" class="slide-img" src="http://img.seabay.co.kr/svc/fil/Board/1500/477503d947581c7ee978d70c3b617eb5.jpg" title="수영장 안내" /></a>
+                        <!-- <a href="http://seabay.co.kr/facilities/?r=swimmingpool_infinite"><img data-u="image" class="slide-img" src="http://img.seabay.co.kr/svc/fil/Board/1500/477503d947581c7ee978d70c3b617eb5.jpg" title="수영장 안내" /></a> -->
+                        <img data-u="image" class="slide-img" src="http://img.seabay.co.kr/svc/img/event/2020_bf.jpg" title="수영장 안내" />
                     </div>
                 </div>
-                !-- <span u="arrowleft" class="jssor-sprite arow-left" style="width: 21px; height: 32px; top: 200px; left: 20px;"></span>
-                <span u="arrowright" class="jssor-sprite arow-right" style="width: 21px; height: 32px; top: 200px; right: 20px"></span> --
             </div>
         </div>
-    </div>-->
+    </div>
+    <!-- <span u="arrowleft" class="jssor-sprite arow-left" style="width: 21px; height: 32px; top: 200px; left: 20px;"></span>
+    <span u="arrowright" class="jssor-sprite arow-right" style="width: 21px; height: 32px; top: 200px; right: 20px"></span> -->
 
-    @@include('src/template/svc/include/_footer.html') 
+    @@include('src/template/svc/include/_footer.html')
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script>

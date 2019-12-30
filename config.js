@@ -25,13 +25,13 @@ module.exports = function () {
         // Css 경로
         css = {
             src: source + '/**/css/**/*.css',
-            dest: development + '/static/css'
+            dest: development + '/'
         },
 
         // JS 경로
         js = {
             src: source + '/**/js/**/*.js',
-            dest: development + '/static/js'
+            dest: development + '/'
         },
 
         // Img 경로
