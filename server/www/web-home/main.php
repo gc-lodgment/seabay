@@ -296,7 +296,7 @@
     </div>
 
     <!-- 팝업 : 나오지않게 주석처리 -->
-    <div class="event_pop">
+    <!-- <div class="event_pop">
         <div class="top">
             <label><input type="checkbox" /> 12시간 동안 보지않기</label>
             <button type="button"><i class="icon-29"></i></button>
@@ -306,14 +306,14 @@
                 <div data-u="slides" class="slides">
                     <div>
                         <img data-u="image" class="slide-img" src="http://img.seabay.co.kr/svc/img/event/2020_bf.jpg" title="수영장 안내" />
-                        <!-- <a href="http://seabay.co.kr/facilities/?r=swimmingpool_infinite">
-                            <img data-u="image" class="slide-img" src="http://img.seabay.co.kr/svc/fil/Board/1500/477503d947581c7ee978d70c3b617eb5.jpg" title="수영장 안내" />
-                        </a> -->
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
+    <!-- <a href="http://seabay.co.kr/facilities/?r=swimmingpool_infinite">
+        <img data-u="image" class="slide-img" src="http://img.seabay.co.kr/svc/fil/Board/1500/477503d947581c7ee978d70c3b617eb5.jpg" title="수영장 안내" />
+    </a> -->
 
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>
