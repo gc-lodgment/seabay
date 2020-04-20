@@ -18,7 +18,7 @@ function onYouTubeIframeAPIReady() {
             'loop': 0,
             //'mute': 1
         },*/
-        'suggestedQuality': 'large',
+        'suggestedQuality': 'hd1080',
         events: {
             'onReady': onPlayerReady,
             'onStateChange': onPlayerStateChange
