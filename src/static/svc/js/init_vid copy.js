@@ -1,6 +1,5 @@
 
 $(document).on('ready', function () {
-    // endVid();
     $(window).on('resize', function () {
         endVid();
     }).resize();
