@@ -17,40 +17,40 @@ module.exports = function () {
 
         // Sass 경로
         sass = {
-            src: source + '/sass/**/!(_)*.{scss,sass}',
-            parts: source + '/sass/**/_*.{scss,sass}',
+            src: source + '/assets/sass/**/!(_)*.{scss,sass}',
+            parts: source + '/assets/sass/**/_*.{scss,sass}',
             dest: development + '/static'
         },
 
         // Css 경로
         css = {
-            src: source + '/**/css/**/*.css',
+            src: source + '/assets/**/css/**/*.css',
             dest: development + '/'
         },
 
         // JS 경로
         js = {
-            src: source + '/**/js/**/*.js',
+            src: source + '/assets/**/js/**/*.js',
             dest: development + '/'
         },
 
         // Img 경로
         img = {
             // src : source + '/assets/img/**/*.{gif,jpg,png,ico}',
-            src: source + '/**/img/**/!(sprite)*/*',
-            src_sprite: source + '/img/**/sprite*/*',
+            src: source + '/assets/**/img/**/!(sprite)*/*',
+            src_sprite: source + '/assets/img/**/sprite*/*',
             dest: development + '/img',
         },
 
         // etc 경로
         etc = {
-            src: source + '/**/*.!{html, css, sass, js, jpg, png, gif}',
+            src: source + '/assets/**/*.!{html, css, sass, js, jpg, png, gif}',
             dest: development + '/static',
         },
 
         // static (씨베이 별도) 경로
         static = {
-            src: source + '/static/**',
+            src: source + '/assets/static/**',
             dest: development + '/static',
         },
 
