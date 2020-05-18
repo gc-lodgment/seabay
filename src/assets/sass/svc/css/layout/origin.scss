@@ -7293,9 +7293,39 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
         text-align: center;
     }
 
-    .main .vid-txt-box .vid-txt img {
-        width: 75%;
-        max-width: 640px;
+    // .main .vid-txt-box .vid-txt img {
+    //     width: 75%;
+    //     max-width: 640px;
+    // }
+    .main .vid-txt-box .vid-txt {
+        // width: 75%;
+        // max-width: 640px;
+        // margin-top: 70px;
+        // display: block;
+
+        >a {
+            position: relative;
+            display: block;
+
+            width: 70%;
+            max-width: 274px;
+            margin: 0 auto;
+
+            &.more-btn {
+                margin-top: 30px;
+                left: 0.5%;
+            }
+
+            &.book-btn {
+                width: 33.9%;
+                max-width: 135px;
+
+            }
+
+            >img {
+                max-width: 100%;
+            }
+        }
     }
 }
 
